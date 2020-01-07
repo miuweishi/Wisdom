@@ -1,0 +1,14 @@
+@charset "gb2312";
+/* CSS Document */
+
+*{padding:0;margin:0;font-family: Source Han Sans CN,Hiragino Sans GB,microsoft yahei,arial,sans-serif !important;}
+.footerBox{clear:both;text-align:center;font-size:14px;color:#636363;line-height:24px;background: #fff;margin-top:20px;}
+.footerBox a{color:#636363;text-decoration:none;}
+.footerBox a:hover{color:#c00;}
+.letterClass{padding:35px 0;}
+.letterClass strong{font-weight: normal;}
+.letterClass a{margin:0 7px;display:inline-block;}
+.indexes{clear:both;padding:0 0 15px;}
+.indexes em{padding:0 20px;font-style:normal;}
+.copyTxt{clear:both;padding:20px 0;}
+.copy{clear:both;height:50px;line-height:50px;background:#202012;}

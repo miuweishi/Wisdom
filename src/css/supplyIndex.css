@@ -1,0 +1,815 @@
+@charset "gb2312";
+
+/* CSS Document */
+
+html{margin:0;padding:0;border:0;}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, img, fieldset, span, legend, button, input, textarea,th, td, div, td,s{margin: 0; padding:0; list-style:none;}
+
+body{font:12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;}
+
+table{border-collapse:separate;border-spacing:0;}
+
+img{border:none;}
+
+s{text-decoration:none;}
+
+i,em{font-style:normal;}
+
+:focus{outline:0;*blr:expression(this.onFocus=this.blur())}
+
+.pr{position:relative;}
+
+.pa{position:absolute;}
+
+.undis{display:none;}
+
+.clr{clear:both;}
+
+a{color:#333;text-decoration:none;*blr:expression(this.onFocus=this.blur());}
+
+a:hover{text-decoration:underline;color:#145cac !important;}
+
+a:active{color:#F60;}
+
+button{border:none;cursor:pointer;}
+
+h1, h2, h3, h4, h5, h6 {color:#000;font-size:100%;}
+
+h2 {font-weight:normal;color:#000;}
+
+ul,ol{list-style-type:none;}
+
+dl dt{font-weight:normal;}
+
+select{background-color:#fff;border-width:1px;border-style:solid;}
+
+input{background:#fff;}
+
+body{background:#e0e0e0;}
+
+div{display:block;}
+
+/*头部通栏样式*/
+
+#supply_top {height:18px; margin:0 auto;padding-top:7px;position:relative;width:1190px;z-index:99999;}
+
+#supply_top li {float:left;line-height:16px;margin-right: 4px;padding-right:4px;position:relative;}
+
+#supply_top li a {color: #444444;}
+
+#supply_top li.help {margin-right:0;padding-right: 0;}
+
+#supply_top li.bgn {background:none repeat scroll 0 0 rgba(0, 0, 0, 0);}
+
+#supply_top li.top_4 {padding-right:25px;}
+
+.supply_left{float:left;position:relative;width:500px;}
+
+.supply_right{float:right;margin:0;padding: 0;width:425px;}
+
+/*头部通栏样式*/
+
+/*logo样式*/
+
+.hc-s-logo,.hbox ul li.drop-menu em.ico,.showmore a
+
+{background:url("//b2b.hc360.com/supermarket/images/supplyico.png") no-repeat 0 0;border:none;}
+
+.sel-public{width:11px;}
+
+.heads{background:#035ca0;height:98px;color:#fff;}
+
+.heads .hbox{width:1190px;margin:0 auto;}
+
+.logo-til{padding-top:20px;overflow:hidden;zoom:1;}
+
+.logo-til h1{font:30px/1.5 "微软雅黑";color:#fff;margin:4px 0 0 13px;float:left;}
+
+.hc-s-logo{display:inline-block;width:187px;height:55px;float:left;}
+
+.hbox ul{float:right;}
+
+.hbox ul li{float:left;line-height:40px;}
+
+.hbox ul li.first{float:none;clear:both;}
+
+.hbox ul li.first span{margin:0 10px;}
+
+.hbox ul li.first a{color:#fff;}
+
+.hbox ul li.first a:hover{color:#fff !important;}
+
+.hbox ul li.drop-menu{position:relative;background:#e6e6e6;cursor:pointer;width:69px;height:40px;line-height:40px;text-align:center;color:#666;}
+
+.hbox ul li.drop-menu em.ico{background-position:-245px -12px;padding-right:13px;}
+
+.hbox ul li button{display:inline-block;width:69px;background:#f58f23;color:#fff;text-align:center;height:40px;line-height:40px;font-size:14px;float:left;}
+
+.hbox ul li input{border:none;width:287px;background:#fff;color:#999;height:40px;line-height:40px;padding:0 5px;font-size:12px;vertical-align:top;float:left;}
+
+/*logo样式*/
+
+/*导航栏样式*/
+
+.navs{border-top:1px solid #144870;height:42px;background:#024d87;}
+
+.navs:after{clear: both;content: " ";display: block;height: 0;}
+
+.subnav{width:1190px;margin:0 auto;}
+
+.subnav:after{clear: both;content: " ";display: block;height: 0;}
+
+.subnav .subnav-left,.subnav .subnav-right{float:left;display:inline;}
+
+.subnav .subnav-left{width:250px;line-height:41px;border-bottom:1px solid #073a63;}
+
+.subnav .subnav-left h2{width:216px;font-size:14px;color:#fff;font-weight:bold;padding-left:34px;}
+
+.subnav .subnav-right ul li{display:inline;float:left;}
+
+.subnav .subnav-right ul li a{display:block;float:left;height:42px;padding:0 28px;margin-right:15px;font-size:14px;font-weight:bold;color:#fff;line-height:42px;}
+
+.subnav .subnav-right ul li a:hover{background:#f58f23;color:#fff !important;text-decoration:none;}
+
+.subnav .subnav-right ul li .current{background:#f58f23;color:#fff;}
+
+.showmore{background:#083960;line-height:26px;text-align:center;}
+
+.showmore a{font-size:12px;color:#fff;background-position:-206px -160px;padding-right:20px;}
+
+.showmore a.up{background-position:-201px -200px;}
+
+/*导航栏样式*/
+
+/*内容区域*/
+
+.maincont{width:1190px;margin:0 auto;}
+
+.maincont-one{width:1190px;overflow:hidden;margin-bottom:10px;}
+
+.maincont-one:after{clear: both;content: " ";display: block;height: 0;}
+
+.maincont-one .maincont-one-left,.maincont-one .maincont-one-right{float:left;display:inline;overflow:hidden;}
+
+.maincont-one .maincont-one-left{width:940px;}
+
+.maincont-one .maincont-one-right{width:250px;background:#fff;}
+
+.subnav-menu,.maincont-one-main{float:left;display:inline;}
+
+.subnav-menu{width:250px;}
+
+font{font-size:12px;color:#fff;}
+
+.subnav-menu-list .item{border-top:1px solid #125182;border-bottom:1px solid #073a63;background:#054374;padding:6px 8px 9px 10px;+padding:7px 8px 8px 10px;position:relative;z-index:10;}
+
+.subnav-menu-list li.cur{ background:#fff;}
+
+.subnav-menu-list .item dl dt.tit-cur .suvnav-tit{color:#fff;}
+
+.subnav-menu-list .item dl .con-cur span a{color:#666;}
+
+.subnav-menu-list .item dl .con-cur font{color:#666;}
+
+.nav-list-con{position:absolute;left:250px;_left:240px;top:-2px;width:510px;border:2px solid #054374; border-left:0; background:#fff; z-index:13;box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);}
+
+.list-1{top:-54px;_top:-52px;}
+
+.list-2{top:-57px;_top:-55px;}
+
+.list-3{top:-110px;_top:-108px;}
+
+.list-4{top:-108px;_top:-106px;}
+
+.list-5{top:-108px;_top:-106px;}
+
+.list-6{top:-108px;_top:-106px;}
+
+.list-7{top:-134px;_top:-132px;}
+
+.list-8{top:-186px;_top:-184px;}
+
+.nav-list-con .nav-list-con-l,.nav-list-con .nav-list-con-r{float:left;display:inline;}
+
+.nav-list-con .nav-list-con-l{width:487px;height:100%;padding-left:10px;}
+
+.nav-list-con-l .pub-list{margin:0 auto 3px;width:470px;line-height:24px;border-bottom:1px solid #e5e5e5;padding-bottom:5px;overflow:hidden;}
+
+.nav-list-con-l .last{border-bottom:none;}
+
+.nav-list-con-l .pub-list span,.nav-list-con-l .more span{font-weight:bold;color:#1c5493;font-size:12px;margin-right:14px;}
+
+.nav-list-con-l .pub-list a{padding:0 3px;color:#666;}
+
+.nav-list-con-l .pub-list ul{overflow:hidden;}
+
+.nav-list-con-l .pub-list ul li{float:left;width:78px;line-height:26px;}
+
+.nav-list-con-l .more{ width:466px;height:33px;text-align:center;line-height:33px; background:#ebebeb; margin:9px auto;}
+
+.nav-list-con-l .more span{margin-right:7px;}
+
+.nav-list-con-l .more font{color:#999; margin:0 9px;}
+
+.nav-list-con-r{width:177px;height:100%;background:#f2f2f2;padding-left:12px;}
+
+.nav-list-con-r h3{font-size:14px;font-family:"微软雅黑","黑体";color:#333;line-height:23px;margin-top:5px;}
+
+.nav-list-con-r .nav-recom{overflow:hidden;margin-top:5px;}
+
+.nav-list-con-r .nav-recom .recom_1,.nav-list-con-r .nav-recom .recom_2,.nav-list-con-r .nav-recom .recom_3,.nav-list-con-r .nav-recom .recom_4,.nav-list-con-r .nav-recom .recom_5,.nav-list-con-r .nav-recom .recom_6{display:block;background:url("//b2b.hc360.com/supermarket/images/supply_nav_recom.gif") no-repeat;overflow:hidden;float:left; text-indent:-99999999px;}
+
+.nav-list-con-r .nav-recom .recom_1,.nav-list-con-r .nav-recom .recom_2,.nav-list-con-r .nav-recom .recom_3,.nav-list-con-r .nav-recom .recom_4{width:80px;height:40px;margin:0 7px 7px 0;}
+
+.nav-list-con-r .nav-recom .recom_5,.nav-list-con-r .nav-recom .recom_6{width:170px; height:40px;margin-bottom:7px;}
+
+.nav-list-con-r .nav-recom .recom_1{background-position:0 0;}
+
+.nav-list-con-r .nav-recom .recom_2{background-position:-89px 0;}
+
+.nav-list-con-r .nav-recom .recom_3{background-position:0 -48px;}
+
+.nav-list-con-r .nav-recom .recom_4{background-position:-89px -48px;}
+
+.nav-list-con-r .nav-recom .recom_5{background-position:-1px -98px;}
+
+.nav-list-con-r .nav-recom .recom_6{background-position:-1px -148px;}
+
+.nav-list-con-r .sel-buss{padding-bottom:6px;border-bottom:1px solid #d6d6d6;overflow:hidden;}
+
+.nav-list-con-r .sel-buss ul{overflow:hidden;height:138px;}
+
+.nav-list-con-r .sel-buss ul li{width:166px;}
+
+.nav-list-con-r .sel-buss ul li .sel-buss-t{height:27px;line-height:27px;text-overflow:ellipsis;-o-text-overflow:ellipsis;word-break:break-all;white-space:nowrap;}
+
+.nav-list-con-r .sel-buss ul li .sel-buss-wrap{width:159px;height:42px;padding:8px 0 7px 7px; background:#035ca0; display:none;}
+
+.nav-list-con-r .sel-buss ul li .sel-buss-cur{ display:block}
+
+.nav-list-con-r .sel-buss ul li .sel-buss-wrap dl{width:159px;}
+
+.nav-list-con-r .sel-buss ul li .sel-buss-wrap dl dt,.nav-list-con-r .sel-buss ul li .sel-buss-wrap dl dd{float:left;}
+
+.nav-list-con-r .sel-buss ul li .sel-buss-wrap dl dt{width:40px;height:40px;border:1px solid #dde4ea;overflow:hidden;}
+
+.nav-list-con-r .sel-buss ul li .sel-buss-wrap dl dd{ width:102px;margin-left:5px;color:#fff;}
+
+.nav-list-con-r .sel-buss ul li .sel-buss-wrap dl dd .buss-tit{margin-bottom:16px;}
+
+.nav-list-con-r .sel-buss ul li .sel-buss-wrap dl dd .buss-tit a{font-size:12px;line-height:13px;color:#fff;}
+
+.nav-list-con-r .sel-buss ul li .sel-buss-wrap dl dd .buss-adr em{margin-right:7px;}
+
+.nav-list-con-r .sel-buss ul li .sel-buss-wrap dl dd .buss-adr span{color:#fff000;font-family:"微软雅黑","黑体";font-size:12px;}
+
+.subnav-menu-list .item dl{width:228px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+.subnav-menu-list .item dl dt{margin-bottom:9px;+margin-bottom:8px;_margin-bottom:7px;line-height:14px;}
+
+.subnav-menu-list .item dl dd{line-height:13px;_line-height:14px;}
+
+.subnav-menu-list .item dl dt .suvnav-tit{color:#fff;}
+
+.subnav-menu-list .item dl a{color:#d6e8f6 !important;}
+
+.subnav-menu-list .cur dl a,.subnav-menu-list .cur dl dt strong,.subnav-menu-list .cur font{color:#666 !important;}
+
+
+
+.subnav .subnav-right{width:940px;}
+
+.maincont-one-main{ width:690px;}
+
+.maincont-one-main .maincont-one-banner{width:690px;height:300px;overflow:hidden;position:relative;}
+
+.maincont-one-main .maincont-one-ser{ width:679px;padding-left:9px;background:#fff; margin:0 auto;height:178px;*height:170px;}
+
+.maincont-one-main .maincont-one-ser h2{line-height:39px;font-size:16px;color:#444;font-weight:bold;font-family:Arial, "微软雅黑";}
+
+.maincont-one-main .maincon-one-ser-con{padding:0 10px 15px 0;overflow:hidden;}
+
+.maincont-one-main .maincon-one-ser-con ul li{float:left;display:inline;width:333px;height:63px;overflow:hidden;background:#f7f7f7 url("//b2b.hc360.com/supermarket/images/supplyico.png") no-repeat 0 -488px;border:1px solid #d9d9d9;margin:0 -1px -1px 0;position:relative;}
+
+.maincont-one-main .maincon-one-ser-con ul li dl{padding:9px 10px 7px 22px;overflow:hidden;}
+
+.maincont-one-main .maincon-one-ser-con ul li dl dt,.maincont-one-main .maincon-one-ser-con ul li dl dd,.maincont-one-main .maincon-one-ser-con ul li dl .info{float:left;}
+
+.maincont-one-main .maincon-one-ser-con ul li dl dt{width:46px;height:46px;overflow:hidden;margin-right:12px;}
+
+.maincont-one-main .maincon-one-ser-con ul li dl .self,.maincont-one-main .maincon-one-ser-con ul li dl .int,.maincont-one-main .maincon-one-ser-con ul li dl .sup,.maincont-one-main .maincon-one-ser-con ul li dl .tal{background: url("//b2b.hc360.com/supermarket/images/supplyico.png") no-repeat;}
+
+.maincont-one-main .maincon-one-ser-con ul li dl .self{background-position:-74px -216px;}
+
+.maincont-one-main .maincon-one-ser-con ul li dl .int{background-position:0 -216px;} 
+
+.maincont-one-main .maincon-one-ser-con ul li dl .sup{background-position:-71px -154px;}
+
+.maincont-one-main .maincon-one-ser-con ul li dl .tal{background-position:0px -154px;} 
+
+.maincont-one-main .maincon-one-ser-con ul li dl dd{padding-top:2px;}
+
+.maincont-one-main .maincon-one-ser-con ul li dl .info{position:absolute;right:10px;bottom:4px;}
+
+.maincont-one-main .maincon-one-ser-con ul li dl .info a{color:#145cac;}
+
+.maincont-one-main .maincon-one-ser-con ul li dl dd .maincon-one-ser-title{font-size:18px;font-family:"微软雅黑","黑体";color:#444;}
+
+.maincont-one-main .maincon-one-ser-con ul li dl dd p{font-size:12px;color:#999; line-height:27px;}
+
+.maincont-one-main .maincon-one-ser-con ul li dl dd p span{color:#ee2929;}
+
+.maincont-one-right .register{width:250px;height:230px;overflow:hidden;background:url("//b2b.hc360.com/supermarket/images/supply_regcon_bg.gif") repeat-x bottom;}
+
+.maincont-one-right .register .register-btn{width:250px;height:40px;}
+
+.maincont-one-right .register .register-btn .bull-btn,.maincont-one-right .register .register-btn .sell-btn{float:left;display:inline;width:125px;height:39px;border-bottom:1px solid #d9d9d9;background:#f5f5f5;color:#333;cursor:pointer;text-align:center;}
+
+.maincont-one-right .register .register-btn .bull-btn{border-right:1px solid #d9d9d9;}
+
+.maincont-one-right .register .register-btn .sell-btn{border-left:1px solid #d9d9d9;}
+
+.maincont-one-right .register .register-btn .btn-current{width:125px;background:#fff;border:0;font-weight:800;}
+
+.btll-btn-con{width:250px;overflow:hidden;padding:16px 0 8px; display:none;}
+
+.maincont-one-right .register .btll-btn-current{display:block;}
+
+.btll-btn-con .btn-wrap{height:36px;margin-bottom:9px;text-align:center;}
+
+.btll-btn-con .btn-wrap .reg,.btll-btn-con .btn-wrap .buy,.btn-wrap .btn-subs{background:url("//b2b.hc360.com/supermarket/images/supplyico.png") no-repeat;}
+
+.btll-btn-con .btn-wrap .reg,.btll-btn-con .btn-wrap .buy{width:184px;height:36px;overflow:hidden; text-align:center;color:#fff;font-sizt:14px;font-weight:bold;}
+
+.btll-btn-con .btn-wrap .reg{background-position:0 -305px;}
+
+.btll-btn-con .btn-wrap .buy{background-position:0 -342px;}
+
+.btll-btn-con p{width:199px;color:#666;line-height:24px;margin:4px auto 0;overflow:hidden;text-align:center;}
+
+.btll-btn-con p span{color:#ee2929;font-weight:600;}
+
+.btll-btn-con p a{color:#145cac;}
+
+.free-businfo{width:236px;height:237px;*height:229px;_height:229px;overflow:hidden;padding:11px 0 0 14px;border-top:1px solid #d9d9d9;}
+
+.free-businfo h3{font-size:16px;color:#444;line-height:16px;margin:5px 0 16px;font-family:Arial, "微软雅黑", sans-serif;}
+
+.free-businfo .b-btn{width:236px;height:32px;margin-bottom:10px;zoom:1;overflow:hidden;}
+
+.free-businfo .b-btn .bus-left,.free-businfo .b-btn .bus-right{float:left;display:block;}
+
+.free-businfo .b-btn .bus-left{width:44px;line-height:32px;text-align:center;margin-right:8px;}
+
+.free-businfo .b-btn .bus-right{width:184px;line-height:32px;}
+
+.free-businfo .b-btn .bus-right .bus-text,.free-businfo .b-btn .bus-right .bus-public{width:138px;border:1px solid #bfbfbf;}
+
+.free-businfo .b-btn .bus-right .bus-text{height:12px;color:#999;padding:9px 6px;}
+
+.free-businfo .b-btn .bus-right .bus-public{width:147px;height:30px;color:#666;text-align:center;position:relative;line-height:30px;padding-left:3px;}
+
+.free-businfo .b-btn .bus-right .bus-public s{float:right; display:inline-block;width:16px;height:30px;background:url("//b2b.hc360.com/supermarket/images/supplyico.png") no-repeat -281px -75px;}
+
+.free-businfo .b-btn .bus-right .bus-public ul{ background:#FFFFFF;border:1px solid #BFBFBF;overflow:auto;position:absolute;left:-1px;top:30px;width:134px;z-index:104;}
+
+.free-businfo .b-btn .bus-right .bus-public ul li{ text-align:center;color:#666;}
+
+.btn-wrap .btn-subs{width:120px;height:30px;overflow:hidden;background-position:0 -274px;text-align:center;color:#fff; cursor:pointer;font-weight:800;text-indent:16px;}
+
+.free-businfo .btn-wrap{margin:18px 0 20px;padding-left:52px;*padding-left:8px;}
+
+/*产业带*/
+
+.maincont-two{width:1190px; height:418px;margin-bottom:14px;_margin-top:-6px;*margin-top:-6px;}
+
+.cup-indust-left,cup-indust-right{float:left;}
+
+.cup-indust-left{width:250px;height:417px;}
+
+.cup-indust-left .indust-top{width:250px;height:40px;position:relative;overflow:visible;}
+
+.cup-indust-left .indust-top h2{width:250px;height:49px;position:absolute;left:0;bottom:0;background:url("//b2b.hc360.com/supermarket/images/supplyico.png") no-repeat 0 -379px;text-indent:-999999999px;line-height:49px;font-family:Arial, "微软雅黑", sans-serif;color:#fff;}
+
+.cup-indust-left .indust-con{width:248px; height:377px;overflow:hidden;border:1px solid #c9c9c9;background:url("//b2b.hc360.com/supermarket/images/supply_cup.jpg") no-repeat;}
+
+.cup-indust-right-wrop{_position:relative;}
+
+.cup-indust-right{_position:absolute;width:940px;height:418px;overflow:hidden;background:#fff; zoom:1;} /*样式修改*/
+
+.indust-title{height:35px;line-height:38px;border-bottom:3px solid #e1e1e1;position:relative;width:920px;margin:0 auto;}
+
+.indust-title:after{clear:both;content: " ";display:block;height: 0;}
+
+.indust-title h3{width:180px;height:38px;font-size:16px; color:#444;}
+
+.indust-list{height:38px;position:absolute;right:-2px;top:4px;_top:6px;overflow:visible;}
+
+.indust-list li{ width:80px;float:left;display:inline;text-align:center;height:40px;line-height:30px;margin-right:21px;position:relative;}
+
+.indust-list li.bottom-line{background:url("//b2b.hc360.com/supermarket/images/supply_nav_line.png") no-repeat 0 31px;}
+
+.indust-list li a{color:#444;font-size:14px; }
+
+.indust-list li a.list-current{font-weight:bold;}
+
+.indust-list li line-current{display:block;position:absolute;}
+
+.indust-main{width:940px;_width:930px;overflow:hidden;}
+
+.indust-main-con{width:940px;height:276px;overflow:hidden;}
+
+.indust-main-con:after{clear: both;content: " ";display:block;height: 0;}
+
+.indust-main-con li{padding:10px 0 0 10px;width:212px;height:128px;float:left;display:inline;margin-right:12px;_margin-right:10px;}
+
+.indust-main-con li dl{ margin-bottom:2px;}
+
+.indust-main-con li dl:after{content: "."; display:block;height:0;clear:both;visibility: hidden; }
+
+.indust-main-con li dl dt,.indust-main-con li dl dd{ float:left; display:inline;}
+
+.indust-main-con li dl dt{ width:82px; height:82px; overflow:hidden; margin-right:10px;}
+
+.indust-main-con li dl dd{ width:120px;overflow:hidden;}
+
+.indust-main-con li dl dd P { line-height:19px; margin-bottom:5px; color:#999;}
+
+.indust-main-con li dl dd P span{ color:#ee2929;font-family: "微软雅黑","黑体","宋体";}
+
+.indust-main-con li dl dd h4{width:120px;height:42px; line-height:20px;overflow:hidden;text-overflow: ellipsis;-o-text-overflow:ellipsis;word-break:break-all;}
+
+.indust-main-con li dl dd h4 a{font-style:normal;font-weight:500;font-family:"宋体";}
+
+.indust-main-con li dl dd h4 a:link,.indust-main-con li dl dd h4 a:visited{font-style:normal;color:#444444; text-decoration:none;}
+
+.indust-main-con li dl dd h4 a:hover{color:#ff6000; font-size:12px; text-decoration:underline;}
+
+.link-sel{width:199px; height:23px; background:#ebebeb; padding:3px 0 0 13px;}
+
+.link-sel font{ color:#999; margin:0 16px;}
+
+.ban-img{width:920px;_width:910px;margin:0 auto;overflow:hidden;_margin-top:5px;}
+
+.ban-img a{display:block;width:212px;height:90px;overflow:hidden; float:left;}
+
+.img_01,.img_02,.img_03{margin-right:22px;_margin-right:20px;}
+
+/*产业带*/
+
+/*一楼机械机电区*/
+
+.pub-main{ width:1190px; overflow:hidden; margin-bottom:14px;}
+
+.pub-main-left,.pub-main-right{ float:left; display:inline; }
+
+.pub-main-left{width:940px;}
+
+.pub-main-left .left-con-warp,.pub-main-left .right-con-warp{ float:left;display:inline;}
+
+.left-con-warp{width:250px; overflow:hidden;}
+
+.pub-title{width:250px; height:40px;line-height:40px;background:#02548d;color:#fff;font-size:18px; font-family:"微软雅黑","黑体";text-align:center;}
+
+.left-con{ width;248px;height:287px;overflow:hidden;border:1px solid #d6d6d6;background:#fff;}
+
+.banner-con{ padding:11px 0 0 10px;width:230px;height:289px;overflow:hidden;}
+
+.banner-con .ban-con-title{width:230px;height:21px;position:relative;}
+
+.banner-con .ban-con-title h4{color:#333;font-size:12px;}
+
+.banner-con .ban-con-title ol{ position:absolute;right:0;top:5px;width:48px;height:8px;overflow:hidden;}
+
+.banner-con .ban-con-title ol li{width:8px;height:8px; float:left;display:inline;margin-left:8px;background:#ccc;}
+
+.banner-con .ban-con-title ol li.blue-sk{background:#00346e;}
+
+.banner-con .banner-img{ width:230px;height:122px;overflow:hidden;}
+
+.banner-con .banner-img li{overflow:hidden;display:none;}
+
+.banner-con .banner-img li a{display:block;width:230px;height:122px;}
+
+.banner-con .banner-img li.banner-img-cur{display:block;}
+
+.pub-hot-pro{overflow:hidden;}
+
+.pub-hot-pro h4{color:#333;width:230px;height:21px;margin-bottom:3px;padding:0 8px 0 10px;font-size:12px;}
+
+.pub-hot-pro ul li{ float:left;display:inline;padding:0 0 12px 10px;}
+
+.pub-hot-pro ul li a{ display:block;text-align:center;width:108px;height:26px;border:1px solid #e0e0e0;line-height:26px;background:#f2f2f2;color:#333;}
+
+.pub-hot-pro ul li a.pro-cur{width:110px;height:28px;border:0;background:#f58f23;color:#fff;}
+
+.right-con-warp{width:690px;}
+
+.pub-main-nav{width:689px;overflow:hidden;background:#f5f5f5;border-bottom:1px solid #d6d6d6;border-right:1px solid #d6d6d6;}
+
+.pub-main-nav ul li{ float:left;display:inline; }
+
+.pub-main-nav ul li a{ display:block;width:137px;line-height:38px;height:38px;background:#f5f5f5;text-align:center;border-left:0;font-size:14px;}
+
+.pub-main-nav ul li a.pub-main-nav-cur{width:137px;height:36px;background:#fff;border-top:3px solid #02548d;border-right:1px solid #d6d6d6;border-bottom:0;color:#1c5493; font-weight:800;}
+
+.pub-main-con{overflow:hidden;background:#fff;border-bottom:1px solid #d6d6d6;border-right:1px solid #D6D6D6}
+
+.pub-main-con ul li{width:229px;overflow:hidden;float:left;display:inline;height:288px;}
+
+.pub-main-con ul li dl dt{ width:100px; height:100px;display:table-cell;text-align:center;vertical-align: middle; border:1px solid #e1e1e1;}
+
+.pub-main-con ul li dl .tle{ width:100px; height:36px; margin-top:8px;line-height:18px;overflow:hidden;text-overflow:ellipsis;}
+
+.pub-main-con ul li dl .tle a{ color:#333;font-weight:bold;font-family:"宋体";}
+
+.pub-main-con ul li dl .moy{ line-height:18px; color:#ee2929;font-family: "微软雅黑","黑体","宋体";margin-top:3px;}
+
+.pub-main-con ul li dl .buy{ line-height:18px; color:#333;}
+
+.pub-main-right{width:249px;height:325px;background:#fff;overflow:hidden;padding-bottom:3px;_padding-bottom:4px;border-bottom:1px solid #D6D6D6;border-right:1px solid #D6D6D6;}
+
+.pub-main-right .pub-con-right-t{width:250px;height:36px;border-top:3px solid #02548d;background:#edf3f7;line-height:36px;text-align:center;color:#333;font-size:14px; margin-bottom:3px;}
+
+.pub-main-right .pub-con-right-c{width:250px;}
+
+.pub-con-right-c li{overflow:hidden;margin:8px 0;}
+
+.pub-con-right-c li .pub-list{height:27px;width:230px;margin:0 auto;border-bottom:1px dashed #ccc;*height:24px;}
+
+.pub-con-right-c li .clr-line{border:0;}
+
+.pub-con-right-c li .pub-list dt{float:left;display:inline;}
+
+.pub-con-right-c li .pub-list dd{float:right;display:inline;margin-right:9px;margin-top:2px;}
+
+.pub-con-right-c li .pub-list dt{overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;overflow:hidden;white-space:nowrap;width:170px;}
+
+.pub-con-right-c li .pub-list-cur{border:0;}
+
+.pub-con-right-c li .pub-list dd{color:#ee2929;font-family: "微软雅黑","黑体","宋体";}
+
+.pub-con-right-c li .pub-list dt a{color:#666; font-size:12px;}
+
+.pub-con-right-c li .last{border:none;}
+
+.pub-con-right-c li .supply-con{width:238px; display:none; height:72px;background:#02548d;padding:13px 0 0 11px;}
+
+.pub-con-right-c li .supply-con-cur{display:block;}
+
+.pub-con-right-c li .supply-con dl{overflow:hidden;}
+
+.pub-con-right-c li .supply-con dl dt,.pub-con-right-c li .supply-con dl dd{ float:left;display:inline;}
+
+.pub-con-right-c li .supply-con dl dt{margin-right:11px;}
+
+.pub-con-right-c li .supply-con dl dt a{display:block;width:58px;height:58px;overflow:hidden;border:1px solid #dce2e2;}
+
+.pub-con-right-c li .supply-con dl dd{ width:155px;color:#fff;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;word-break:break-all;white-space:nowrap;}
+
+.pub-con-right-c li .supply-con dl dd .sup-con-tle{width:130px;line-height:14px;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;word-break:break-all; white-space:nowrap;}
+
+.pub-con-right-c li .supply-con dl dd .sup-con-tle a{color:#fff;font-size:12px;}
+
+.pub-con-right-c li .supply-con dl dd .sup-con-adr{line-height:16px;margin:8px 0 6px 0;}
+
+.pub-con-right-c li .supply-con dl dd .sup-con-adr em{margin-right:12px;}
+
+.pub-con-right-c li .supply-con dl dd .sup-con-adr span{font-family: "微软雅黑","黑体","宋体";}
+
+.pub-con-right-c li .supply-con dl dd .sup-con-nam{line-height:16px;}
+
+/*一楼机械机电区*/
+
+/*三楼电子电工专区公用列表样式*/
+
+.three-list{height:122px;overflow:hidden;width:229px;background:#f5f5f5;padding-left:9px;}
+
+.three-list li{height:17px;line-height:17px;*line-height:17px;font-size:12px;margin-top:6px;_margin-top:4px;*margin-top:4px;padding-left:9px;background:url("//b2b.hc360.com/supermarket/images/supply_list-bg.gif") no-repeat left center;zoom:1;}
+
+.three-list li p{float:left;display:inline;}
+
+.three-list li span{float:right;display:inline;margin-right:18px;color:#999;}
+
+.three-list li p{color:##333;width:148px;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;word-break:break-all;white-space:nowrap;}
+
+/*三楼电子电工专区公用列表样式*/
+
+/*内容区域*/
+
+.footer{background:#fff;text-align:center;padding:10px 0;}
+
+/*代理加盟*/
+
+.joinlist{background:#fff;padding:10px;margin-bottom:10px;overflow:hidden;zoom:1;}
+
+.joinlist span{float:right;}
+
+.joinlist span a{margin-left:15px;}
+
+.joinlist div.til{border-bottom:3px solid #e0e0e0;line-height:34px;}
+
+.joinlist div.til strong{font-size:14px;color:#444;}
+
+.joinlist .wordlist{float:left;width:292px;margin-top: 10px;}
+
+.joinlist .wordlist ul{width:285px;height:90px;}
+
+.joinlist .wordlist ul.bottompd{padding:15px 0 0;}
+
+.joinlist .wordlist ul li{line-height:180%;}
+
+.joinlist .wordlist ul li.til{font:18px "宋体","微软雅黑";margin-bottom:5px;color:#333;}
+
+.joinlist .wordlist ul li.til a{color:#333;}
+
+.joinlist .wordlist ul li strong a{color:#1c5493;}
+
+.joinlist .wordlist ul li a{color:#666;margin-right:10px;}
+
+.joinlist .wordlist ul li a:hover{color:#f60;}
+
+.tablist{border:1px solid #d0d2d8;background:#fff;margin-bottom:10px;}
+
+.tablist .tabox{height:32px;border-bottom:1px solid #d0d2d8;width:100%;background:#f0f1f4;}
+
+.tablist .tabox span{float:right;padding:7px 5px 0 0;}
+
+.tablist ul.tabli{padding-left:40px;margin:7px 0 0 0;height:26px;overflow:hidden;zoom:1;float:left;}
+
+.tablist ul.tabli li{float:left;}
+
+.tablist ul.tabli li a{font-size:14px;font-weight:bold;color:#434343;display:inline-block;padding:0 15px;height:25px;}
+
+.tablist ul.tabli li.current a{background:#fff;border:1px solid #d0d2d8;border-bottom:none;height:25px;}
+
+.tablist ul.tabli li a:hover{text-decoration:none;}
+
+.tablist .tabcont{padding:10px;min-height:35px;height:56px;}
+
+.tablist .linkwrap span{margin:0 5px;}
+
+
+
+.tablist ul.tabli li.current{background:#fff;font-weight:bold;border:1px solid #d0d2d8;border-bottom:none;}
+
+.tablist ul.tabli li{height: 25px;font-size:14px;font-weight:lighter;color: #434343;display: inline-block;padding: 0 15px;margin:0 8px; cursor:pointer;}
+
+.tabcont{overflow:hidden;}
+
+.tabcont .txt2{padding:0 10px 0 20px;}
+
+.tabcont li{float:left;width:85px;line-height:30px;color:#888;margin-right:28px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+.tabcont li a{color:#888;}
+
+
+
+/*代理加盟*/
+
+/*侧边栏*/
+
+.right-nav {display:none;left:56%;margin-left:510px;position:fixed;top:220px;_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop)+220);}
+
+.right-nav ul {background:#fff;border:1px solid #d6d6d6;width:108px;}
+
+.right-nav li {position:relative;color:#333;height:30px;line-height:24px;overflow:visible;vertical-align:middle;}
+
+.right-nav li a{color:#333; display:block;width:108px;cursor:pointer;vertical-align:top;}
+
+.right-nav li a:hover{width:113px;padding-left:5px;height:30px;display:block;position:absolute;top:0;left:-5px;background:url("//b2b.hc360.com/supermarket/images/supply_right_navbg.png") no-repeat 0 0; color:#fff;}
+
+.right-nav li.cur a{width:113px;padding-left:5px;height:30px;color:#FFFFFF;display:block;position:absolute;top:0;left:-5px;background:url("//b2b.hc360.com/supermarket/images/supply_right_navbg.png") no-repeat 0 0;}
+
+.right-nav li span {display: block;float:left;height:24px;line-height:24px;}
+
+.right-nav li span.floor-level {padding-left:16px;width:29px;}
+
+.right-nav li span.floor-name {width:63px;}
+
+#goback {background:#fff;border:1px solid #d6d6d6;border-top:0;width: 108px;text-indent:16px;line-height:24px;*line-height:28px;}
+
+#goback a {color:#333;background-position:0 -33px;cursor:pointer;display:block;height:26px;padding-left:20px;background:url("//b2b.hc360.com/supermarket/images/supply_right_navbg.png") no-repeat 18px -81px;}
+
+html{_text-overflow:ellipsis;} 
+
+/*侧边栏*/
+
+/*================================layout-980================================*/
+
+.layout-980 .heads .hbox{width:980px;}
+
+.layout-980 .subnav{width:980px;}
+
+.layout-980 .subnav .subnav-right{width:730px;}
+
+.layout-980 .maincont{width:980px;}
+
+.layout-980 .maincont-one .maincont-one-left{width:980px;}
+
+.layout-980 .maincont-one-main{width:730px;}
+
+.layout-980 .maincont-one-main .maincont-one-banner{width:730px;}
+
+.layout-980 .maincont-one-main .maincont-one-ser{padding-left:25px;width: 703px;}
+
+.layout-980 .maincont-one-main .maincon-one-ser-con {padding:0 10px 15px 0;}
+
+.layout-980 .maincont-one-main .maincon-one-ser-con ul li{width:336px;height:66px;}
+
+.layout-980 .maincont-one-main .maincon-one-ser-con ul li dl{padding: 9px 10px 7px 22px;}
+
+.layout-980 .maincont-one .maincont-one-right{width:210px;display:none;}
+
+.layout-980 .free-businfo .b-btn{zoom:0;}
+
+.layout-980 .maincont-one-right .register{width:210px;}
+
+.layout-980 .maincont-one-right .register .register-btn {width:210px;}
+
+.layout-980 .maincont-one-right .register .register-btn .btn-current {width:105px;}
+
+.layout-980 .maincont-one-right .register .register-btn .bull-btn,.layout-980 .maincont-one-right .register .register-btn .sell-btn{width:105px;}
+
+.layout-980 .btll-btn-con {padding:16px 0 8px; width:211px;}
+
+.layout-980 .btll-btn-con p {width:177px;}
+
+.layout-980 .free-businfo {padding:16px 0 0 9px;width:201px;}
+
+.layout-980 .free-businfo .b-btn {width:202px;}
+
+.layout-980 .free-businfo .b-btn .bus-right {width:149px;}
+
+.layout-980 .free-businfo .b-btn .bus-right .bus-text,.layout-980 .free-businfo .b-btn .bus-right .bus-public{width:124px;}
+
+.layout-980 .free-businfo .b-btn .bus-right .bus-public ul{width: 111px;}
+
+.layout-980 .free-businfo .btn-wrap {padding-left:52px;}
+
+.layout-980 .maincont-one{width:980px;height:503px;}
+
+.layout-980 .maincont-one-main .maincont-one-ser {width:705px;}
+
+.layout-980 .maincont-two {width:980px;}
+
+.layout-980 .cup-indust-right{overflow:hidden;width:730px;}
+
+.layout-980 .indust-title{height:35px;width:720px;}
+
+.layout-980 .indust-title h3 {width: 84px;}
+
+.layout-980 .indust-list {right: -7px;}
+
+.layout-980 .indust-list li {margin-right:16px;width:80px;}
+
+.layout-980 .indust-main{width:730px;}
+
+.layout-980 .indust-main-con {width:730px;}
+
+.layout-980 .indust-main-con li{margin-right: 13px;padding:10px 0 0 16px;}
+
+.layout-980 .ban-img{width:696px;height:90px;overflow:hidden;}
+
+.layout-980 .ban-img .img_02{margin:0 29px 0 6px;}
+
+.layout-980 .ban-img .img_03{margin:0;}
+
+.layout-980 .joinlist{width:960px;height:246px;overflow:hidden;}
+
+.layout-980 .joinlist .wordlist{margin:10px 20px 0 0;width:300px;}
+
+.layout-980 .pub-main{margin-bottom:14px;overflow:hidden;width:980px;}
+
+.layout-980 .pub-main-left{width:730px;}
+
+.layout-980 .right-con-warp{width:480px;}
+
+.layout-980 .pub-main-nav {width:480px;}
+
+.layout-980 .pub-main-nav ul li a.pub-main-nav-cur{width:91px;}
+
+.layout-980 .pub-main-nav ul li a{width:96px;}
+
+.layout-980 .pub-main-con {width:479px;}
+
+.layout-980 .pub-main-con ul li{padding:11px 0 0 13px;width: 103px;}
+
+.layout-980 .right-nav{left:50%;}
+
+/*================================layout-980================================*/
+
+.helplist li{margin:0 0 6px 0;}
+
+.f_listpic li{float:left;border-right:1px solid #d6d6d6;width:240px;height:288px;}
+
+.f_listpic li.last{border-right:0;}
+
+.picbtns{float:right;padding-right:1px;}
+
+.adnumber{cursor:pointer;border:solid 1px #ccc;background-color:#eee;line-height:20px;float:left;width:20px;height:20px;text-align:center;margin-right:5px;}
+
+.mad-bx {height:300px;width:689px;}
+
+.none{display:none;}
