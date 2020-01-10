@@ -1,0 +1,112 @@
+/*logo样式*/
+
+.hc-s-logo,
+.hbox ul li.drop-menu em.ico,
+.showmore a {
+    background: url("//b2b.hc360.com/supermarket/images/supplyico.png") no-repeat 0 0;
+    border: none;
+}
+
+.sel-public {
+    width: 11px;
+}
+
+.heads {
+    background: #035ca0;
+    height: 98px;
+    color: #fff;
+}
+
+.heads .hbox {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.logo-til {
+    padding-top: 20px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.logo-til h1 {
+    font: 30px/1.5 "微软雅黑";
+    color: #fff;
+    margin: 4px 0 0 13px;
+    float: left;
+}
+
+.hc-s-logo {
+    display: inline-block;
+    width: 187px;
+    height: 55px;
+    float: left;
+}
+
+.hbox ul {
+    float: right;
+}
+
+.hbox ul li {
+    float: left;
+    line-height: 40px;
+}
+
+.hbox ul li.first {
+    float: none;
+    clear: both;
+}
+
+.hbox ul li.first span {
+    margin: 0 10px;
+}
+
+.hbox ul li.first a {
+    color: #fff;
+}
+
+.hbox ul li.first a:hover {
+    color: #fff !important;
+}
+
+.hbox ul li.drop-menu {
+    position: relative;
+    background: #e6e6e6;
+    cursor: pointer;
+    width: 69px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+}
+
+.hbox ul li.drop-menu em.ico {
+    background-position: -245px -12px;
+    padding-right: 13px;
+}
+
+.hbox ul li button {
+    display: inline-block;
+    width: 69px;
+    background: #f58f23;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    float: left;
+}
+
+.hbox ul li input {
+    border: none;
+    width: 287px;
+    background: #fff;
+    color: #999;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+    font-size: 12px;
+    vertical-align: top;
+    float: left;
+}
+
+/*logo样式*/

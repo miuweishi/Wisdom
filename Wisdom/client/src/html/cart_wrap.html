@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cart_index-order.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../lib/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+    <!-- head头部内容 -->
+    <div class="heads" id="header"></div>
+    <script>
+        $(() => {
+            $('#header').load('./head.html');
+        })
+    </script>
+    <!-- 当采购车没有任何商品的时候就弹出这个界面 -->
+
+    <div class="wrap">
+        <div class="container batchCart">
+            <div class="p-title mg-t15 fn-clear">
+                <h2 class="fl">我的<span class="red1-1">采购单</span></h2>
+            </div>
+            <div class="p-form mg-t15">
+                <div class="no-list-box fn-clear">
+                    <div class="fl no-list-icon"></div>
+                    <div class="mg-l38 mg-t5 fl">
+                        <h2>采购单内暂时没有货品!</h2>
+                        <p class="hui3 mg-t10"><a href="javascript:void(0);"
+                                class="immediatelyLogin">登录</a>&nbsp;后，将显示您之前加入的货品</p>
+                        <p class="hui3 mg-t10"><a href="http://www.hc360.com">去首页</a>，挑选感兴趣的货品</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 公共尾部 start -->
+    <div id="footerBox" class="footerBox"></div>
+    <script>
+        $(() => {
+            $('#footerBox').load('./footer.html');
+        })
+    </script>
+</body>
+
+</html>

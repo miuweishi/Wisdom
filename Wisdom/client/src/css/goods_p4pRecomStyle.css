@@ -1,0 +1,26 @@
+.p4pBotRecom{ overflow:hidden;}
+.p4pBotRecom li{ float:left; width:122px;margin:0 7px 0 8px;}
+.p4pBotRecom .p4pRecomImg{height:120px; width:120px; border:1px solid #e0e0e0;}
+.p4pRecomImg img{ max-height:120px; max-width:120px; vertical-align:middle;display:initial;}
+.p4pRecomImg a{display:table-cell; height:120px; width:120px; text-align:center; vertical-align:middle;}
+.p4pRecomName{margin:8px 0 0; line-height:20px; color:#333; text-decoration:none; font-size:12px;-o-text-overflow: ellipsis; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.p4pRecomName a{color:#666;}
+.p4pRecomPrice{color:#ee2e2c; font-size:16px;}
+.p4pRecomPrice em{font-size:12px;margin-right:5px;}
+.Con2Box{padding:30px 0 !important;}
+.dAlertBoxCon2{padding:25px 25px 25px;}
+.contactBoxNew{position:relative; margin-bottom:15px;}
+.p4pContact ul{width:105%; padding:5px 0 5px 1px; overflow:hidden;}
+.p4pContact li{ margin:0 10px 0 0 !important;}
+
+.pepRecomBox .dAlertBoxCon2{float:left;width:465px}
+.p4pRigRecom{overflow:hidden; float:left; padding:20px 0 10px 45px;}
+.p4pRigRecom li{width:82px;margin:0 7px 0 8px;}
+.p4pRigRecom .p4pRecomImg{height:80px; width:80px; border:1px solid #e0e0e0;}
+.p4pRigRecom .p4pRecomImg img{ max-height:80px; max-width:80px; vertical-align:middle;display:initial;}
+.p4pRigRecom .p4pRecomImg a{display:table-cell; height:80px; width:80px; text-align:center; vertical-align:middle;}
+.check-num.w610,.check-num.w610 .title{width:610px;}
+.check-num-box.w650{width:650px;}
+.p4pRigRecom .p4pRecomName{margin:2px 0 0; line-height:20px; color:#333; text-decoration:none; font-size:12px;-o-text-overflow: ellipsis; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.p4pRigRecom .p4pRecomPrice{margin-bottom:8px; font-size:12px;}
+.p4pRecomName a:hover{color:#ee2e2c;}

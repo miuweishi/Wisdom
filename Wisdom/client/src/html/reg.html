@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慧聪网会员注册</title>
+    <link type="text/css" rel="stylesheet" href="../css/regNew.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../lib/captcha.js"></script>
+    <script src="../lib/md5.js"></script>
+    <script src="../lib/reg.js"></script>
+
+</head>
+
+<body>
+    <div class="regTop">
+        <a href="https://www.hc360.com" target="_blank" class="logo"></a> <span>我是会员，点此<a
+                href="https://sso.hc360.com/ssologin?ReturnURL=http://p4p.hc360.com/p4p/p4p/homepage/recharge.html?param=sourcetypeid=10_source=p4pregister_pagesource=">登录</a></span>
+    </div>
+    <div class="regConta">
+        <div class="regBox">
+            <div class="regList">
+                <form id="regform-step1" name="regForm-step1" action="/reg/info/second.html" method="post">
+                    <input type="hidden" id="sourcetypeid" name="sourcetypeid" value="10">
+                    <input type="hidden" id="ReturnURL" name="ReturnURL" value="">
+                    <input type="hidden" id="skey" name="skey" value="">
+                    <ul>
+                        <li>
+                            <div class="regLeft">
+                                <em>*</em>用户名
+                            </div>
+                            <div class="regRight zIndex4">
+                                <input class="iText" type="text" tabindex="6"
+                                    data-useractivelogname="UserBehavior_reg_6" id="userName" name="userName"
+                                    autocomplete="off" value="" placeholder="请输入用户名" maxlength="25">
+                                <div class="promptBox"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="regLeft">
+                                <em>*</em>手机号码
+                            </div>
+                            <div class="regRight">
+                                <input type="text" class="iText" data-useractivelogs="UserBehavior_reg_13" tabindex="1"
+                                    autocomplete="off" id="mobile" name="MP" maxlength="11" value=""
+                                    placeholder="请输入手机号码" />
+                                <div class="promptBox"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="regLeft"><em>*</em>密码：</div>
+                            <div class="regRight">
+                                <input type="password" class="iText" data-useractivelogs="UserBehavior_reg_4"
+                                    tabindex="2" id="password" name="passWord" value="" maxlength="20"
+                                    placeholder="请设置6-20位字母、数字及符号">
+                                <div class="promptBox"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="regLeft"><em>*</em>确认密码：</div>
+                            <div class="regRight">
+                                <input type="password" class="iText" tabindex="3"
+                                    data-useractivelogs="UserBehavior_reg_5" id="repassword" name="s" value=""
+                                    maxlength="20" placeholder="请再次确认密码">
+                                <div class="promptBox"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="regLeft">
+                                <em>*</em>验证码
+                            </div>
+                            <div class="regRight">
+                                <div class="iBox">
+                                    <!-- <input type="hidden" id="validate_name" name="LoginTicket"
+                                        value="lt-35085eb9d9febdb542dfd7595ffe5638"> -->
+                                    <input type="text" tabindex="2" data-useractivelogs="UserBehavior_reg_14"
+                                        name="ValidKey" id="captcha" class="VerText" maxlength="4" />
+                                    
+                                    <div id="validate_map" width="110" height="38">
+                                        <canvas width="110" height="38" id="cap">
+                                        </canvas>
+                                        <a href="javascript:;" onclick="return false" id="refresh" tabindex="3"
+                                            data-useractivelogs="UserBehavior_reg_16">看不清,换一张</a>
+                                    </div>
+                                    <div class="promptBox"></div>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="regLeft">
+                                <em>*</em>短信验证码
+                            </div>
+                            <div class="regRight">
+                                <div class="iBox">
+                                    <input type="text" class="VerText" tabindex="4" name="ValidKeySJ" id="verifiyCode"
+                                        maxlength="4" data-useractivelogs="UserBehavior_reg_17"
+                                        onchange="_hmt.push(['_trackEvent', 'register', 'input', '/virtual/register/verifiyCode/']);">
+                                    <button type="button" class="VerBtn VerGrayBtn"
+                                        data-useractivelogs="UserBehavior_reg_18" tabindex="5"
+                                        id="btnGetCheckCode">获取短信验证码</button>
+                                </div>
+                                <div class="promptBox"></div>
+                                <div class="telPrompt" style="display:none;" id="divCheckCodePrompt">
+                                    <!-- <div>
+												请留意来自<b>400-636-0888</b>的电话，将为您播报语音验证码
+											</div> -->
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="regRig">
+                                <input name="severTerms" id="severTerms" type="checkbox">您确认阅读并接受<a
+                                    href="https://b2b.hc360.com/agreement/reg.html" target="_blank">《慧聪网会员注册协议》</a>
+                                <a href="https://b2b.hc360.com/agreement/privacy.html" target="_blank">《慧聪网隐私政策条款》</a>
+                                <br>
+                                <a href="https://b2b.hc360.com/agreement/online_service.html"
+                                    target="_blank">《慧聪网在线服务条款》</a>
+                                <a href="https://b2b.hc360.com/agreement/hfb.html" target="_blank">《慧付宝服务协议》</a>
+                                <div>
+                                    <input name="returnVisit" type="checkbox">您确认愿意接受电话服务回访</a>
+                                </div>
+                                <div class="promptBox promptBox_2">
+                                    <div class="tips-errow" style="display:none;">请勾选确认已阅读服务协议</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void(0);" class="botBtn" tabindex="6"
+                                data-useractivelogs="UserBehavior_reg_19" id="btnNextStep">免费注册</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--add-part-->
+    <div class="regBottomNew">
+        <div class="regBottomNewCon">
+            <ul class="icoBox2">
+                <li class="ico1">
+                    <h5>精美模板装饰店铺</h5>
+                    <p>突出企业独特优势、可显著超越领先同行</p>
+                </li>
+                <li class="ico2">
+                    <h5>代运营为您完成商铺搭建</h5>
+                    <p>让您轻松获得“商品丰富、设置完善”的商铺</p>
+                </li>
+                <li class="ico3">
+                    <h5>实地认证彰显企业诚信</h5>
+                    <p>国际第三方权威认证机构上门服务</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="regRigBox">
+        <div class="regRigBoxCon"><img id="qrcode" src="../img/showqrcode"></div>
+        <p class="p1">关注慧聪商家公众号</p>
+        <p class="p2">获取实时买卖信息</p>
+        <p class="p3">领取神秘大礼</p>
+    </div>
+    <!--常见问题-->
+    <div class="rigMore">
+        <h3>了解更多：</h3>
+        <ul>
+            <li><a href="//sxy.hc360.com/helpNovice.html" target="_blank">如何注册慧聪网的会员？</a></li>
+            <li><a href="http://kf.hc360.com/2018/05/2916421681.shtml" target="_blank">填写登录名和密码有哪些值得注意？</a></li>
+            <li><a href="http://kf.hc360.com/2018/05/2916331662.shtml" target="_blank">个体户如何填写公司名称？</a></li>
+            <li><a href="http://kf.hc360.com/2018/05/2914081661.shtml" target="_blank">注册时填写的密码提示错误？</a></li>
+            <li><a href="http://kf.hc360.com/2018/05/2913521643.shtml" target="_blank">注册时提示登录名填写有误或会员名已存在？</a></li>
+            <!--<li><a href="#" target="_blank"></a></li>-->
+            <li><a href="http://kf.hc360.com/2013/10/281204335.shtml" target="_blank">手机绑定时提示手机号码已被占用？</a></li>
+            <li><a href="http://kf.hc360.com/list/iframe_help.shtml" target="_blank">其他问题 ></a></li>
+        </ul>
+    </div>
+    <div class="reg_qq">
+        <script id="qd28521590194a5f17fc890b274dbfea98605a40b95e"
+            src="//wp.qiye.qq.com/qidian/2852159019/4a5f17fc890b274dbfea98605a40b95e" charset="utf-8" async defer>
+        </script>
+    </div>
+    <!-- 公共尾部 start -->
+    <div id="footerBox" class="footerBox"></div>
+    <script>
+        $(() => {
+            $('#footerBox').load('./footer.html');
+        })
+    </script>
+</body>
+
+</html>

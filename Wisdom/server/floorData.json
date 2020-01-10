@@ -1,0 +1,43 @@
+[{
+    "gid": "1",
+    "title": "1F化工专区",
+    "bigpic": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/floorpic01.jpg",
+    "picbox1": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img01.jpg",
+    "picbox2": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img02.jpg",
+    "picbox3": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img03.jpg"
+}, {
+    "gid": "2",
+    "title": "2F安防专区",
+    "bigpic": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/floorpic02.jpg",
+    "picbox1": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img04.jpg",
+    "picbox2": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img05.jpg",
+    "picbox3": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img06.jpg"
+}, {
+    "gid": "3",
+    "title": "3F五金专区",
+    "bigpic": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/floorpic03.jpg",
+    "picbox1": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img07.jpg",
+    "picbox2": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img08.jpg",
+    "picbox3": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img09.jpg"
+}, {
+    "gid": "4",
+    "title": "4F服装专区",
+    "bigpic": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/floorpic05.jpg",
+    "picbox1": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img10.jpg",
+    "picbox2": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img11.jpg",
+    "picbox3": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img12.jpg"
+}, {
+    "gid": "5",
+    "title": "5F印刷专区",
+    "bigpic": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/floorpic04.jpg",
+    "picbox1": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img13.jpg",
+    "picbox2": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img14.jpg",
+    "picbox3": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img15.jpg"
+}, {
+    "gid": "6",
+    "title": "6F净水专区",
+    "bigpic": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/floorpic06.jpg",
+    "picbox1": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img16.jpg",
+    "picbox2": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img17.jpg",
+    "picbox3": "https:\/\/image.hc360.com\/b2b\/supermarket\/images\/pub-img18.jpg"
+}]

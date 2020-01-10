@@ -1,115 +1,6 @@
 @charset "gb2312";
 
 /* CSS Document */
-
-html{margin:0;padding:0;border:0;}
-
-body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, img, fieldset, span, legend, button, input, textarea,th, td, div, td,s{margin: 0; padding:0; list-style:none;}
-
-body{font:12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;}
-
-table{border-collapse:separate;border-spacing:0;}
-
-img{border:none;}
-
-s{text-decoration:none;}
-
-i,em{font-style:normal;}
-
-:focus{outline:0;*blr:expression(this.onFocus=this.blur())}
-
-.pr{position:relative;}
-
-.pa{position:absolute;}
-
-.undis{display:none;}
-
-.clr{clear:both;}
-
-a{color:#333;text-decoration:none;*blr:expression(this.onFocus=this.blur());}
-
-a:hover{text-decoration:underline;color:#145cac !important;}
-
-a:active{color:#F60;}
-
-button{border:none;cursor:pointer;}
-
-h1, h2, h3, h4, h5, h6 {color:#000;font-size:100%;}
-
-h2 {font-weight:normal;color:#000;}
-
-ul,ol{list-style-type:none;}
-
-dl dt{font-weight:normal;}
-
-select{background-color:#fff;border-width:1px;border-style:solid;}
-
-input{background:#fff;}
-
-body{background:#e0e0e0;}
-
-div{display:block;}
-
-/*头部通栏样式*/
-
-#supply_top {height:18px; margin:0 auto;padding-top:7px;position:relative;width:1190px;z-index:99999;}
-
-#supply_top li {float:left;line-height:16px;margin-right: 4px;padding-right:4px;position:relative;}
-
-#supply_top li a {color: #444444;}
-
-#supply_top li.help {margin-right:0;padding-right: 0;}
-
-#supply_top li.bgn {background:none repeat scroll 0 0 rgba(0, 0, 0, 0);}
-
-#supply_top li.top_4 {padding-right:25px;}
-
-.supply_left{float:left;position:relative;width:500px;}
-
-.supply_right{float:right;margin:0;padding: 0;width:425px;}
-
-/*头部通栏样式*/
-
-/*logo样式*/
-
-.hc-s-logo,.hbox ul li.drop-menu em.ico,.showmore a
-
-{background:url("//b2b.hc360.com/supermarket/images/supplyico.png") no-repeat 0 0;border:none;}
-
-.sel-public{width:11px;}
-
-.heads{background:#035ca0;height:98px;color:#fff;}
-
-.heads .hbox{width:1190px;margin:0 auto;}
-
-.logo-til{padding-top:20px;overflow:hidden;zoom:1;}
-
-.logo-til h1{font:30px/1.5 "微软雅黑";color:#fff;margin:4px 0 0 13px;float:left;}
-
-.hc-s-logo{display:inline-block;width:187px;height:55px;float:left;}
-
-.hbox ul{float:right;}
-
-.hbox ul li{float:left;line-height:40px;}
-
-.hbox ul li.first{float:none;clear:both;}
-
-.hbox ul li.first span{margin:0 10px;}
-
-.hbox ul li.first a{color:#fff;}
-
-.hbox ul li.first a:hover{color:#fff !important;}
-
-.hbox ul li.drop-menu{position:relative;background:#e6e6e6;cursor:pointer;width:69px;height:40px;line-height:40px;text-align:center;color:#666;}
-
-.hbox ul li.drop-menu em.ico{background-position:-245px -12px;padding-right:13px;}
-
-.hbox ul li button{display:inline-block;width:69px;background:#f58f23;color:#fff;text-align:center;height:40px;line-height:40px;font-size:14px;float:left;}
-
-.hbox ul li input{border:none;width:287px;background:#fff;color:#999;height:40px;line-height:40px;padding:0 5px;font-size:12px;vertical-align:top;float:left;}
-
-/*logo样式*/
-
 /*导航栏样式*/
 
 .navs{border-top:1px solid #144870;height:42px;background:#024d87;}
@@ -664,6 +555,9 @@ font{font-size:12px;color:#fff;}
 
 .tabcont li a{color:#888;}
 
+.tabcont {
+    height: auto !important;
+}
 
 
 /*代理加盟*/
@@ -813,3 +707,26 @@ html{_text-overflow:ellipsis;}
 .mad-bx {height:300px;width:689px;}
 
 .none{display:none;}
+
+#piccontent{
+    position: absolute;
+    width:2500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#piccontent a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#picitem0{
+    display: inline-block;
+    width:689px;
+    height: 300px;
+}
+.active{
+    background-color: #eeaa33;
+    color:#fff;
+}

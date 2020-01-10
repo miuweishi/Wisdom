@@ -1,0 +1,1339 @@
+@charset "GB2312";
+
+/* CSS Document */
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: "MicroSoft YaHei"
+}
+
+input {
+    outline: none;
+    color: #333;
+}
+
+.regTop {
+    padding-top: 30px;
+    width: 980px;
+    margin: 0 auto;
+    height: 55px;
+    padding-bottom: 35px;
+}
+
+.regTop .logo {
+    background-image: url(https://style.org.hc360.com/images/logo/logo280x48-reg.png);
+    background-image: url(https://style.org.hc360.com/images/logo/logo280x48-reg.svg), none;
+    display: block;
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 280px;
+    float: left;
+}
+
+.regTop span {
+    float: right;
+    font-size: 14px;
+    color: #333;
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+.regTop span a {
+    color: #0055aa;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.regTop span a:hover {
+    color: #f52c2c;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.regBox {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.regBox .rB-top {
+    height: 70px;
+    width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid #e5e5e5;
+    background: url(//style.org.hc360.com/images/my/images/regist/new/proc_1.png) no-repeat center center;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+.regConta .rB-top1 {
+    height: 70px;
+    width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid #e5e5e5;
+    background: url(//style.org.hc360.com/images/my/images/regist/new/proc_2.png) no-repeat center center;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+.regList {
+    padding: 35px 0 30px 225px;
+}
+
+.regLeft {
+    width: 120px;
+    line-height: 40px;
+    float: left;
+    font-size: 16px;
+    color: #666;
+    text-align: right;
+    padding-right: 23px;
+    height: 40px;
+}
+
+.regLeft em {
+    padding-right: 5px;
+    color: #d11120;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.regRight {
+    float: left;
+    width: 410px;
+    position: relative;
+}
+
+.regRight .iBox {
+    height: 40px;
+    width: 288px;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.iText {
+    width: 255px;
+    height: 36px;
+    background: none;
+    line-height: 36px;
+    padding-left: 5px;
+    float: left;
+    padding-right: 25px;
+    border: 1px solid #ccc;
+    z-index: 10;
+    position: relative;
+}
+
+/* .borRed {
+    border: 1px solid #ee2e2c !important;
+} */
+
+.VerText {
+    width: 72px;
+    height: 36px;
+    background: none;
+    line-height: 36px;
+    padding-left: 5px;
+    float: left;
+    border: 1px solid #d5d5d5;
+}
+
+.promptBox{
+    font-size: 12px;
+    line-height: 38px;
+    color:#ee2e2c;
+}
+#validate_map{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#verifiyCode {
+    width: 174px;
+    border-right: none
+}
+
+.regRight .iBox img {
+    margin: 0px 5px 0 9px;
+    float: left;
+}
+
+.regRight .iBox a {
+    font-size: 12px;
+    float: left;
+    line-height: 40px;
+    color: #0c76f4;
+    margin-left: 10px;
+    width: 60px;
+    white-space: nowrap;
+}
+
+.regRight .iBox a:hover {
+    color: #f52c2c;
+}
+
+.telIco,
+.userIco,
+.passIco,
+.comIco,
+.personIco,
+.tips-errow,
+.tips-ok,
+.tipsCur,
+.Consultation {
+    background: url(//style.org.hc360.cn/images/my/images/regist/new/regIco.png) no-repeat;
+}
+
+.telIco,
+.userIco,
+.passIco,
+.comIco,
+.personIco {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 24px;
+    top: 9px;
+    left: 266px;
+}
+
+.tips-errow,
+.tips-ok,
+.tipsCur {
+    padding-left: 20px;
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.telIco {
+    background-position: 0 -65px;
+}
+
+.userIco {
+    background-position: -1px -163px;
+}
+
+.passIco {
+    background-position: -23px -162px;
+}
+
+.comIco {
+    background-position: -46px -162px;
+}
+
+.personIco {
+    background-position: -71px -162px;
+}
+
+.promptBox {
+    display: inline-block;
+    height: 40px;
+    padding-left: 5px;
+    width: 10px;
+    white-space: nowrap;
+    z-index: 50;
+    position: relative;
+}
+
+.tips-errow {
+    background-position: -296px -22px;
+    color: #ee2e2c;
+}
+
+.tips-ok {
+    background-position: -296px 14px;
+    color: #666;
+}
+
+.tipsCur {
+    background-position: -296px -55px;
+    color: #666;
+}
+
+.borRed {
+    border: 1px solid #ee2e2c !important;
+}
+
+.borBlue {
+    border: 1px solid #89b6f8 !important;
+}
+
+.regList ul li {
+    margin-bottom: 20px;
+    float: left;
+    width: 640px;
+}
+
+.VerBtn {
+    width: 106px;
+    height: 40px;
+    /*margin-left:10px;*/
+    display: block;
+    float: left;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+}
+
+.VerGrayBtn {
+    width: 106px;
+    height: 40px;
+    display: block;
+    float: left;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    color: #999;
+}
+
+. {
+    color: #999;
+    font-size: 12px;
+}
+
+.telPrompt {
+    clear: both;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+}
+
+.telPrompt b {
+    color: #d11120;
+    padding: 0 5px;
+}
+
+.ClausePrompt {
+    float: left;
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+}
+
+.ClausePrompt a {
+    color: #0055aa;
+    text-decoration: none;
+}
+
+.ClausePrompt a:hover {
+    color: #f52c2c;
+    text-decoration: underline;
+}
+
+a.botBtn {
+    background: url(//style.org.hc360.cn/images/my/images/regist/new/regIco.png) 0 -101px;
+    display: block;
+    height: 40px;
+    width: 287px;
+    color: #fff;
+    margin-left: 144px;
+    font-size: 18px;
+    font-family: 'Microsoft YaHei';
+    border: none;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
+}
+
+a.botBtn:hover {
+    background: url(//style.org.hc360.cn/images/my/images/regist/new/regIco.png) 0 -199px;
+}
+
+.radioBox {
+    float: left;
+    padding-right: 30px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #333;
+}
+
+.radioBox label {
+    padding-right: 45px;
+    float: left;
+    padding-left: 23px;
+    position: relative;
+    font-size: 14px
+}
+
+.radioBox input {
+    top: 11px;
+    float: left;
+    position: absolute;
+    left: 0px;
+}
+
+.promptBox a {
+    color: #0055aa;
+    text-decoration: none;
+}
+
+.promptBox a:hover {
+    color: #f52c2c;
+    text-decoration: underline;
+}
+
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+.userSelect {
+    width: 285px;
+    top: 40px;
+    left: 0;
+    border: 1px solid #ccc;
+    z-index: 2000;
+    background: #fff;
+    position: absolute;
+    font-size: 12px;
+    color: #333;
+    line-height: 30px;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-box-shadow: 2px 2px 2px #ebebeb;
+    -moz-box-shadow: 2px 2px 2px #ebebeb;
+    box-shadow: 2px 2px 2px #ebebeb;
+    overflow: hidden;
+}
+
+.userSelect dt {
+    width: auto;
+    height: 30px;
+    font-size: 12px;
+    border-bottom: 1px dotted #ccc;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.userSelect dd {
+    padding: 0 10px;
+    clear: both;
+    height: 30px;
+}
+
+.userSelect dd:hover {
+    background: #f8f8f8;
+}
+
+.userSelect dd input {
+    float: left;
+    margin-top: 8px;
+}
+
+.userSelect dd label {
+    float: left;
+}
+
+.regBottom {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    background: #f7f7f7;
+}
+
+.regBottom-inner {
+    width: 1040px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.regBottom-inner li {
+    float: left;
+    width: 313px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.regBottom-inner li .icon_1 {
+    float: left;
+    width: 98px
+}
+
+.regBottom-inner li .word {
+    float: left;
+    width: 205px;
+    padding-top: 20px;
+    margin-left: 10px
+}
+
+.regBottom-inner li .word p {
+    color: #6c6c6c;
+    font-size: 12px;
+    line-height: 26px
+}
+
+.regBottom-inner li .word p.fs16 {
+    font-size: 16px;
+    color: #262626;
+}
+
+.footer {
+    width: 980px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+    padding: 40px 0 30px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.sPassword1,
+.sPassword2,
+.sPassword3,
+.sPassword4 {
+    background: url(//style.org.hc360.cn/images/my/images/regist/new/progressImg_zss.png) no-repeat;
+    height: 12px;
+    width: 163px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+
+.sPassword1 {
+    background-position: 0 0;
+}
+
+.sPassword2 {
+    background-position: 0 -13px;
+}
+
+.sPassword3 {
+    background-position: 0 -26px;
+}
+
+.sPassword4 {
+    background-position: 0 -39px;
+}
+
+.tips1,
+.tips2,
+.tips3 {
+    background: url(//style.org.hc360.cn/images/my/images/regist/new/regIco.png) no-repeat;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 20px;
+}
+
+.tips3 {
+    background-position: -296px -29px;
+    color: #f52c2c;
+}
+
+.tips2 {
+    background-position: -296px 5px;
+    color: #666;
+}
+
+.tips1 {
+    background-position: -296px -63px;
+    color: #666;
+}
+
+.passAlert {
+    width: 289px;
+    left: 300px;
+    height: 95px;
+    padding: 10px 12px;
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    z-index: 5000;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 2px 2px 2px #ebebeb;
+    -moz-box-shadow: 2px 2px 2px #ebebeb;
+    box-shadow: 2px 2px 2px #ebebeb;
+}
+
+.passAlert s {
+    background: url(//style.org.hc360.cn/images/my/images/regist/new/regIco.png) -287px -162px;
+    display: block;
+    height: 15px;
+    width: 14px;
+    left: -14px;
+    top: 14px;
+    position: absolute;
+}
+
+span.ConBox a {
+    background-position: -292px -122px;
+    margin-right: 20px;
+    display: block;
+    height: 24px;
+    padding-left: 24px;
+    color: #333;
+}
+
+span.ConBox a:hover {
+    background-position: -292px -97px;
+    text-decoration: none;
+    color: #f52c2c;
+}
+
+div#divCompanyNameSelector dd label {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 265px;
+}
+
+.zIndex4 {
+    z-index: 40000;
+}
+
+.zIndex5 {
+    z-index: 50000;
+}
+
+/* tian jia zhu ce cheng gong ye mian 2017-2-10 --zhh */
+.regTop .bluSpa {
+    color: #249be0;
+    padding-top: 0px;
+}
+
+.regTop .sucSpa {
+    padding-top: 0px;
+}
+
+.regBox .rB-top2 {
+    height: 90px;
+    width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid #e5e5e5;
+    background: url(//style.org.hc360.com/images/my/images/regist/new/proc_3.jpg) no-repeat center top;
+}
+
+.regBox .rB-ewm {
+    width: 630px;
+    height: 150px;
+    padding-top: 50px;
+    margin: 0 auto 45px;
+}
+
+.regBox .rB-ewm .ewmBoxLef {
+    float: left;
+}
+
+.regBox .rB-ewm a {
+    text-decoration: none;
+    color: #249be0;
+    font-size: 22px;
+}
+
+.regBox .rB-ewm .ewmBoxRig {
+    float: left;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.regBox .rB-ewm .ewmBoxRig b {
+    color: #ee1513;
+    font-size: 22px;
+}
+
+.regBox .rB-ewm .ewmBoxRig p {
+    line-height: 44px;
+    font-size: 18px;
+}
+
+.regBot_2 {
+    width: 810px;
+    margin: 0 auto;
+}
+
+.regBot_2 h3 {
+    font-size: 20px;
+    color: #000;
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+.regBot_2 ul {
+    width: 915px;
+    overflow: hidden;
+    height: 90px;
+    font-size: 14px;
+    color: #666;
+}
+
+.regBot_2 li {
+    float: left;
+    width: 270px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 35px;
+    background: url(//style.org.hc360.com/images/my/images/regist/new/regIcon_1.png) no-repeat;
+    margin-bottom: 10px;
+}
+
+.regBot_2 li.regLi_1 {
+    background-position: -22px -22px;
+}
+
+.regBot_2 li.regLi_2 {
+    background-position: -326px -22px;
+}
+
+.regBot_2 li.regLi_3 {
+    background-position: -653px -22px;
+}
+
+.regBot_2 li.regLi_4 {
+    background-position: -22px -74px;
+}
+
+.regBot_2 li.regLi_5 {
+    background-position: -326px -74px;
+}
+
+.regBot_2 li.regLi_6 {
+    background-position: -653px -74px;
+}
+
+.rebBot_3 {
+    width: 1030px;
+    margin: 50px auto 0;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 60px;
+}
+
+.rebBot_3 a {
+    background: url(//style.org.hc360.cn/images/my/images/regist/new/regIco.png) 0 -101px;
+    display: block;
+    height: 40px;
+    width: 287px;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Microsoft YaHei';
+    border: none;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* zhu ce ye xiu gai --2017-4-6 --zhh */
+.regConta {
+    width: 100%;
+    background: url(//style.org.hc360.com/images/my/images/regist/new/regBg_1.png) repeat-x 0px 0px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.regTop {
+    padding-bottom: 20px;
+}
+
+.regList li .regLeft {
+    font-size: 14px;
+    color: #333;
+    height: 36px;
+    line-height: 36px;
+}
+
+.iText {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 0 0 5px;
+    width: 295px;
+}
+
+.VerText {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 0 0 5px;
+    width: 85px;
+}
+
+.VerBtn {
+    width: 106px;
+    height: 36px;
+    display: block;
+    float: left;
+    background: #ee2e2c;
+    border: 1px solid #ee2e2c;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.VerGrayBtn {
+    height: 36px;
+    line-height: 34px;
+    width: 106px;
+    display: block;
+    float: left;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    color: #999;
+    padding: 0;
+}
+
+.regRight .iBox {
+    height: 36px;
+}
+
+.promptBox {
+    height: 36px;
+}
+
+.tips-errow,
+.tips-ok,
+.tipsCur {
+    height: 36px;
+    line-height: 36px;
+}
+
+.regRight .iBox a {
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.regRig {
+    float: left;
+    margin-left: 143px;
+    padding-top: 15px;
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+}
+
+.regRig input {
+    float: left;
+    margin: 3px 3px 0px 4px;
+}
+
+.regRig a {
+    text-decoration: none;
+    color: #0c76f4;
+    font-size: 12px;
+}
+
+.regList {
+    padding: 80px 0 30px 225px;
+}
+
+.regBottom-inner li .icon_1 {
+    width: 45px;
+    height: 45px;
+    background: url(//style.org.hc360.com/images/my/images/regist/new/regIcon_0407.png) no-repeat -20px -18px;
+    float: left;
+    margin-top: 15px;
+}
+
+.regBottom-inner li .icon_New {
+    float: left;
+    width: 98px
+}
+
+.regBottom-inner li .word {
+    padding-top: 11px;
+}
+
+.regBottom-inner li .word p {
+    color: #666;
+}
+
+.regList_2 {
+    width: 560px;
+    margin: 0 auto;
+    padding: 25px 0 40px 0;
+}
+
+.regList_2 h2 {
+    font-size: 20px;
+    text-align: center;
+    width: 140px;
+    height: 40px;
+    background: url(//style.org.hc360.com/images/my/images/regist/new/regIcon_0407.png) no-repeat 229px -421px;
+    font-weight: normal;
+    color: #333;
+    padding-left: 200px;
+}
+
+a.botBtn {
+    font-size: 16px;
+    width: 300px;
+    background: #ee2e2c;
+    border-radius: 3px;
+}
+
+a.botBtn:hover {
+    background: #d11120;
+}
+
+.rB-top0407 {
+    font-size: 22px;
+    color: #333;
+    padding-left: 453px;
+    background: url(//style.org.hc360.com/images/my/images/regist/new/regIcon_0407.png) no-repeat 375px -831px;
+    height: 42px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.regBox .rB-ewm .ewmBoxLef img {
+    width: 120px;
+    height: 120px;
+}
+
+.regBox .rB-ewm .ewmBoxRig p {
+    font-size: 16px;
+    line-height: 38px;
+}
+
+.regBox .rB-ewm .ewmBoxRig p b {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.regBox .rB-ewm a {
+    font-size: 18px;
+}
+
+.regBox .rB-ewm .ewmBoxRig {
+    margin-left: 40px;
+}
+
+.regBot_2 li {
+    padding-left: 42px;
+    width: 260px;
+}
+
+.rebBot_3 a {
+    background: #ee2e2c;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.rebBot_3 a:hover {
+    background: #d11120;
+}
+
+.regSucCon {
+    width: 100%;
+    background: url(//style.org.hc360.com/images/my/images/regist/new/regBg_1.png) repeat-x 0px 0px;
+    padding-top: 55px;
+}
+
+.regBox .rB-ewm {
+    margin: 0 auto 40px
+}
+
+.regBot_2 h3 {
+    margin: 15px 0 20px 0;
+}
+
+.regRight .iBox {
+    width: 302px;
+}
+
+.tipsCur {
+    background-position: -296px -57px;
+}
+
+.tips-errow {
+    background-position: -296px -23px;
+}
+
+.tips-ok {
+    background-position: -296px 10px;
+}
+
+.regBottom {
+    padding: 20px 0;
+}
+
+.regBottom-inner li .icon_12 {
+    background-position: -20px -143px;
+}
+
+.regBottom-inner li .icon_13 {
+    background-position: -20px -276px;
+}
+
+.regBottom-inner li:nth-of-type(2) .icon_1 {
+    background-position: -20px -143px;
+}
+
+.regBottom-inner li:nth-of-type(3) .icon_1 {
+    background-position: -20px -276px;
+}
+
+.promptBox .tips-errow a:hover {
+    text-decoration: none;
+    color: #0055aa
+}
+
+.promptBox_2 {
+    padding-left: 36px;
+    *padding-left: 8px;
+}
+
+.regList ul:after {
+    content: ".";
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.regList ul {
+    *width: 560px;
+    *zoom: 1;
+}
+
+/* 2017-8-14 tian jia er wei ma */
+.regList {
+    position: relative;
+}
+
+.ewmBox {
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    width: 88px;
+    text-align: center;
+    background: #eeeeee;
+    padding: 10px 5px 10px 7px;
+}
+
+.ewmBox img {
+    display: block;
+    margin: 0 auto 6px;
+    width: 88px;
+    height: 88px;
+}
+
+.ewmBox p {
+    font-size: 12px;
+    color: #333;
+    line-height: 16px;
+}
+
+.promptBox_2 {
+    height: 20px;
+}
+
+.promptBox_2 .tips-errow {
+    line-height: 30px;
+    background-position: -296px -25px;
+}
+
+.wlPrompt {
+    width: 150px;
+    height: 16px;
+    position: relative;
+    line-height: 16px;
+    cursor: pointer;
+    font-size: 12px;
+    border: 1px solid #ee2e2c;
+    border-radius: 20px;
+    text-align: center;
+    background: #ffeded;
+    float: left;
+    margin: 10px 20px;
+    z-index: 100000;
+    display: none;
+}
+
+.wlPrompt b {
+    color: #ee2e2c;
+}
+
+a.botBtn {
+    float: left;
+}
+
+/*.wlPromptCon{display:none;width: 235px;text-align:left;padding-left: 12px;padding-top: 20px;height: 175px;background: url("https://style.org.hc360.com/images/my/images/regist/new/regWlBg.png") no-repeat;font-size: 12px;position: absolute;bottom:60px;left: 0;z-index: 100000;padding-right: 12px;}*/
+.wlPromptCon {
+    display: none;
+    width: 244px;
+    text-align: left;
+    padding-left: 12px;
+    padding-top: 12px;
+    height: 112px;
+    background: url(https://style.org.hc360.com/images/my/images/regist/new/regWlBg_1.png) no-repeat;
+    font-size: 12px;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    line-height: 20px;
+}
+
+.wlPromptCon h5 {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.wlPromptCon h5.wlBot {
+    padding-top: 10px;
+}
+
+/*底部*/
+.regBottomNew {
+    height: 120px;
+    background: #f7f7f7;
+}
+
+.regBottomNewCon {
+    width: 985px;
+    margin: 0 auto;
+    height: 48px;
+    padding-top: 36px;
+    overflow: hidden;
+}
+
+.regBottomNewCon ul {
+    width: 125%;
+}
+
+.regBottomNewCon ul li {
+    background: url(https://style.org.hc360.com/images/my/images/regist/new/regBotIcoNew.png) no-repeat 0 0;
+}
+
+.regBottomNewCon ul.icoBox1 li.ico1 {
+    background-position: 0 2px;
+}
+
+.regBottomNewCon ul.icoBox1 li.ico2 {
+    background-position: 0 -75px;
+}
+
+.regBottomNewCon ul.icoBox1 li.ico3 {
+    background-position: 0 -147px;
+}
+
+.regBottomNewCon ul.icoBox2 li.ico1 {
+    background-position: 0 -224px;
+}
+
+.regBottomNewCon ul.icoBox2 li.ico2 {
+    background-position: 0 -299px;
+}
+
+.regBottomNewCon ul.icoBox2 li.ico3 {
+    background-position: 0 -377px;
+}
+
+.regBottomNewCon ul.icoBox3 li.ico1 {
+    background-position: 0 -456px;
+}
+
+.regBottomNewCon ul.icoBox3 li.ico2 {
+    background-position: 0 -529px
+}
+
+.regBottomNewCon ul.icoBox3 li.ico3 {
+    background-position: 0 -603px;
+}
+
+.regBottomNewCon ul.icoBox4 li.ico1 {
+    background-position: 0 2px;
+}
+
+.regBottomNewCon ul.icoBox4 li.ico2 {
+    background-position: 0 -675px;
+}
+
+.regBottomNewCon ul.icoBox4 li.ico3 {
+    background-position: 0 -750px;
+}
+
+.regBottomNewCon ul.icoBox1 li {
+    width: 340px;
+    float: left;
+    height: 48px;
+    padding-left: 55px;
+}
+
+.regBottomNewCon ul.icoBox2 li {
+    width: 320px;
+    float: left;
+    height: 48px;
+    padding-left: 55px;
+}
+
+.regBottomNewCon ul.icoBox3 li {
+    width: 335px;
+    float: left;
+    height: 48px;
+    padding-left: 55px;
+}
+
+.regBottomNewCon ul.icoBox4 li {
+    width: 318px;
+    float: left;
+    height: 48px;
+    padding-left: 55px;
+}
+
+.regBottomNewCon ul h5 {
+    margin: 0;
+    line-height: 24px;
+    padding: 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+}
+
+.regBottomNewCon ul p {
+    color: #666;
+    line-height: 24px;
+    color: #666;
+    font-size: 12px;
+}
+
+.succBoxTop {
+    height: auto;
+    line-height: 60px;
+    padding-top: 30px;
+    border-bottom: 1px dashed #eee;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 980px;
+    font-size: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.succBoxTop b {
+    font-weight: normal;
+    color: #ee2e2c;
+}
+
+.succBoxTop em {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    vertical-align: middle;
+    background: url(https://style.org.hc360.cn/images/my/images/regist/new/2018/succIco.png);
+    margin-top: -4px;
+}
+
+.succBoxTop p {
+    color: #999;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.regRigBox {
+    background: url(https://style.org.hc360.com/images/my/images/regist/new/regRigCodeBg.png);
+    height: 200px;
+    width: 140px;
+    overflow: hidden;
+    position: fixed;
+    top: 190px;
+    right: 20px;
+    background-size: 140px 200px;
+    text-align: center;
+    color: #fff;
+}
+
+.regRigBoxCon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 18px 0 5px;
+    overflow: hidden;
+}
+
+.regRigBoxCon img {
+    width: 100px;
+    height: 100px;
+}
+
+.rigMore {
+    background: #fafafa;
+    width: 160px;
+    padding: 0 20px;
+    position: fixed;
+    right: 180px;
+    top: 190px;
+    padding-bottom: 10px;
+}
+
+.rigMore h3 {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+    padding: 15px 0 5px;
+}
+
+.rigMore li {
+    padding: 10px 0;
+    border-top: 1px solid #e9e9e9;
+    font-size: 12px;
+}
+
+.rigMore li:nth-child(1) {
+    border-top: 0;
+}
+
+.rigMore li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.rigMore li a:hover {
+    color: #ee2e2c;
+}
+
+.reg_qq iframe {
+    position: fixed;
+    right: 20px !important;
+    left: auto !important;
+    top: 400px;
+}
+
+.regRigBox .p1,
+.regRigBox .p2 {
+    font-size: 14px;
+}
+
+.regRigBox .p3 {
+    font-size: 18px;
+}

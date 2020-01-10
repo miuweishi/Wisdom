@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // let arr = [];
+    // let joinlist = document.querySelector(".joinlist")
+    // let wordlist = joinlist.querySelector(".wordlist");
+    // let listbox = {};
+    // for(let i=0;i<wordlist.lrngth;i++){
+    //     let ele = wordlist[i]
+    //     listbox.top = 
+    // }
+
+    // for (let i = 0; i < wordlist.length; i++) {
+    //     let ele = wordlist[i];
+    //     console.log(ele);
+    // }
+
+    //列表页
+    var box = document.getElementsByClassName("proListLeft")[0];
+    var ul = box.querySelector("ul");
+    var lis = ul.querySelector("li");
+    var arr = [];
+    for (var i = 0; i < lis.length; i++) {
+        // var ele = lis[i];
+        var imgsrc = lis[i].getElementsByClassName("forbid-title4");
+        // var title = lis[i].getElementsByClassName("seaNewPrice");
+        // var decs = lis[i].getElementsByClassName("newName");
+        // var shopName = lis[i].getElementsByClassName("newName");
+        // var areaBox = lis[i].getElementsByClassName("areaBox");
+
+        var good = {};
+        good.imgsrc = imgsrc.src;
+        // good.goodName = title.innerHTML;
+        // good.decs = decs.innerHTML;
+        // good.shopName = shopName.innerHTML;
+        // good.areaBox = areaBox.innerHTML;
+
+        arr.push(good);
+    }
+   
+
+</script>
+
+</html>

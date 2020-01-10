@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>采购车</title>
+    <link rel="stylesheet" href="../css/topper.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/cart_index-order.css">
+    <link rel="stylesheet" href="../css/cart_main.css">
+    <!-- <link rel="stylesheet" href="../css/cart_pur_order.css"> -->
+    <link rel="stylesheet" href="../css/cart_public-popup.css">
+    <script src="../lib/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+     <!-- topper顶部菜单栏 -->
+     <div class="toolbarBox" id="TopBar"></div>
+     <!-- 公共顶部菜单栏 -->
+     <script>
+         $(() => {
+             $('#TopBar').load('./topper.html');
+         })
+     </script>
+    <div class="header-c">
+        <div class="p_header fn-clear">
+            <h1 class="fl"><a href="http://www.hc360.com" target="_blank" title="慧聪网" class="hc_logo">慧聪网</a></h1>
+            <div class="fr search-bar fn-clear">
+                <input id="productKeyName" type="text" value="" class="fl" />
+                <button class="fr searchProduct">搜索</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="container batchCart">
+            <div class="p-title mg-t15 fn-clear">
+                <h2 class="fl">我的<span class="red1-1">采购单</span></h2>
+                <!-- 				<a href="http://detail.b2b.hc360.com/detail/turbine/template/transaction,batch_cart.html" class="fr btn3 switchOrderModel">批量下单</a> -->
+            </div>
+            <div class="p-form mg-t15">
+                <table>
+                    <tr>
+                        <th class="txt-l" width="10%"><input type="checkbox" class="v-a checkAllProduct"
+                                checked="checked" />&nbsp;全选</th>
+                        <th width="41%">货品</th>
+                        <th width="15%">单价（元）</th>
+                        <th width="13%">数量</th>
+                        <th width="15%">金额（元）</th>
+                        <th width="6%"></th>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="pd-l10">
+                            <input type="checkbox" class="v-a checkSupplierProduct" checked="checked" />&nbsp;
+                            <a href="http://szbceec.b2b.hc360.com" target="_blank" title="深圳市碧玺电子设备有限公司" class="bold"
+                                onclick="return hcclick('?hcmy_SupplierManagelog=Company3');">
+                                深圳市碧玺电子设备有限公司
+                            </a>
+                            <span class="hc_ico"></span>
+                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=316175048&site=qq&menu=yes"
+                                onclick="HC.UBA.sendUserlogsElement('UserBehavior_order_qq?detailbcid=408517661&detailuserid=1268954');">
+                                <img border="0"
+                                    src="//style.org.hc360.com/images/detail/mysite/siteconfig/qqIco/qqIco2.gif"
+                                    alt="点击这里给我发消息" title="点击这里给我发消息" style="padding-bottom:5px;" />
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-f pd-0" colspan="6">
+                            <table>
+                                <tr>
+                                    <td width="3%" class="pd-l20 v-a-t"><input type="checkbox" class="checkProduct"
+                                            checked="checked" /></td>
+                                    <td width="48%" class="v-a-t">
+                                        <ul class="fn-clear">
+                                            <li class="fl pd1"><a href="http://b2b.hc360.com/supplyself/408517661.html"
+                                                    target="_blank"
+                                                    onclick="return hcclick('?hcmy_SupplierManagelog=title4');"><img
+                                                        onclick="return hcclick('?hcmy_SupplierManagelog=title4');"
+                                                        src="//img003.hc360.cn/m3/M05/A9/69/wKhQ51S8Z_iEUTqJAAAAAOpRVww641.jpg..180x180.jpg"
+                                                        onerror="this.src='//style.org.hc360.com/images/my/images/corcenter/mmt4/tran/nop.png';"
+                                                        alt="IPC网络摄像机 130万 红外 智能分析" width="80" height="80" /></a></li>
+                                            <li class="fl pd2 mg-l10">
+                                                <p class="h-60">
+                                                    <a href="http://b2b.hc360.com/supplyself/408517661.html"
+                                                        target="_blank" title="IPC网络摄像机 130万 红外 智能分析"
+                                                        onclick="return hcclick('?hcmy_SupplierManagelog=title4');">
+                                                        IPC网络摄像机 130万 红外 智能分析
+                                                    </a>
+                                                </p>
+                                            </li>
+                                            <li class="fl pd3 hui1 mg-l30">
+                                                <p title="规格：4mm距离5m/角度57度">
+                                                    规格：4mm距离5m/...
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td width="15%" class="priceItem v-a-t" unit="台">
+                                        <p><b>240.00台</b></p>
+                                    </td>
+                                    <td width="13%" class="txt-c v-a-t">
+                                        <div class="num-bg">
+                                            <a href="javascript:void(0);" class="fl decreaseProduct">-</a>
+                                            <input type="text" class="fl product" bcId="408517661" skuId="16326326"
+                                                activityId="0" value="1" minOrderNum="1" max="100" priceType="1"
+                                                sellerUserId="1268954" />
+                                            <a href="javascript:void(0);" class="fl increaseProduct">+</a>
+                                            <div class="cw-hint tipMessage hide">
+                                                <font class="pr-icon3"></font>
+                                                <font class="red1 mg-l5"></font>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="15%" class="txt-c v-a-t"><b class="red1 totalPrice">240.00</b></td>
+                                    <td width="6%" class="v-a-t"><a href="javascript:void(0);"
+                                            class="close removeProduct" bcId="408517661" skuId="16326326">删除</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-f pd-0 bd-n bg-blue" colspan="6">
+                            <div class="fn-clear mg-t-1">
+                                <div class="fl mg-l10">
+                                    <input type="checkbox" class="v-a checkAllSupplierProduct"
+                                        checked="checked" />&nbsp;全选
+                                    <a href="javascript:void(0);" class="hui1 mg-l15 batchRemoveProduct">删除选中的货品</a>
+                                </div>
+                                <div class="fr mg-r20 fn-clear">
+                                    <span class="fl"><b class="red1 productCount"
+                                            id="pcountId"></b>件货品，共计（不含运费）：￥</span>
+                                    <span class="tolnum fl productTotalprice" id="pricesId"></span><span
+                                        class="m-yuan">元</span>
+                                    <button class="btn4-1 mg-t13 mg-l15 submitOrder">确认下单</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="pd-l10">
+                            <input type="checkbox" class="v-a checkSupplierProduct" checked="checked" />&nbsp;
+                            <a href="http://sdguojing.b2b.hc360.com" target="_blank" title="佛山市顺德区国精合成材料有限公司"
+                                class="bold" onclick="return hcclick('?hcmy_SupplierManagelog=Company3');">
+                                佛山市顺德区国精合成材料有限公司
+                            </a>
+                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=326583797&site=qq&menu=yes"
+                                onclick="HC.UBA.sendUserlogsElement('UserBehavior_order_qq?detailbcid=260029721&detailuserid=23546580');">
+                                <img border="0"
+                                    src="//style.org.hc360.com/images/detail/mysite/siteconfig/qqIco/qqIco2.gif"
+                                    alt="点击这里给我发消息" title="点击这里给我发消息" style="padding-bottom:5px;" />
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-f pd-0" colspan="6">
+                            <table>
+                                <tr>
+                                    <td width="3%" class="pd-l20 v-a-t"><input type="checkbox" class="checkProduct"
+                                            checked="checked" /></td>
+                                    <td width="48%" class="v-a-t">
+                                        <ul class="fn-clear">
+                                            <li class="fl pd1"><a href="http://b2b.hc360.com/supplyself/260029721.html"
+                                                    target="_blank"
+                                                    onclick="return hcclick('?hcmy_SupplierManagelog=title4');"><img
+                                                        onclick="return hcclick('?hcmy_SupplierManagelog=title4');"
+                                                        src="//img004.hc360.cn/g7/M08/B5/47/wKhQslQNw4aEQAsPAAAAAPLe-wU769.jpg..180x180.jpg"
+                                                        onerror="this.src='//style.org.hc360.com/images/my/images/corcenter/mmt4/tran/nop.png';"
+                                                        alt="博高PU固化剂 水性固化剂  芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化剂" width="80"
+                                                        height="80" /></a></li>
+                                            <li class="fl pd2 mg-l10">
+                                                <p class="h-60">
+                                                    <a href="http://b2b.hc360.com/supplyself/260029721.html"
+                                                        target="_blank" title="博高PU固化剂 水性固化剂 芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化剂"
+                                                        onclick="return hcclick('?hcmy_SupplierManagelog=title4');">
+                                                        博高PU固化剂 水性固化剂 芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化...
+                                                    </a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td width="15%" class="priceItem v-a-t" unit="桶">
+                                        <p>
+                                            1-19桶：<b>10.00</b>
+                                        </p>
+                                        <p class="hui2 through">≥20桶：<b>9.00</b></p>
+                                    </td>
+                                    <td width="13%" class="txt-c v-a-t">
+                                        <div class="num-bg">
+                                            <a href="javascript:void(0);" class="fl decreaseProduct">-</a>
+                                            <input type="text" class="fl product" bcId="260029721" skuId="0"
+                                                activityId="0" value="2" minOrderNum="1" max="100000" priceType="0"
+                                                sellerUserId="23546580" />
+                                            <a href="javascript:void(0);" class="fl increaseProduct">+</a>
+                                            <div class="cw-hint tipMessage hide">
+                                                <font class="pr-icon3"></font>
+                                                <font class="red1 mg-l5"></font>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="15%" class="txt-c v-a-t"><b class="red1 totalPrice">20.00</b></td>
+                                    <td width="6%" class="v-a-t"><a href="javascript:void(0);"
+                                            class="close removeProduct" bcId="260029721" skuId="0">删除</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-f pd-0 bd-n bg-blue" colspan="6">
+                            <div class="fn-clear mg-t-1">
+                                <div class="fl mg-l10">
+                                    <input type="checkbox" class="v-a checkAllSupplierProduct"
+                                        checked="checked" />&nbsp;全选
+                                    <a href="javascript:void(0);" class="hui1 mg-l15 batchRemoveProduct">删除选中的货品</a>
+                                </div>
+                                <div class="fr mg-r20 fn-clear">
+                                    <span class="fl"><b class="red1 productCount"
+                                            id="pcountId"></b>件货品，共计（不含运费）：￥</span>
+                                    <span class="tolnum fl productTotalprice" id="pricesId"></span><span
+                                        class="m-yuan">元</span>
+                                    <button class="btn4-1 mg-t13 mg-l15 submitOrder">确认下单</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="popLogin" style="display:none"></div>
+    <!-- <script id="popLoginjs" type="text/javascript"
+        src="//sso.hc360.com/include/popLogin.jsp?loginparam=&amp;jump=not&amp;ReturnURL=//detail.b2b.hc360.com/detail/turbine/template/transaction,my_cart.html"
+        charset="GBK"></script> -->
+    <div id="newtip_deletePrompt" class="poplayer" style="margin-left:-182px;margin-top:-100px;">
+        <div class="pub-tc">
+            <div class="pub-tc-box wd364">
+                <div class="pub-tit1 fn-clear">
+                    <h2 class="fl">删除货品</h2>
+                    <a href="javascript:void(0);" class="tc-close fr"></a>
+                </div>
+                <div class="tc-content pd-t30 pd-b30">
+                    <p class="txt-c fz-14">确认要删除该货品？</p>
+                </div>
+                <div class="txt-c">
+                    <button class="tc-btn1">确定</button>
+                    <button class="tc-btn2 mg-l15">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="newtip_confirmBatchDeletePrompt" class="poplayer" style="margin-left:-182px;margin-top:-100px;">
+        <div class="pub-tc">
+            <div class="pub-tc-box wd364">
+                <div class="pub-tit1 fn-clear">
+                    <h2 class="fl">删除货品</h2>
+                    <a href="javascript:void(0);" class="tc-close fr"></a>
+                </div>
+                <div class="tc-content pd-t30 pd-b30">
+                    <p class="txt-c fz-14">确认要删除选中的货品？</p>
+                </div>
+                <div class="txt-c">
+                    <button class="tc-btn1">确定</button>
+                    <button class="tc-btn2 mg-l15">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="newtip_Alert" class="poplayer" style="margin-left:-182px;margin-top:-100px;">
+        <div class="pub-tc">
+            <div class="pub-tc-box wd364">
+                <div class="pub-tit1 fn-clear">
+                    <h2 class="fl">提示消息</h2>
+                    <a href="javascript:void(0);" class="tc-close fr"></a>
+                </div>
+                <div class="tc-content pd-t30 pd-b30 showMessage"></div>
+                <div class="txt-c">
+                    <button class="tc-btn1">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 公共尾部 start -->
+    <div id="footerBox" class="footerBox"></div>
+    <script>
+        $(() => {
+            $('#footerBox').load('./footer.html');
+        })
+    </script>
+</body>
+
+</html>

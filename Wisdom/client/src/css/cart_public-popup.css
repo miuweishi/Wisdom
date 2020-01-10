@@ -1,0 +1,216 @@
+@charset "gb2312";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2014-12-15 10:06:54
+ * @version $Id$
+ */
+ 
+.body {font-size:12px;}
+.hui1 {color:#6e6e6e;}
+.red1 {
+  color:#f13e41;
+  font-family:Arial;
+}
+
+.h30 {height:30px;}
+
+.fz-16 {font-size:16px;}
+
+.mg-l24 {margin-left:24px;}
+.mg-l50 {margin-left:50px;}
+
+.pub-tc {
+	color:#333;
+	background:#fff;
+}
+
+.pub-tc h2 {
+	font-family:"微软雅黑";
+  font-weight:normal;
+  margin-bottom:0 !important;
+}
+
+.pub-tc .wd364 {
+  	width:364px;
+}
+
+.pub-tc .wd416 {
+  	width:416px;
+	
+}
+
+.pub-tc .wd584 {
+  	width:584px;
+	
+}
+
+.pub-tc .pub-tc-box {
+ 	border:5px #d6d6d6 solid;
+	padding-bottom:18px;
+}
+
+.pub-tc .pub-tc-box .pub-tit1 {
+ 	width:100%;
+ 	height:38px;
+ 	line-height:38px;
+ 	background:#f5f5f5;
+}
+
+.tc-icon1 {
+	width:32px;
+	height:32px;
+	background:url(//style.org.hc360.cn/images/my/images/defray/manifest/tcc-icon.png) no-repeat;
+	display:inline-block;
+}
+
+.pub-tc .pub-tc-box .pub-tit1 h2 {
+  	margin-left:10px;
+  	color:#333;
+  	font-size:16px;
+}
+
+.pub-tc .pub-tc-box .pub-tit1 .tc-close,.pub-tc .pub-tc-box .pub-tit1 .tc-close:hover {
+  	width:26px;
+  	height:26px;
+  	background:url(//style.org.hc360.cn/images/my/images/defray/manifest/tc-close.png) no-repeat;
+  	display:inline-block;
+  	margin-top:6px;
+  	margin-right:10px;
+}
+
+.pub-tc .pub-tc-box .pub-tit1 .tc-close:hover {
+  	background-position:0 -26px;
+}
+
+.pub-tc .pub-tc-box .tc-content {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.pub-tc .pub-tc-box .tc-content p {
+  	line-height:26px;
+}
+
+.pub-tc .pub-tc-box .tc-content .fz-14 {
+  	font-size:14px;
+}
+
+.pub-tc .tc-btn1,.pub-tc .tc-btn2 {
+    width:78px;
+  	height:28px;
+  	line-height:28px;
+  	background:#e64241;
+  	border:1px #c43d3c solid;
+  	text-align:center;
+  	font-size:12px;
+  	color:#fff;
+  	cursor:pointer;
+    font-weight:bold;
+}
+
+.pub-tc .tc-btn2 {
+	background:#f5f5f5;
+	border:1px #d5d5d5 solid;
+	color:#333;
+}
+
+.pub-tc .tc-btn1:hover {
+	background:#ff4043;
+}
+
+.pub-tc .tc-btn2:hover {
+	background:#f1f1f1;
+}
+
+.pub-tc .tc-btn3,.pub-tc .tc-btn4 {
+    height:38px;
+	width:auto;
+    line-height:38px;
+    background:#e64241;
+	float:left;
+    border:1px #e64241 solid;
+    border-radius:3px;
+    text-align:center;
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    padding:0 15px;
+    font-family: "微软雅黑";
+	display:inline-block;
+	text-decoration:none;
+}
+
+.pub-tc .tc-btn4 {
+  background:#f5f5f5;
+  border:1px #d5d5d5 solid;
+  color:#333;
+}
+
+.pub-tc .tc-btn3 {height:36px;line-height:36px;}
+.tc-btn3 {color:#fff !important}
+.pub-tc .tc-btn3:hover {
+  background:#ff4043;
+  text-decoration:none;
+}
+
+.pub-tc .tc-btn4:hover {
+  background:#f1f1f1;
+  text-decoration:none;
+}
+
+.tc-hint {
+	border-bottom:1px #d8d9db dashed;
+	padding-bottom:20px;
+}
+
+.pub-tc .fr {position:relative !important;}
+
+.tc-hint h2 {
+	font-size:22px;
+	width:180px !important;
+	line-height:30px;
+}
+
+.pub-tc .tc-pic1 {
+  margin-top:10px;
+}
+
+.pub-tc .tc-pic1 img {
+  border:1px #d5d5d5 solid;
+}
+
+.pub-tc .pub-tc-box .tc-content .tc-pic1 li {
+  width:122px;
+}
+
+.pub-tc .tc-pic1 a {
+  color:#666;
+}
+
+.poplayer  
+{  
+    position:fixed;_position:absolute;_top: expression(documentElement.scrollTop + 400 + "px"); 
+    top:50%;  
+    left:50%;  
+    z-index:999999999;
+	display:none;
+}  
+
+/*遮罩*/
+#covered  
+{  
+    position:fixed;  
+    _position:absolute; 
+    z-index:999;  
+    _z-index:999;  
+    top:0px;  
+	_margin-top:-30px;
+    left:0px; 
+    width:100%; _width:100%  !important;
+    height:100%;_height:6000px !important; 
+    background-color:#000;  
+    filter:progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=30);-moz-opacity: 0.3; opacity:0.3; 
+	display:none;
+}  
+.bcname {line-height:20px !important;}
