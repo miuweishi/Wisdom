@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表页</title>
+    <link rel="stylesheet" href="../css/list_aladinPageHots.css">
+    <link rel="stylesheet" href="../css/list_botFixed.css">
+    <link rel="stylesheet" href="../css/topper.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../lib/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <!-- topper顶部菜单栏 -->
+    <div class="toolbarBox" id="TopBar"></div>
+    <!-- 公共顶部菜单栏 -->
+    <script>
+        $(() => {
+            $('#TopBar').load('./topper.html');
+        })
+    </script>
+
+    <!--头部-->
+    <div class="s-mod-top wrap1190">
+        <span class="hc-logo">
+            <a href="//www.hc360.com/" target="_blank"><img src="//style.org.hc360.com/search/images/logo.jpg"
+                    alt="慧聪网，中国领先的B2B网上贸易市场" title="慧聪网，中国领先的B2B网上贸易市场"></a>
+        </span>
+        <!-- 搜索框+tab S -->
+        <div class="search-wp">
+            <div class="tablist-top">
+                <ul>
+                    <li class="current"><a href="javascript:void(0)" target="_self" rel="seller">供应</a><em>|</em></li>
+                    <li><a href="javascript:void(0)" target="_self" rel="buyer">求购</a><em>|</em></li>
+                    <li><a href="javascript:void(0)" target="_self" rel="enterprise">公司</a><em>|</em></li>
+                    <li><a href="javascript:void(0)" target="_self" rel="news">资讯</a></li>
+                </ul>
+            </div><!-- end tablist-top -->
+            <div class="s-input-t">
+                <ul class="form">
+                    <li><input type="text" class="textkey SBar-hook" maxlength="50" value="固化剂" name="w" id="w"
+                            onblur="if(this.value=='')this.value='请输入您感兴趣的关键字';this.style.color='#999'"
+                            onfocus="if(this.value.substring(0,2)=='请输')this.value='';this.style.color='#333'"
+                            placeholder="请输入您感兴趣的关键字"></li>
+                    <li><button type="submit" class="searchbtn" name="searchbutton" id="searchbutton"
+                            value="搜索">搜索</button></li>
+                </ul>
+            </div>
+            <!-- end s-input-t  -->
+            <!-- 搜索框+tab E -->
+        </div>
+        <!-- ad广告位 E-->
+        <!-- 三帧广告 S-->
+        <div class="Img13Box">
+            <em class="searchad">广告</em>
+            <div class="Hide">
+                <div class="Img13Box_Title" index="2"><a href="//b2b.hc360.com/supplyself/420705207.html"
+                        target="_blank"><img
+                            src="//img006.hc360.cn/m8/M09/B2/F8/wKhQpVU0rPOESa6eAAAAAPdujrc270.jpg..100x100.jpg"
+                            width="65" height="65" alt=""></a></div>
+                <div class="rBox" style="display: block;">
+                    <p><a href="#" target="_blank" title="出售二手 沃尔沃 EC460大型挖掘机 矿山设备 二手钩机">出售二手 沃尔沃 EC460大型挖掘机 矿山设备
+                            二手钩机</a></p>
+                    <a href="#" target="_blank" class="price">&yen;58.50万</a>
+                    <a href="#" target="_blank" class="btn_go">抢购</a>
+                </div>
+            </div>
+            <div class="Hide">
+                <div class="Img13Box_Title" index="2"><a href="//b2b.hc360.com/supplyself/420705207.html"
+                        target="_blank"><img
+                            src="//img006.hc360.cn/m8/M09/B2/F8/wKhQpVU0rPOESa6eAAAAAPdujrc270.jpg..100x100.jpg"
+                            width="65" height="65" alt=""></a></div>
+                <div class="rBox" style="display: none;">
+                    <p><a href="#" target="_blank" title="出售二手 沃尔沃 EC460大型挖掘机 矿山设备 二手钩机">出售二手 沃尔沃 EC460大型挖掘机 矿山设备
+                            二手钩机</a></p>
+                    <a href="#" target="_blank" class="price">&yen;58.50万</a>
+                    <a href="#" target="_blank" class="btn_go">抢购</a>
+                </div>
+            </div>
+            <div class="Hide Img13Box_last">
+                <div class="Img13Box_Title" index="2"><a href="//b2b.hc360.com/supplyself/420705207.html"
+                        target="_blank"><img
+                            src="//img006.hc360.cn/m8/M09/B2/F8/wKhQpVU0rPOESa6eAAAAAPdujrc270.jpg..100x100.jpg"
+                            width="65" height="65" alt=""></a></div>
+                <div class="rBox" style="display: none;">
+                    <p><a href="#" target="_blank" title="出售二手 沃尔沃 EC460大型挖掘机 矿山设备 二手钩机">出售二手 沃尔沃 EC460大型挖掘机 矿山设备
+                            二手钩机</a></p>
+                    <a href="#" target="_blank" class="price">&yen;58.50万</a>
+                    <a href="#" target="_blank" class="btn_go">抢购</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navBox">
+        <a href="//s.hc360.com/?w=%E5%9B%BA%E5%8C%96%E5%89%82&mc=seller" target="_blank">
+            <div class="navLeft">全部分类</div>
+        </a>
+        <div class="navRig">
+            <dl>
+                <dt>热搜产品：</dt>
+                <dd>
+                    <a href="//www.hc360.com/hots/900079432.html" class="navCur forbid-title2" title='固化剂'>固化剂</a>
+                    <a href="//www.hc360.com/hots/900093091.html" class="forbid-title2" title='环氧固化剂'>环氧固化剂</a>
+                    <a href="//www.hc360.com/hots-pr8/900225442.html" class="forbid-title2" title='硬化剂'>硬化剂</a>
+                    <a href="//www.hc360.com/hots/900093201.html" class="forbid-title2" title='环氧树脂'>环氧树脂</a>
+                    <a href="//www.hc360.com/hots-tb6/909766771.html" class="forbid-title2" title='活性稀释剂'>活性稀释剂</a>
+                    <a href="//www.hc360.com/hots-taj/900205675.html" class="forbid-title2" title='稀释剂'>稀释剂</a>
+                </dd>
+            </dl>
+            <div class="topAd">
+                <a href="http://my.b2b.hc360.com/my/turbine/template/firstview,purchaseplan.html" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+    <div class="boxContent">
+        <div class="boxCon wrap1190">
+            <!--优品推荐-->
+            <!--商品列表-->
+            <div class="proListBox">
+                <div class="proListBoxCon">
+                    <!--商品列表左侧-->
+                    <div class="proListLeft">
+                        <!-- js -->
+                        <ul>
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/260029721.html" target="_blank"
+                                        title="博高PU固化剂 水性固化剂  芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化剂">
+                                        <img src="//img004.hc360.cn/g7/M08/B5/47/wKhQslQNw4aEQAsPAAAAAPLe-wU769.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="博高PU固化剂 水性固化剂  芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化剂"
+                                            alt="博高PU固化剂 水性固化剂  芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>9.0&frasl;桶
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/260029721.html" target="_blank"
+                                                class="forbid-title2"
+                                                title="博高PU固化剂 水性固化剂  芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化剂">博高PU<span>固化剂</span>
+                                                水性<span>固化剂</span> 芳香族异氰酸酯<span>固化剂</span> 通用型<span>固化剂</span>
+                                                家具漆用<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//sdguojing.b2b.hc360.com" target="_blank"
+                                                    class="forbid-title2" title="佛山市顺德区国精合成材料有限公司">佛山市顺德区国精合成材料有限公司</a>
+                                            </p>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title="广东 佛山市"><span>广东 佛山市</span></div>
+                                            </div>
+                                            <div class="nBotRight"><a class="newQQIco" target="_blank"
+                                                    href="http://wpa.qq.com/msgrd?v=3&uin=326583797&site=qq&menu=yes"
+                                                    title="QQ交谈"><em class="qqonline">&nbsp;</em></a></div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/619106659.html" target="_blank"
+                                        title="源生态家具用固化剂 净味固化剂 哑光固化剂 代理加盟">
+                                        <img src="//img011.hc360.cn/k1/M00/19/80/wKhQw1hqPSGEC10fAAAAAG8MTdk695.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="源生态家具用固化剂 净味固化剂 哑光固化剂 代理加盟"
+                                            alt="源生态家具用固化剂 净味固化剂 哑光固化剂 代理加盟"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>1073.0&frasl;桶
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/619106659.html" target="_blank"
+                                                class="forbid-title2"
+                                                title="源生态家具用固化剂 净味固化剂 哑光固化剂 代理加盟">源生态家具用<span>固化剂</span>
+                                                净味<span>固化剂</span> 哑光<span>固化剂</span> 代理加盟</a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//yst7.b2b.hc360.com" target="_blank"
+                                                    title="广东顺德紫嘉化工有限公司">广东顺德紫嘉化工有限公司</a></p>
+                                            <div class="newNameRight"><a href="//yst7.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">3年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title="广东 佛山市"><span>广东 佛山市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//yst7.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/260003073.html" target="_blank"
+                                        title="博高BG-75B-1PU固化剂 木器漆固化剂 固化剂厂家 聚氨酯固化剂">
+                                        <img src="//img004.hc360.cn/g7/M08/D5/34/wKhQs1QNu6iEWOEyAAAAAPLe-wU079.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="博高BG-75B-1PU固化剂 木器漆固化剂 固化剂厂家 聚氨酯固化剂"
+                                            alt="博高BG-75B-1PU固化剂 木器漆固化剂 固化剂厂家 聚氨酯固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>9.0&frasl;桶
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/260003073.html" target="_blank"
+                                                class="forbid-title2"
+                                                title="博高BG-75B-1PU固化剂 木器漆固化剂 固化剂厂家 聚氨酯固化剂">博高BG-75B-1PU<span>固化剂</span>
+                                                木器漆<span>固化剂</span> <span>固化剂</span>厂家 聚氨酯<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//sdguojing.b2b.hc360.com" target="_blank"
+                                                    class="forbid-title2" title="佛山市顺德区国精合成材料有限公司">佛山市顺德区国精合成材料有限公司</a>
+                                            </p>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title="广东 佛山市"><span>广东 佛山市</span></div>
+                                            </div>
+                                            <div class="nBotRight"><a class="newQQIco" target="_blank"
+                                                    href="http://wpa.qq.com/msgrd?v=3&uin=326583797&site=qq&menu=yes"
+                                                    title="QQ交谈"><em class="qqonline">&nbsp;</em></a></div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/679426832.html" target="_blank"
+                                        title="水性环氧树脂固化剂">
+                                        <img src="//img010.hc360.cn/k2/M0C/9C/79/17dd220d06fce284f27A3c190B9A2422ce.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="水性环氧树脂固化剂" alt="水性环氧树脂固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>25.0&frasl;千克
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/679426832.html" target="_blank"
+                                                class="forbid-title2" title="水性环氧树脂固化剂">水性环氧树脂<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//hnbotu.b2b.hc360.com" target="_blank"
+                                                    title="郑州市金水区振兴五金电料店">郑州市金水区振兴五金电料店</a></p>
+                                            <div class="newNameRight"><a href="//hnbotu.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">2年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title="河南 郑州市"><span>河南 郑州市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//hnbotu.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                            <div class="nBotRight"><a class="newQQIco" target="_blank"
+                                                    href="http://wpa.qq.com/msgrd?v=3&uin=508763501&site=qq&menu=yes"
+                                                    title="QQ交谈"><em class="qqonline">&nbsp;</em></a></div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/679389385.html" target="_blank"
+                                        title="优质水性环氧树脂固化剂">
+                                        <img src="//img008.hc360.cn/k2/M0C/9C/79/SPb113b989fb9E0277CDC19D382213CA4C.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="优质水性环氧树脂固化剂" alt="优质水性环氧树脂固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>25.0&frasl;千克
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/679389385.html" target="_blank"
+                                                class="forbid-title2" title="优质水性环氧树脂固化剂">优质水性环氧树脂<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//hnbotu.b2b.hc360.com" target="_blank"
+                                                    title="郑州市金水区振兴五金电料店">郑州市金水区振兴五金电料店</a></p>
+                                            <div class="newNameRight"><a href="//hnbotu.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">2年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title="河南 郑州市"><span>河南 郑州市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//hnbotu.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                            <div class="nBotRight"><a class="newQQIco" target="_blank"
+                                                    href="http://wpa.qq.com/msgrd?v=3&uin=508763501&site=qq&menu=yes"
+                                                    title="QQ交谈"><em class="qqonline">&nbsp;</em></a></div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/679382797.html" target="_blank"
+                                        title="水性环氧树脂固化剂价格">
+                                        <img src="//img005.hc360.cn/k2/M09/9C/79/wKhQxFpFm3eEfnJtAAAAAJvHf0E611.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="水性环氧树脂固化剂价格" alt="水性环氧树脂固化剂价格"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>25.0&frasl;千克
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/679382797.html" target="_blank"
+                                                class="forbid-title2" title="水性环氧树脂固化剂价格">水性环氧树脂<span>固化剂</span>价格</a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//hnbotu.b2b.hc360.com" target="_blank"
+                                                    title="郑州市金水区振兴五金电料店">郑州市金水区振兴五金电料店</a></p>
+                                            <div class="newNameRight"><a href="//hnbotu.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">2年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title="河南 郑州市"><span>河南 郑州市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//hnbotu.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                            <div class="nBotRight"><a class="newQQIco" target="_blank"
+                                                    href="http://wpa.qq.com/msgrd?v=3&uin=508763501&site=qq&menu=yes"
+                                                    title="QQ交谈"><em class="qqonline">&nbsp;</em></a></div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/679424437.html" target="_blank"
+                                        title="水性环氧树脂固化剂厂家">
+                                        <img src="//img011.hc360.cn/k2/M0F/95/1D/jT99d2ddA5732175F521011F276B9B4F5d.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="水性环氧树脂固化剂厂家" alt="水性环氧树脂固化剂厂家"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>25.0&frasl;千克
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/679424437.html" target="_blank"
+                                                class="forbid-title2" title="水性环氧树脂固化剂厂家">水性环氧树脂<span>固化剂</span>厂家</a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//hnbotu.b2b.hc360.com" target="_blank"
+                                                    title="郑州市金水区振兴五金电料店">郑州市金水区振兴五金电料店</a></p>
+                                            <div class="newNameRight"><a href="//hnbotu.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">2年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title="河南 郑州市"><span>河南 郑州市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//hnbotu.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                            <div class="nBotRight"><a class="newQQIco" target="_blank"
+                                                    href="http://wpa.qq.com/msgrd?v=3&uin=508763501&site=qq&menu=yes"
+                                                    title="QQ交谈"><em class="qqonline">&nbsp;</em></a></div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <script type="text/javascript">
+                                    (function () {
+                                        var s = "_" + Math.random().toString(36).slice(2);
+                                        document.write('<div style="" id="' + s + '"></div>');
+                                        (window.slotbydup = window.slotbydup || []).push({
+                                            id: "u3539810",
+                                            container: s
+                                        });
+                                    })();
+                                </script>
+                            </li>
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/679380392.html" target="_blank"
+                                        title="巴陵 水性氧化树脂固化剂厂家">
+                                        <img src="//img004.hc360.cn/k2/M06/95/21/wKhQxVpFm3GEFJdOAAAAANRZ1l0529.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="巴陵 水性氧化树脂固化剂厂家" alt="巴陵 水性氧化树脂固化剂厂家"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>25.0&frasl;千克
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/679380392.html" target="_blank"
+                                                class="forbid-title2" title="巴陵 水性氧化树脂固化剂厂家">巴陵
+                                                水性氧化树脂<span>固化剂</span>厂家</a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//hnbotu.b2b.hc360.com" target="_blank"
+                                                    title="郑州市金水区振兴五金电料店">郑州市金水区振兴五金电料店</a></p>
+                                            <div class="newNameRight"><a href="//hnbotu.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">2年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title="河南 郑州市"><span>河南 郑州市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//hnbotu.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                            <div class="nBotRight"><a class="newQQIco" target="_blank"
+                                                    href="http://wpa.qq.com/msgrd?v=3&uin=508763501&site=qq&menu=yes"
+                                                    title="QQ交谈"><em class="qqonline">&nbsp;</em></a></div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/679423762.html" target="_blank"
+                                        title="环氧树脂 水性环氧树脂固化剂">
+                                        <img src="//img009.hc360.cn/k2/M0F/95/1D/Rkifd116916E0d277dddCff2933f1EB6E99.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="环氧树脂 水性环氧树脂固化剂" alt="环氧树脂 水性环氧树脂固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>25.0&frasl;千克
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/679423762.html" target="_blank"
+                                                class="forbid-title2" title="环氧树脂 水性环氧树脂固化剂">环氧树脂
+                                                水性环氧树脂<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//hnbotu.b2b.hc360.com" target="_blank"
+                                                    title="郑州市金水区振兴五金电料店">郑州市金水区振兴五金电料店</a></p>
+                                            <div class="newNameRight"><a href="//hnbotu.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">2年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title="河南 郑州市"><span>河南 郑州市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//hnbotu.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                            <div class="nBotRight"><a class="newQQIco" target="_blank"
+                                                    href="http://wpa.qq.com/msgrd?v=3&uin=508763501&site=qq&menu=yes"
+                                                    title="QQ交谈"><em class="qqonline">&nbsp;</em></a></div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/650762301.html" target="_blank"
+                                        title="平原出品 T31固化剂 量大从优">
+                                        <img src="//img005.hc360.cn/k1/M04/D7/2C/wKhQwFlMhz6EN5c9AAAAAFi5lg8530.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="平原出品 T31固化剂 量大从优" alt="平原出品 T31固化剂 量大从优"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>1.80万&frasl;吨
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/650762301.html" target="_blank"
+                                                class="forbid-title2" title="平原出品 T31固化剂 量大从优">平原出品 T31<span>固化剂</span>
+                                                量大从优</a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//pingyuanjiaoni.b2b.hc360.com" target="_blank"
+                                                    title="沁阳市平原胶泥有限公司">沁阳市平原胶泥有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//pingyuanjiaoni.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">4年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 河南 焦作市"><span> 河南 焦作市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//pingyuanjiaoni.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/638160897.html" target="_blank"
+                                        title="平原 T31固化剂 量大从优">
+                                        <img src="//img002.hc360.cn/k2/M09/38/D2/wKhQxVj3GKiEAeyLAAAAAFi5lg8674.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="平原 T31固化剂 量大从优" alt="平原 T31固化剂 量大从优"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>9500.00&frasl;吨
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/638160897.html" target="_blank"
+                                                class="forbid-title2" title="平原 T31固化剂 量大从优">平原 T31<span>固化剂</span>
+                                                量大从优</a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//pingyuanjiaoni.b2b.hc360.com" target="_blank"
+                                                    title="沁阳市平原胶泥有限公司">沁阳市平原胶泥有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//pingyuanjiaoni.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">4年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 河南 焦作市"><span> 河南 焦作市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//pingyuanjiaoni.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/733598488.html" target="_blank"
+                                        title="旭升渗透型耐磨固化剂">
+                                        <img src="//img009.hc360.cn/k2/M07/BE/7C/llCe18e8305e03779CCe5B7C63A01D68289.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="旭升渗透型耐磨固化剂" alt="旭升渗透型耐磨固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>12.00&frasl;平方米
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/733598488.html" target="_blank"
+                                                class="forbid-title2" title="旭升渗透型耐磨固化剂">旭升渗透型耐磨<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//chxs1633.b2b.hc360.com" target="_blank"
+                                                    title="深圳市旭升地坪工程有限公司">深圳市旭升地坪工程有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//chxs1633.b2b.hc360.com/shop/mmtdocs.html" target="_blank"
+                                                    class="mmtIco" title="认证会员">1年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 广东 深圳市"><span> 广东 深圳市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//chxs1633.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/728677478.html" target="_blank"
+                                        title="双氟化工水泥地坪固化剂厂家可批发可零售可出口">
+                                        <img src="//img006.hc360.cn/k1/M01/AD/FB/9Wa3cbe64956a4627Fa581053bbc043cce.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="双氟化工水泥地坪固化剂厂家可批发可零售可出口"
+                                            alt="双氟化工水泥地坪固化剂厂家可批发可零售可出口"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>4900.00&frasl;吨
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/728677478.html" target="_blank"
+                                                class="forbid-title2"
+                                                title="双氟化工水泥地坪固化剂厂家可批发可零售可出口">双氟化工水泥地坪<span>固化剂</span>厂家可批发可零售可出口</a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//sfhg666.b2b.hc360.com" target="_blank"
+                                                    title="佛山市南海双氟化工有限公司">佛山市南海双氟化工有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//sfhg666.b2b.hc360.com/shop/mmtdocs.html" target="_blank"
+                                                    class="mmtIco" title="认证会员">1年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 广东 佛山市"><span> 广东 佛山市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//sfhg666.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/483063775.html" target="_blank"
+                                        title="域田YTA-304系列传统固化剂">
+                                        <img src="//img004.hc360.cn/m7/M07/38/CE/wKhQpFXvhqaEHGnuAAAAAJMHmg4584.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="域田YTA-304系列传统固化剂" alt="域田YTA-304系列传统固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>16.50&frasl;公斤
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/483063775.html" target="_blank"
+                                                class="forbid-title2"
+                                                title="域田YTA-304系列传统固化剂">域田YTA-304系列传统<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//juyinghg.b2b.hc360.com" target="_blank"
+                                                    title="广东聚盈化工有限公司">广东聚盈化工有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//juyinghg.b2b.hc360.com/shop/mmtdocs.html" target="_blank"
+                                                    class="mmtIco" title="认证会员">14年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 广东 江门市"><span> 广东 江门市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//juyinghg.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/646864238.html" target="_blank"
+                                        title="也乐厂家直销 PU固化剂  家具漆固化剂 聚氨酯固化剂 快干固化剂 亮光固化剂 哑光固化剂 质量稳定 性价比高">
+                                        <img src="//img011.hc360.cn/k1/M04/D8/49/wKhQw1k2R-eEVN0fAAAAAIENaCk605.jpg..220x220a.jpg"
+                                            class="forbid-title4"
+                                            title="也乐厂家直销 PU固化剂  家具漆固化剂 聚氨酯固化剂 快干固化剂 亮光固化剂 哑光固化剂 质量稳定 性价比高"
+                                            alt="也乐厂家直销 PU固化剂  家具漆固化剂 聚氨酯固化剂 快干固化剂 亮光固化剂 哑光固化剂 质量稳定 性价比高"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>15.00&frasl;千克
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/646864238.html" target="_blank"
+                                                class="forbid-title2"
+                                                title="也乐厂家直销 PU固化剂  家具漆固化剂 聚氨酯固化剂 快干固化剂 亮光固化剂 哑光固化剂 质量稳定 性价比高">也乐厂家直销
+                                                PU<span>固化剂</span> 家具漆<span>固化剂</span> 聚氨酯<span>固化剂</span>
+                                                快干<span>固化剂</span> 亮光<span>固化剂</span> 哑光<span>固化剂</span> 质量稳定 性价比高</a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//yelegroup.b2b.hc360.com" target="_blank"
+                                                    title="广东也乐新材料制造有限公司">广东也乐新材料制造有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//yelegroup.b2b.hc360.com/shop/mmtdocs.html" target="_blank"
+                                                    class="mmtIco" title="认证会员">5年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 广东 韶关市"><span> 广东 韶关市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//yelegroup.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/27390315.html" target="_blank"
+                                        title="【鸿墒贸易】供应首诺PVB  PVB固化剂">
+                                        <img src="//img009.hc360.cn/m7/M07/4A/B2/wKhQpFbNVbWEG72PAAAAAN0YDUc113.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="【鸿墒贸易】供应首诺PVB  PVB固化剂"
+                                            alt="【鸿墒贸易】供应首诺PVB  PVB固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>180.00&frasl;公斤
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/27390315.html" target="_blank"
+                                                class="forbid-title2" title="【鸿墒贸易】供应首诺PVB  PVB固化剂">【鸿墒贸易】供应首诺PVB
+                                                PVB<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//hongshangmy.b2b.hc360.com" target="_blank"
+                                                    title="广州市鸿墒贸易有限公司">广州市鸿墒贸易有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//hongshangmy.b2b.hc360.com/shop/mmtdocs.html" target="_blank"
+                                                    class="mmtIco" title="认证会员">14年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 广东 广州市"><span> 广东 广州市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//hongshangmy.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/714458183.html" target="_blank"
+                                        title="旧地坪翻新用上海筑耘密封固化剂。">
+                                        <img src="//img001.hc360.cn/k3/M02/66/50/xk160b7137C21C4812589D9b96D3F9DC49.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="旧地坪翻新用上海筑耘密封固化剂。" alt="旧地坪翻新用上海筑耘密封固化剂。"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>11.00&frasl;平方米
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/714458183.html" target="_blank"
+                                                class="forbid-title2"
+                                                title="旧地坪翻新用上海筑耘密封固化剂。">旧地坪翻新用上海筑耘密封<span>固化剂</span>。</a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//gengyun888888.b2b.hc360.com" target="_blank"
+                                                    title="上海筑耘新材料科技有限公司">上海筑耘新材料科技有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//gengyun888888.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">1年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 上海 虹口区"><span> 上海 虹口区</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//gengyun888888.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/364100183.html" target="_blank"
+                                        title="效果好固化剂 众宜环保固化剂 粘附力强固化剂">
+                                        <img src="//img011.hc360.cn/k2/M00/01/DA/wKhQxFs7GiKEfobaAAAAACfdNLE565.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="效果好固化剂 众宜环保固化剂 粘附力强固化剂"
+                                            alt="效果好固化剂 众宜环保固化剂 粘附力强固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                面议
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/364100183.html" target="_blank"
+                                                class="forbid-title2" title="效果好固化剂 众宜环保固化剂 粘附力强固化剂">效果好<span>固化剂</span>
+                                                众宜环保<span>固化剂</span> 粘附力强<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//zhongyiyinhua.b2b.hc360.com" target="_blank"
+                                                    title="佛山市众宜环保新材料有限公司">佛山市众宜环保新材料有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//zhongyiyinhua.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">3年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 广东 佛山市"><span> 广东 佛山市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//zhongyiyinhua.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/224583823.html" target="_blank"
+                                        title="供应巴斯夫BASONTHI190B/SHDI90固化剂">
+                                        <img src="//img010.hc360.cn/g1/M08/06/35/wKhQMVKX8fCEFZU7AAAAAEABTkY426.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="供应巴斯夫BASONTHI190B/SHDI90固化剂"
+                                            alt="供应巴斯夫BASONTHI190B/SHDI90固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>55.00&frasl;公斤
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/224583823.html" target="_blank"
+                                                class="forbid-title2"
+                                                title="供应巴斯夫BASONTHI190B/SHDI90固化剂">供应巴斯夫BASONTHI190B/SHDI90<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//zhengdajzt.b2b.hc360.com" target="_blank"
+                                                    title="桐乡市正大涂料有限公司">桐乡市正大涂料有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//zhengdajzt.b2b.hc360.com/shop/mmtdocs.html" target="_blank"
+                                                    class="mmtIco" title="认证会员">16年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 浙江 嘉兴市"><span> 浙江 嘉兴市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//zhengdajzt.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/730175038.html" target="_blank"
+                                        title="汇锦川 对甲苯磺酸 98% 甲基苯磺酸 稳定剂 催化剂 固化剂">
+                                        <img src="//img002.hc360.cn/k2/M09/B6/16/dHde238B3A7eFA4CBd0154C26862d501d4.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="汇锦川 对甲苯磺酸 98% 甲基苯磺酸 稳定剂 催化剂 固化剂"
+                                            alt="汇锦川 对甲苯磺酸 98% 甲基苯磺酸 稳定剂 催化剂 固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>10.00&frasl;公斤
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/730175038.html" target="_blank"
+                                                class="forbid-title2" title="汇锦川 对甲苯磺酸 98% 甲基苯磺酸 稳定剂 催化剂 固化剂">汇锦川 对甲苯磺酸
+                                                98% 甲基苯磺酸 稳定剂 催化剂 <span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//guolianqing.b2b.hc360.com" target="_blank"
+                                                    title="济南汇锦川商贸有限公司">济南汇锦川商贸有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//guolianqing.b2b.hc360.com/shop/mmtdocs.html" target="_blank"
+                                                    class="mmtIco" title="认证会员">1年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 山东 济南市"><span> 山东 济南市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//guolianqing.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/732656243.html" target="_blank"
+                                        title="环氧固化剂胺类固化剂常温固化无色透明">
+                                        <img src="//img010.hc360.cn/k3/M01/B2/9F/cb4c00862fb09787Ac9A220E501332278fA.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="环氧固化剂胺类固化剂常温固化无色透明"
+                                            alt="环氧固化剂胺类固化剂常温固化无色透明"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>24.95&frasl;千克
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/732656243.html" target="_blank"
+                                                class="forbid-title2"
+                                                title="环氧固化剂胺类固化剂常温固化无色透明">环氧<span>固化剂</span>胺类<span>固化剂</span>常温固化无色透明</a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//wuhaibo1987.b2b.hc360.com" target="_blank"
+                                                    title="苏州市森菲达化工有限公司">苏州市森菲达化工有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//wuhaibo1987.b2b.hc360.com/shop/mmtdocs.html" target="_blank"
+                                                    class="mmtIco" title="认证会员">2年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 江苏 苏州市"><span> 江苏 苏州市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//wuhaibo1987.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <script type="text/javascript">
+                                    (function () {
+                                        var s = "_" + Math.random().toString(36).slice(2);
+                                        document.write('<div style="" id="' + s + '"></div>');
+                                        (window.slotbydup = window.slotbydup || []).push({
+                                            id: "u3551701",
+                                            container: s
+                                        });
+                                    })();
+                                </script>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/157743207.html" target="_blank"
+                                        title="供应德国N3390HDI三聚体固化剂 N3390">
+                                        <img src="//img002.hc360.cn/k3/M0B/A3/9C/wKhQv14FZEGET90WAAAAACeTyBI232.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="供应德国N3390HDI三聚体固化剂 N3390"
+                                            alt="供应德国N3390HDI三聚体固化剂 N3390"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>45.00&frasl;公斤
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/157743207.html" target="_blank"
+                                                class="forbid-title2"
+                                                title="供应德国N3390HDI三聚体固化剂 N3390">供应德国N3390HDI三聚体<span>固化剂</span>
+                                                N3390</a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//gzwg.b2b.hc360.com" target="_blank"
+                                                    title="广州旺港贸易有限公司">广州旺港贸易有限公司</a></p>
+                                            <div class="newNameRight"><a href="//gzwg.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">16年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 广东 广州市"><span> 广东 广州市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//gzwg.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/690365723.html" target="_blank"
+                                        title="直销水油两用固化剂　耐黄变催化剂　硬化剂　固化剂">
+                                        <img src="//img006.hc360.cn/k2/M08/D9/FF/zSf01708b669ece4cFF0c0D2b5681996F0A.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="直销水油两用固化剂　耐黄变催化剂　硬化剂　固化剂"
+                                            alt="直销水油两用固化剂　耐黄变催化剂　硬化剂　固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>258.00&frasl;罐
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/690365723.html" target="_blank"
+                                                class="forbid-title2"
+                                                title="直销水油两用固化剂　耐黄变催化剂　硬化剂　固化剂">直销水油两用<span>固化剂</span>　耐黄变催化剂　硬化剂　<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//changandajiang8.b2b.hc360.com" target="_blank"
+                                                    title="东莞市长安大将油墨印刷材料经营部">东莞市长安大将油墨印刷材料经营部</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//changandajiang8.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">2年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 广东 东莞市"><span> 广东 东莞市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//changandajiang8.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/717382843.html" target="_blank"
+                                        title="现货 苯磺酸固化剂  量大优惠  苯磺酸固化剂">
+                                        <img src="//img004.hc360.cn/k3/M0F/74/72/wKhQx1z2JwyEMc3CAAAAAAGrjAI370.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="现货 苯磺酸固化剂  量大优惠  苯磺酸固化剂"
+                                            alt="现货 苯磺酸固化剂  量大优惠  苯磺酸固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>3500.00&frasl;吨
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/717382843.html" target="_blank"
+                                                class="forbid-title2" title="现货 苯磺酸固化剂  量大优惠  苯磺酸固化剂">现货
+                                                苯磺酸<span>固化剂</span> 量大优惠 苯磺酸<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//sdlaxcl2019.b2b.hc360.com" target="_blank"
+                                                    title="山东力昂新材料科技有限公司">山东力昂新材料科技有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//sdlaxcl2019.b2b.hc360.com/shop/mmtdocs.html" target="_blank"
+                                                    class="mmtIco" title="认证会员">1年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 山东 济宁市"><span> 山东 济宁市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//sdlaxcl2019.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/686868142.html" target="_blank"
+                                        title="金耐德墙面加固剂20KG室内墙固界面剂 墙固防水固化剂">
+                                        <img src="//img002.hc360.cn/k2/M0A/49/E8/hx57abd9c30d0416c05aa709a3aE280ab23.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="金耐德墙面加固剂20KG室内墙固界面剂 墙固防水固化剂"
+                                            alt="金耐德墙面加固剂20KG室内墙固界面剂 墙固防水固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>10.00&frasl;桶
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/686868142.html" target="_blank"
+                                                class="forbid-title2"
+                                                title="金耐德墙面加固剂20KG室内墙固界面剂 墙固防水固化剂">金耐德墙面加固剂20KG室内墙固界面剂
+                                                墙固防水<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//jinnaide123.b2b.hc360.com" target="_blank"
+                                                    title="广州市誉川防水建材有限公司">广州市誉川防水建材有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//jinnaide123.b2b.hc360.com/shop/mmtdocs.html" target="_blank"
+                                                    class="mmtIco" title="认证会员">3年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 广东 广州市"><span> 广东 广州市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//jinnaide123.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/687515916.html" target="_blank"
+                                        title="金耐德墙面加固剂20KG室内墙固界面剂  墙固防水固化剂">
+                                        <img src="//img006.hc360.cn/k2/M0A/49/E8/s968F7C3C46DD1D5CDF563F45E9A9EBA79.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="金耐德墙面加固剂20KG室内墙固界面剂  墙固防水固化剂"
+                                            alt="金耐德墙面加固剂20KG室内墙固界面剂  墙固防水固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>10.00&frasl;桶
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/687515916.html" target="_blank"
+                                                class="forbid-title2"
+                                                title="金耐德墙面加固剂20KG室内墙固界面剂  墙固防水固化剂">金耐德墙面加固剂20KG室内墙固界面剂
+                                                墙固防水<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//jinnaide123.b2b.hc360.com" target="_blank"
+                                                    title="广州市誉川防水建材有限公司">广州市誉川防水建材有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//jinnaide123.b2b.hc360.com/shop/mmtdocs.html" target="_blank"
+                                                    class="mmtIco" title="认证会员">3年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 广东 广州市"><span> 广东 广州市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//jinnaide123.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/686930184.html" target="_blank"
+                                        title="金耐德墙面加固剂20KG 室内墙固界面剂墙固防水固化剂">
+                                        <img src="//img001.hc360.cn/k2/M0A/49/E8/QJQ5d15435BF62A969dA3Cd1F0d980743B5.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="金耐德墙面加固剂20KG 室内墙固界面剂墙固防水固化剂"
+                                            alt="金耐德墙面加固剂20KG 室内墙固界面剂墙固防水固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>10.00&frasl;桶
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/686930184.html" target="_blank"
+                                                class="forbid-title2" title="金耐德墙面加固剂20KG 室内墙固界面剂墙固防水固化剂">金耐德墙面加固剂20KG
+                                                室内墙固界面剂墙固防水<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//jinnaide123.b2b.hc360.com" target="_blank"
+                                                    title="广州市誉川防水建材有限公司">广州市誉川防水建材有限公司</a></p>
+                                            <div class="newNameRight"><a
+                                                    href="//jinnaide123.b2b.hc360.com/shop/mmtdocs.html" target="_blank"
+                                                    class="mmtIco" title="认证会员">3年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 广东 广州市"><span> 广东 广州市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//jinnaide123.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="proImg"><a
+                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
+                                        href="//b2b.hc360.com/supplyself/64569318.html" target="_blank"
+                                        title="供应 氟硅酸锌 混凝土固化剂">
+                                        <img src="//img011.hc360.cn/k2/M09/BD/FE/wKhQxVekPbKEPCBCAAAAAFR1zVE978.jpg..220x220a.jpg"
+                                            class="forbid-title4" title="供应 氟硅酸锌 混凝土固化剂" alt="供应 氟硅酸锌 混凝土固化剂"></a>
+                                </div>
+                                <div class="proBot">
+                                    <dl>
+                                        <dt><span class="seaNewPrice">
+                                                <s>&yen;</s>1.25万&frasl;吨
+                                            </span></dt>
+                                        <dd class="newName">
+                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
+                                                href="//b2b.hc360.com/supplyself/64569318.html" target="_blank"
+                                                class="forbid-title2" title="供应 氟硅酸锌 混凝土固化剂">供应 氟硅酸锌
+                                                混凝土<span>固化剂</span></a>
+                                        </dd>
+                                        <dd class="newCname">
+                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
+                                                    href="//jstcgx.b2b.hc360.com" target="_blank"
+                                                    title="常熟市鸿嘉氟科技有限公司">常熟市鸿嘉氟科技有限公司</a></p>
+                                            <div class="newNameRight"><a href="//jstcgx.b2b.hc360.com/shop/mmtdocs.html"
+                                                    target="_blank" class="mmtIco" title="认证会员">11年</a></div>
+                                        </dd>
+                                        <dd class="newBotBox">
+                                            <div class="nBotLeft">
+                                                <div class="areaBox" title=" 江苏 苏州市"><span> 江苏 苏州市</span></div>
+                                                <a class="newIco100" title="企业信息真实性已认证" target="_blank"
+                                                    href="//jstcgx.b2b.hc360.com/shop/mmtdocs.html"></a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--商品列表右侧 begin -->
+                    <div class="rightBox">
+
+                        <!-- 人气排行 -->
+                        <div class="rightCon" id="top5Box">
+                            <div class="title"><span>人气排行</span></div>
+                            <div class="top5Box">
+                                <ul>
+                                    <div id="topggbox"></div>
+                                    <li>
+                                        <script type="text/javascript">
+                                            (function () {
+                                                var s = "_" + Math.random().toString(36).slice(2);
+                                                document.write('<div style="" id="' + s + '"></div>');
+                                                (window.slotbydup = window.slotbydup || []).push({
+                                                    id: "u3791643",
+                                                    container: s
+                                                });
+                                            })();
+                                        </script>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div style="margin-bottom: 20px">
+                                <script type="text/javascript">
+                                    (function () {
+                                        var s = "_" + Math.random().toString(36).slice(2);
+                                        document.write('<div style="" id="' + s + '"></div>');
+                                        (window.slotbydup = window.slotbydup || []).push({
+                                            id: "u4320937",
+                                            container: s
+                                        });
+                                    })();
+                                </script>
+                            </div>
+                            <!-- 新品推荐 -->
+                            <div class="rightCon" id="newproBox"></div>
+
+                            <div class="rightCon">
+                                <div class="title"><span>导购</span></div>
+                                <div class="salesInfo">
+                                    <ul>
+                                        <li>
+                                            <p class="til"><a
+                                                    href="http://info.coatings.hc360.com/2019/11/051611863869.shtml"
+                                                    target="_blank" class="forbid-title2"
+                                                    title="广东省地坪涂料固化技术创新研讨会在东旭集团总部举行">广东省地坪涂料固化技术创新研讨会在东旭集团总部举行</a></p>
+                                            <div class="imgCon">
+                                                <a href="http://info.coatings.hc360.com/2019/11/051611863869.shtml"
+                                                    target="_blank" class="forbid-title1"
+                                                    title="广东省地坪涂料固化技术创新研讨会在东旭集团总部举行">
+
+                                                    <img src="//img01.hc360.com/coatings/201911/201911051539314830.jpg"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <p class="infotxt">
+                                                慧聪涂料网讯：11月2日上午，广东省地坪涂料固化技术创新研讨会在东旭集团总部举行。会议的召开旨在联合地坪涂料上中下游及施工单位进行创新，提升广东省地坪涂料的水性技术进步，推动产业高质量发展。广东省涂料行业协会秘书长吕水列、中国建材联地坪产业分会副秘书长李超群、华南理工大学工程学院教授张心亚、东旭集团董事长卢家杰，东旭集团联固固化剂总工程师陈爱文、东旭集团固化事业部总工程师刘凌云，与来自省内优秀地坪
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="til"><a
+                                                    href="http://info.chem.hc360.com/2019/11/041029715352.shtml"
+                                                    target="_blank" class="forbid-title2"
+                                                    title="约见CHINACOAT 2019丨与德科美共话水性未来！">约见CHINACOAT
+                                                    2019丨与德科美共话水性未来！</a></p>
+                                            <div class="imgCon">
+                                                <a href="http://info.chem.hc360.com/2019/11/041029715352.shtml"
+                                                    target="_blank" class="forbid-title1"
+                                                    title="约见CHINACOAT 2019丨与德科美共话水性未来！">
+
+                                                    <img src="//img04.hc360.com/chem/201911/201911041014362175.jpg"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <p class="infotxt">
+                                                慧聪涂料网讯：第二十四届「中国国际涂料展CHINACOAT」，将于11月18至20日在上海新国际博览中心举行。作为中国高品质水性树脂解决方案首选服务商，德科美将携纯水性分散体、银排功能性树脂、水性助剂、水性固化剂等产品，亮相2019中国国际涂料展E5.E01展台，为业界带来一大波水性化解决方案。2019第二十四届中国国际涂料展日期:2019年11月18-20日地点:上海新国际博览中心E2、E3、E
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="til"><a href="https://wujin.hc360.com/24/245147.html"
+                                                    target="_blank" class="forbid-title2"
+                                                    title="模具硅胶收缩不可避免，可又预防之法">模具硅胶收缩不可避免，可又预防之法</a></p>
+                                            <div class="imgCon">
+                                                <a href="https://wujin.hc360.com/24/245147.html" target="_blank"
+                                                    class="forbid-title1" title="模具硅胶收缩不可避免，可又预防之法">
+
+                                                    <img src="https://img010.hc360.cn/k3/M0F/66/6C/S208be841bF75eD00b6C537C7bC5A27e02.png"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <p class="infotxt">
+                                                其实看见很多类型的模具液体硅胶，不管是A组份硅胶与B胶搅拌混合发生硫化，还是A组份与固化剂硫化，在硫化的过程后，会出现一定的收缩率问题，这样的情况，属于正常情况吗？其实模具硅胶在与固化剂混合逐渐固化的过程中，硅胶的内的液体水份会随着空气中流失而导致缩水！缩水其实属于一种正常现象，任何一种模具硅胶固化以后变成模具，都会出现收缩率现象。收缩率主要是由于硅胶液体，固体时分子不同，密度不同，再有液体转换为
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--商品列表右侧 end -->
+                    </div>
+                    <!--更多商机-->
+                    <div class="proListMoreBtn">
+                        <a href="//s.hc360.com/?w=%E5%9B%BA%E5%8C%96%E5%89%82&mc=seller" target="_blank"
+                            title="查看更多">查看更多<span class="forbid-title2" title="固化剂">固化剂</span>商机>></a>
+                    </div>
+                </div>
+                <!--广告END-->
+
+                <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2211638124279700"
+                    data-ad-slot="4237007188" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script type="text/javascript">
+                    if (navigator.language == 'zh-CN') {
+                        (function () {
+                            var s = "_" + Math.random().toString(36).slice(2);
+                            document.write('<div style="" id="' + s + '"></div>');
+                            (window.slotbydup = window.slotbydup || []).push({
+                                id: "u3529931",
+                                container: s
+                            });
+                        })();
+                    } else {
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    }
+                </script> -->
+                <div class="aladNewsList">
+                    <div class="newsListCon">
+                        <div class="newsTit">
+                            <ul>
+                                <li class="cur">最新资讯</li>
+                                <li>行业资讯</li>
+                            </ul>
+                        </div>
+                        <div class="newsList">
+                            <ul>
+                                <li><em></em><a href="https://jj.hc360.com/23/237627.html" target="_blank"
+                                        title="水泥地面怎么处理好看" class="forbid-title1">水泥地面怎么处理好看</a><span>【2019-07-31】</span>
+                                </li>
+                                <li><em></em><a href="https://bm.hc360.com/22/221936.html" target="_blank"
+                                        title="外星化工奇锐丙烯酸防锈涂料 漆膜坚韧附着力强" class="forbid-title1">外星化工奇锐丙烯酸防锈涂料
+                                        漆膜坚韧附着力强</a><span>【2019-07-09】</span></li>
+                                <li><em></em><a href="https://bm.hc360.com/22/221933.html" target="_blank"
+                                        title="中康泰博牌环氧防锈涂料 常温干燥耐水耐酸" class="forbid-title1">中康泰博牌环氧防锈涂料
+                                        常温干燥耐水耐酸</a><span>【2019-07-09】</span></li>
+                                <li><em></em><a href="http://info.chem.hc360.com/2019/05/221648711812.shtml"
+                                        target="_blank" title="专访仕全兴柯万林：走进嘉鱼新基地 在搬迁改造中革新突变"
+                                        class="forbid-title1">专访仕全兴柯万林：走进嘉鱼新基地 在搬迁改造中革新突变</a><span>【2019-05-22】</span>
+                                </li>
+                                <li><em></em><a href="http://info.cm.hc360.com/2019/01/111506714826.shtml"
+                                        target="_blank" title="对话 | 上海序林环境科技有限公司总经理——向志文 先生" class="forbid-title1">对话 |
+                                        上海序林环境科技有限公司总经理——向志文 先生</a><span>【2019-01-11】</span></li>
+                                <li><em></em><a href="http://info.chem.hc360.com/2019/01/101206703691.shtml"
+                                        target="_blank" title="广东聚盈化工员工荣获2018年危化行业安全管理“先进个人”表彰"
+                                        class="forbid-title1">广东聚盈化工员工荣获2018年危化行业安全管理“先进个人”表彰</a><span>【2019-01-10】</span>
+                                </li>
+                                <li><em></em><a href="http://info.coatings.hc360.com/2018/12/291103846649.shtml"
+                                        target="_blank" title="紧急通知！佛山安监发布立即停用这个人提供的涂料油漆产品"
+                                        class="forbid-title1">紧急通知！佛山安监发布立即停用这个人提供的涂料油漆产品</a><span>【2018-12-29】</span>
+                                </li>
+                                <li><em></em><a href="http://info.chem.hc360.com/2018/12/251706701752.shtml"
+                                        target="_blank" title="博高化工集团周志伟：良心经营 为客户创造最大价值"
+                                        class="forbid-title1">博高化工集团周志伟：良心经营 为客户创造最大价值</a><span>【2018-12-25】</span></li>
+                                <li><em></em><a href="http://info.pf.hc360.com/2018/12/070958615960.shtml"
+                                        target="_blank" title="影响户外用聚酯粉末耐沸水性的原因分析"
+                                        class="forbid-title1">影响户外用聚酯粉末耐沸水性的原因分析</a><span>【2018-12-07】</span></li>
+                                <li><em></em><a href="http://info.pf.hc360.com/2018/11/271006614960.shtml"
+                                        target="_blank" title="皱纹粉浮色问题及改善"
+                                        class="forbid-title1">皱纹粉浮色问题及改善</a><span>【2018-11-27】</span></li>
+                            </ul>
+                        </div>
+                        <div class="newsList" style="display:none;">
+                            <ul>
+                                <li><em></em><a href="http://info.pf.hc360.com/2018/11/270953614940.shtml"
+                                        class="forbid-title1" title="粉末涂料颜色配方参考"
+                                        target="_blank">粉末涂料颜色配方参考</a><span>【2018-11-27】</span></li>
+                                <li><em></em><a href="https://wujin.hc360.com/3/38018.html" class="forbid-title1"
+                                        title="环氧板固化方便，粘附力强收缩性低"
+                                        target="_blank">环氧板固化方便，粘附力强收缩性低</a><span>【2018-11-26】</span></li>
+                                <li><em></em><a href="http://info.chem.hc360.com/2018/11/251133697772.shtml"
+                                        class="forbid-title1" title="仕全兴将携固化剂等众多产品亮相第二十三中国国际涂料展"
+                                        target="_blank">仕全兴将携固化剂等众多产品亮相第二十三中国国际涂料展</a><span>【2018-11-25】</span></li>
+                                <li><em></em><a href="http://info.chem.hc360.com/2018/11/241031697732.shtml"
+                                        class="forbid-title1" title="聚盈化工水性异氰酸酯固化剂 提升水性双组分漆多种性能"
+                                        target="_blank">聚盈化工水性异氰酸酯固化剂 提升水性双组分漆多种性能</a><span>【2018-11-24】</span></li>
+                                <li><em></em><a href="http://info.chem.hc360.com/2018/11/221358697453.shtml"
+                                        class="forbid-title1" title="绿色家园携美缝剂 环氧固化剂等产品亮相中国国际涂料展"
+                                        target="_blank">绿色家园携美缝剂 环氧固化剂等产品亮相中国国际涂料展</a><span>【2018-11-22】</span></li>
+                                <li><em></em><a href="http://info.chem.hc360.com/2018/11/211412697212.shtml"
+                                        class="forbid-title1" title="11.23买化塑在线课堂-广东聚盈水性固化剂在双组份的应用"
+                                        target="_blank">11.23买化塑在线课堂-广东聚盈水性固化剂在双组份的应用</a><span>【2018-11-21】</span></li>
+                                <li><em></em><a href="http://info.pf.hc360.com/2018/11/200959614260.shtml"
+                                        class="forbid-title1" title="超耐水高Tg2环氧粉末涂料的分析研究"
+                                        target="_blank">超耐水高Tg2环氧粉末涂料的分析研究</a><span>【2018-11-20】</span></li>
+                                <li><em></em><a href="http://info.chem.hc360.com/2018/11/161408696635.shtml"
+                                        class="forbid-title1" title="北京阳光汇德携优势产品亮相国际涂料展"
+                                        target="_blank">北京阳光汇德携优势产品亮相国际涂料展</a><span>【2018-11-16】</span></li>
+                                <li><em></em><a href="http://info.pf.hc360.com/2018/11/061033612440.shtml"
+                                        class="forbid-title1" title="粉末涂料怎么分类？不同种类粉末涂料的特点"
+                                        target="_blank">粉末涂料怎么分类？不同种类粉末涂料的特点</a><span>【2018-11-06】</span></li>
+                                <li><em></em><a href="http://info.coatings.hc360.com/2018/11/011246838209.shtml"
+                                        class="forbid-title1" title="新品推荐——填充？透明？不矛盾！"
+                                        target="_blank">新品推荐——填充？透明？不矛盾！</a><span>【2018-11-01】</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 公共尾部 start -->
+    <div id="footerBox" class="footerBox"></div>
+    <script>
+        $(() => {
+            $('#footerBox').load('./footer.html');
+        })
+    </script>
+</body>
+
+</html>

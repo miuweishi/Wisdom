@@ -12,44 +12,55 @@
 
 </body>
 <script>
-    // let arr = [];
-    // let joinlist = document.querySelector(".joinlist")
-    // let wordlist = joinlist.querySelector(".wordlist");
-    // let listbox = {};
-    // for(let i=0;i<wordlist.lrngth;i++){
-    //     let ele = wordlist[i]
-    //     listbox.top = 
-    // }
-
-    // for (let i = 0; i < wordlist.length; i++) {
-    //     let ele = wordlist[i];
-    //     console.log(ele);
-    // }
 
     //列表页
+    // var box = document.getElementsByClassName("proListLeft")[0];
+    // var lis = box.getElementsByTagName("li");
+    // var data = [];
+    // for (var i = 0; i < lis.length; i++) {
+
+    //     var url = lis[i].getElementsByClassName("forbid-title4")[0];
+    //     // var price = lis[i].getElementsByClassName("seaNewPrice")[0];
+    //     // var decs = lis[i].getElementsByClassName("newName")[0];
+    //     // var shopName = lis[i].getElementsByClassName("newCname")[0];
+    //     // var areaBox = lis[i].getElementsByClassName("areaBox")[0];
+    //     console.log(url);
+    //     var good = {};
+    //     good.url = url.src;
+    //     // good.prices = price.innerText;
+    //     // good.decs = decs.innerHTML;
+    //     // good.shopName = shopName.innerText;
+    //     // good.areaBox = areaBox.innerText;
+    //     console.log(good.url);
+
+    //     data.push(good);
+    // }
+    // console.log(data);
+
     var box = document.getElementsByClassName("proListLeft")[0];
-    var ul = box.querySelector("ul");
-    var lis = ul.querySelector("li");
-    var arr = [];
+    var lis = box.getElementsByTagName("li");
+    var data = [];
     for (var i = 0; i < lis.length; i++) {
-        // var ele = lis[i];
-        var imgsrc = lis[i].getElementsByClassName("forbid-title4");
-        // var title = lis[i].getElementsByClassName("seaNewPrice");
-        // var decs = lis[i].getElementsByClassName("newName");
-        // var shopName = lis[i].getElementsByClassName("newName");
-        // var areaBox = lis[i].getElementsByClassName("areaBox");
-
+        var Img = lis[i].getElementsByClassName("proImg")[0];
+        var urls = Img.getElementsByTagName("img")[0];
+        // var price = lis[i].getElementsByClassName("seaNewPrice")[0];
+        // var decs = lis[i].getElementsByClassName("newName")[0];
+        // var shopName = lis[i].getElementsByClassName("newCname")[0];
+        // var areaBox = lis[i].getElementsByClassName("areaBox")[0];
+        // console.log(Img);
+        // console.log(urls);
+        // console.log(lis);
         var good = {};
-        good.imgsrc = imgsrc.src;
-        // good.goodName = title.innerHTML;
-        // good.decs = decs.innerHTML;
-        // good.shopName = shopName.innerHTML;
-        // good.areaBox = areaBox.innerHTML;
-
-        arr.push(good);
+        // good.bigsrc = Img.src;
+        good.smalsrc = urls.src;
+        // good.prices = price.innerText;
+        // good.decs = decs.innerHTML;
+        // good.shopName = shopName.innerText;
+        // good.areaBox = areaBox.innerText;
+                console.log(good.smalsrc);
+        //         console.log(good.bigsrc);
+        //         data.push(good);
     }
-   
-
 </script>
 
 </html>

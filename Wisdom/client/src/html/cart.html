@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../css/cart_public-popup.css">
     <script src="../lib/jquery-3.4.1.js"></script>
 </head>
-
 <body>
      <!-- topper顶部菜单栏 -->
      <div class="toolbarBox" id="TopBar"></div>
@@ -37,7 +36,7 @@
         <div class="container batchCart">
             <div class="p-title mg-t15 fn-clear">
                 <h2 class="fl">我的<span class="red1-1">采购单</span></h2>
-                <!-- 				<a href="http://detail.b2b.hc360.com/detail/turbine/template/transaction,batch_cart.html" class="fr btn3 switchOrderModel">批量下单</a> -->
+                <!-- <a href="http://detail.b2b.hc360.com/detail/turbine/template/transaction,batch_cart.html" class="fr btn3 switchOrderModel">批量下单</a> -->
             </div>
             <div class="p-form mg-t15">
                 <table>
@@ -138,92 +137,6 @@
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <td colspan="6" class="pd-l10">
-                            <input type="checkbox" class="v-a checkSupplierProduct" checked="checked" />&nbsp;
-                            <a href="http://sdguojing.b2b.hc360.com" target="_blank" title="佛山市顺德区国精合成材料有限公司"
-                                class="bold" onclick="return hcclick('?hcmy_SupplierManagelog=Company3');">
-                                佛山市顺德区国精合成材料有限公司
-                            </a>
-                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=326583797&site=qq&menu=yes"
-                                onclick="HC.UBA.sendUserlogsElement('UserBehavior_order_qq?detailbcid=260029721&detailuserid=23546580');">
-                                <img border="0"
-                                    src="//style.org.hc360.com/images/detail/mysite/siteconfig/qqIco/qqIco2.gif"
-                                    alt="点击这里给我发消息" title="点击这里给我发消息" style="padding-bottom:5px;" />
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="bg-f pd-0" colspan="6">
-                            <table>
-                                <tr>
-                                    <td width="3%" class="pd-l20 v-a-t"><input type="checkbox" class="checkProduct"
-                                            checked="checked" /></td>
-                                    <td width="48%" class="v-a-t">
-                                        <ul class="fn-clear">
-                                            <li class="fl pd1"><a href="http://b2b.hc360.com/supplyself/260029721.html"
-                                                    target="_blank"
-                                                    onclick="return hcclick('?hcmy_SupplierManagelog=title4');"><img
-                                                        onclick="return hcclick('?hcmy_SupplierManagelog=title4');"
-                                                        src="//img004.hc360.cn/g7/M08/B5/47/wKhQslQNw4aEQAsPAAAAAPLe-wU769.jpg..180x180.jpg"
-                                                        onerror="this.src='//style.org.hc360.com/images/my/images/corcenter/mmt4/tran/nop.png';"
-                                                        alt="博高PU固化剂 水性固化剂  芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化剂" width="80"
-                                                        height="80" /></a></li>
-                                            <li class="fl pd2 mg-l10">
-                                                <p class="h-60">
-                                                    <a href="http://b2b.hc360.com/supplyself/260029721.html"
-                                                        target="_blank" title="博高PU固化剂 水性固化剂 芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化剂"
-                                                        onclick="return hcclick('?hcmy_SupplierManagelog=title4');">
-                                                        博高PU固化剂 水性固化剂 芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化...
-                                                    </a>
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td width="15%" class="priceItem v-a-t" unit="桶">
-                                        <p>
-                                            1-19桶：<b>10.00</b>
-                                        </p>
-                                        <p class="hui2 through">≥20桶：<b>9.00</b></p>
-                                    </td>
-                                    <td width="13%" class="txt-c v-a-t">
-                                        <div class="num-bg">
-                                            <a href="javascript:void(0);" class="fl decreaseProduct">-</a>
-                                            <input type="text" class="fl product" bcId="260029721" skuId="0"
-                                                activityId="0" value="2" minOrderNum="1" max="100000" priceType="0"
-                                                sellerUserId="23546580" />
-                                            <a href="javascript:void(0);" class="fl increaseProduct">+</a>
-                                            <div class="cw-hint tipMessage hide">
-                                                <font class="pr-icon3"></font>
-                                                <font class="red1 mg-l5"></font>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td width="15%" class="txt-c v-a-t"><b class="red1 totalPrice">20.00</b></td>
-                                    <td width="6%" class="v-a-t"><a href="javascript:void(0);"
-                                            class="close removeProduct" bcId="260029721" skuId="0">删除</a></td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="bg-f pd-0 bd-n bg-blue" colspan="6">
-                            <div class="fn-clear mg-t-1">
-                                <div class="fl mg-l10">
-                                    <input type="checkbox" class="v-a checkAllSupplierProduct"
-                                        checked="checked" />&nbsp;全选
-                                    <a href="javascript:void(0);" class="hui1 mg-l15 batchRemoveProduct">删除选中的货品</a>
-                                </div>
-                                <div class="fr mg-r20 fn-clear">
-                                    <span class="fl"><b class="red1 productCount"
-                                            id="pcountId"></b>件货品，共计（不含运费）：￥</span>
-                                    <span class="tolnum fl productTotalprice" id="pricesId"></span><span
-                                        class="m-yuan">元</span>
-                                    <button class="btn4-1 mg-t13 mg-l15 submitOrder">确认下单</button>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
                 </table>
             </div>
         </div>
@@ -249,24 +162,7 @@
             </div>
         </div>
     </div>
-    <div id="newtip_confirmBatchDeletePrompt" class="poplayer" style="margin-left:-182px;margin-top:-100px;">
-        <div class="pub-tc">
-            <div class="pub-tc-box wd364">
-                <div class="pub-tit1 fn-clear">
-                    <h2 class="fl">删除货品</h2>
-                    <a href="javascript:void(0);" class="tc-close fr"></a>
-                </div>
-                <div class="tc-content pd-t30 pd-b30">
-                    <p class="txt-c fz-14">确认要删除选中的货品？</p>
-                </div>
-                <div class="txt-c">
-                    <button class="tc-btn1">确定</button>
-                    <button class="tc-btn2 mg-l15">取消</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="newtip_Alert" class="poplayer" style="margin-left:-182px;margin-top:-100px;">
+    <!-- <div id="newtip_Alert" class="poplayer" style="margin-left:-182px;margin-top:-100px;">
         <div class="pub-tc">
             <div class="pub-tc-box wd364">
                 <div class="pub-tit1 fn-clear">
@@ -279,7 +175,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- 公共尾部 start -->
     <div id="footerBox" class="footerBox"></div>
     <script>
