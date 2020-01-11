@@ -137,7 +137,7 @@ em.extension{color:#999; position:absolute; right:10px; bottom:5px;z-index: 500;
 .newBotBox{border-top: 1px solid #e6e6e6;height: 32px;line-height: 32px;padding-top: 2px;}
 .proListBox{clear:both;overflow: hidden;}
 .proListBox .proListLeft{float:left;width: 1000px;}
-.proListBox .proListLeft ul{width:105%;}
+.proListBox .proListLeft ul{width:105%;height:auto;}
 .proListLeft ul li{width: 180px;float:left;margin: 0 18px 18px 0;border:1px solid #e6e6e6;height: 304px;}
 a.telIco{background: url(//style.org.hc360.com/images/my/images/alading/aladinIco.png) -276px -95px no-repeat;display:block;height:30px;float:left;width:28px;}
 a.newQQIco{display:block;height:16px;width: 23px;margin: 9px 0 0 3px;background: url(//style.org.hc360.com/search/images/button_old_41.gif) no-repeat 0px 0px;float:left;}

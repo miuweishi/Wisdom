@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/topper.css">
     <link rel="stylesheet" href="../css/footer.css">
     <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../lib/list.js"></script>
 </head>
 
 <body>
@@ -123,48 +124,7 @@
                 <div class="proListBoxCon">
                     <!--商品列表左侧-->
                     <div class="proListLeft">
-                        <!-- js -->
-                        <ul>
-                            <li>
-                                <div class="proImg"><a
-                                        onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_img')"
-                                        href="//b2b.hc360.com/supplyself/260029721.html" target="_blank"
-                                        title="博高PU固化剂 水性固化剂  芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化剂">
-                                        <img src="//img004.hc360.cn/g7/M08/B5/47/wKhQslQNw4aEQAsPAAAAAPLe-wU769.jpg..220x220a.jpg"
-                                            class="forbid-title4" title="博高PU固化剂 水性固化剂  芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化剂"
-                                            alt="博高PU固化剂 水性固化剂  芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化剂"></a>
-                                </div>
-                                <div class="proBot">
-                                    <dl>
-                                        <dt><span class="seaNewPrice">
-                                                <s>&yen;</s>9.0&frasl;桶
-                                            </span></dt>
-                                        <dd class="newName">
-                                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_title')"
-                                                href="//b2b.hc360.com/supplyself/260029721.html" target="_blank"
-                                                class="forbid-title2"
-                                                title="博高PU固化剂 水性固化剂  芳香族异氰酸酯固化剂 通用型固化剂 家具漆用固化剂">博高PU<span>固化剂</span>
-                                                水性<span>固化剂</span> 芳香族异氰酸酯<span>固化剂</span> 通用型<span>固化剂</span>
-                                                家具漆用<span>固化剂</span></a>
-                                        </dd>
-                                        <dd class="newCname">
-                                            <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_p4p_aladdinTitle_title_two_comp')"
-                                                    href="//sdguojing.b2b.hc360.com" target="_blank"
-                                                    class="forbid-title2" title="佛山市顺德区国精合成材料有限公司">佛山市顺德区国精合成材料有限公司</a>
-                                            </p>
-                                        </dd>
-                                        <dd class="newBotBox">
-                                            <div class="nBotLeft">
-                                                <div class="areaBox" title="广东 佛山市"><span>广东 佛山市</span></div>
-                                            </div>
-                                            <div class="nBotRight"><a class="newQQIco" target="_blank"
-                                                    href="http://wpa.qq.com/msgrd?v=3&uin=326583797&site=qq&menu=yes"
-                                                    title="QQ交谈"><em class="qqonline">&nbsp;</em></a></div>
-                                        </dd>
-                                    </dl>
-                                </div>
-                            </li>
-                        </ul>
+                        <!-- ul商品列表内容-->
                     </div>
                     <!--商品列表右侧 begin -->
                     <div class="rightBox">
@@ -173,27 +133,9 @@
                             <img src="../img/列表右侧(新推荐).png" alt="">
                         </div>
                     </div>
-                   
+
                 </div>
                 <!--广告END-->
-
-                <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2211638124279700"
-                    data-ad-slot="4237007188" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                <script type="text/javascript">
-                    if (navigator.language == 'zh-CN') {
-                        (function () {
-                            var s = "_" + Math.random().toString(36).slice(2);
-                            document.write('<div style="" id="' + s + '"></div>');
-                            (window.slotbydup = window.slotbydup || []).push({
-                                id: "u3529931",
-                                container: s
-                            });
-                        })();
-                    } else {
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    }
-                </script> -->
                 <div class="aladNewsList">
                     <div class="newsListCon">
                         <div class="newsTit">
@@ -287,5 +229,19 @@
         })
     </script>
 </body>
+<script>
+    /*列表页数据渲染*/
+    window.onload = () => {
+        $.ajax({
+            type: "get",
+            url: "../../../server/listData03.php",
+            success: function (data) {
+                let arr = JSON.parse(data);
+                (new Listbox(arr)).init();
+            }
+        });
+
+    }
+</script>
 
 </html>

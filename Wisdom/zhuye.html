@@ -2467,7 +2467,7 @@
         /*主页logo的轮播图*/
         $.ajax({
             type: "get",
-            url: "./server/getData01.php",
+            url: "./server/swipeData01.php",
             dataType: "json",
             success: function (data) {
                 // console.log(data);
@@ -2478,9 +2478,9 @@
         /*楼层的图片数据发送请求*/
         $.ajax({
             type: "get",
-            url: "./server/getData02.php",
+            url: "./server/floorData02.php",
             success: function (data) {
-                console.log(data);
+                // console.log(data);
                 (new Floor(data)).init();
             }
         });
