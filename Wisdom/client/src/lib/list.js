@@ -5,13 +5,12 @@ class Listbox {
     }
     init() {
         this.renderUI();
-
     }
     renderUI() {
         this.root = document.createElement("ul");
         this.root.classList.add("item");
-        let str =this.arr.map((ele,index)=>{
-            return `<li data-id=${index+1} class="items">
+        let str = this.arr.map((ele, index) => {
+            return `<li data-id=${index+1}>
                 <div class="proImg">
                     <a href="###"  title="${ele.title}">
                         <img src="${ele.url}" class="forbid-title4" alt=""></a>
@@ -33,18 +32,9 @@ class Listbox {
                         </dd>
                     </dl>
                 </div>
-            </li>`}).join("");
+            </li>`
+        }).join("");
         this.root.innerHTML = str;
         $(".proListLeft").append(this.root);
     }
 }
-
-/*点击每一个商品跳转到详情页，将该商品的id通过url带到详情页*/
-// $(".item").on("click","li",function(){
-//     console.log(this);
-    
-//     // let id = $(this)
-//     // window.location.href = "./goods.html?" + "id"
-// })
-
-

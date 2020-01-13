@@ -387,7 +387,7 @@ a.mmtIco{display:block;margin-left:3px;float: right;height:20px;line-height:20px
 .newsTit{border:1px solid #e6e6e6; height:48px; background:#f5f5f5;}
 .newsTit li{float:left;width:150px; line-height:48px; text-align:center; cursor:pointer;}
 .newsTit li.cur{background:#fff;margin-top:-1px; border:1px solid #e6e6e6; margin-left:-1px;border-top:2px solid #ee2e2c; border-bottom:0;}
-.newsList{overflow:hidden; padding:15px 0 10px;}
+.newsList{overflow:hidden;padding:15px 0 10px;}
 .newsList li{width:50%;float:left;line-height:32px;font-size:14px;color:#333;}
 .newsList li a{color:#333;display:block;float:left;max-width: 335px;-o-text-overflow: ellipsis;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 .newsList li a:hover{color:#ee2e2c;}
@@ -395,6 +395,7 @@ a.mmtIco{display:block;margin-left:3px;float: right;height:20px;line-height:20px
 .newsList li em{display:block;width:4px;height:4px; background:#666; border-radius:50%; float:left;margin:13px 10px 0 0;}
 .newsList ul{width: 105%;}
 a.qdIco{display:block;height:16px;width:21px;margin-left:3px;background:url(https://style.org.hc360.com/search/images/newIcon_100.png) no-repeat 0px -82px;float:left;margin-left: 10px;margin-top: 8px;}
+/* .showcon{display:block!important} */
 .rigAd,.leftBotAd{overflow:hidden;position:relative; margin-bottom:20px;}
 em.searchad{display:block;height: 16px;width: 29px;background:url(https://style.org.hc360.com/images/detail/miniportal/portal3/adImg.png);position:absolute;bottom:0;right:0;text-indent:60px;overflow:hidden;}
 

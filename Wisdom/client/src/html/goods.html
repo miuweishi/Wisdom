@@ -9,17 +9,15 @@
     <link rel="stylesheet" href="../css/goods_proStyle38.css">
     <link rel="stylesheet" href="../css/goods_proDetailsPay.css">
     <link rel="stylesheet" href="../css/goods_p4pRecomStyle.css">
-    <!-- <link rel="stylesheet" href="../css/goods_detaiAlert.css"> -->
-    <!-- <link rel="stylesheet" href="../css/goods_hc.searchText.css"> -->
     <link rel="stylesheet" href="../css/topper.css">
     <link rel="stylesheet" href="../css/footer.css">
     <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../lib/goods.js"></script>
 </head>
 
 <body>
     <!-- topper顶部菜单栏 -->
     <div class="toolbarBox" id="TopBar"></div>
-    <!-- 公共顶部菜单栏 -->
     <script>
         $(() => {
             $('#TopBar').load('./topper.html');
@@ -79,7 +77,6 @@
             <div class="proTopCode">
                 <div class="codeAlert" style="display: none;">
                     <div class="q-icon2" id="q-icon2" style="position: relative;">
-
                         <canvas width="111" height="111"></canvas><img
                             src="//style.org.hc360.cn/js/build/source/widgets/qrcode/logo-25.png" class="logo-img"
                             style="position: absolute; top: -13px; left: -13px;"></div>
@@ -93,9 +90,9 @@
                         <form name="searchform" method="get" target="_blank" action="//s.hc360.com">
                             <div class="searchBox">
                                 <div class="seaInputBox">
-                                    <input type="text" value="" maxlength="50" autocomplete="off" size="30" name="w" placeholder="请输入产品名称">
-                                </div><label><button type="button" id="searchAll"
-                                       >搜全站</button></label>
+                                    <input type="text" value="" maxlength="50" autocomplete="off" size="30" name="w"
+                                        placeholder="请输入产品名称">
+                                </div><label><button type="button" id="searchAll">搜全站</button></label>
                                 <div class="form_list_tip" style="display: none;">
                                     <ul></ul>
                                     <div class="form_advice">建议搜索：帮您选择更精准的关键词</div>
@@ -129,13 +126,6 @@
         <div class="hot-word">
             <span class="ht-words"><a href="https://top.hc360.com/" target="_blank">热搜词：</a></span>
         </div>
-        <!-- <script type="text/javascript">
-                jQuery('#moreWord').on("mouseenter", function () {
-                    jQuery('.showkey').show();
-                }).on("mouseleave", function () {
-                    jQuery('.showkey').hide();
-                });
-            </script> -->
     </div>
     <!-- 导航栏 end -->
 
@@ -797,35 +787,19 @@
             </div>
         </div>
     </div>
-
-    <!--侧边栏-->
-    <!-- <span id="stylepagemark" sys="detail" style="display:none"></span>
-    <script type="text/javascript">
-        var DataSign = {
-            imSystemTextSign: {
-                "sign": 1,
-                "webFF": true
-            }
-        }
-    </script>
-    <script type="text/javascript">
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "//hm.baidu.com/hm.js?c1bfff064e4a03c5b6f2b589e099da36";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script> -->
-
-    <!-- <div class="qdAlert2" style="display: none;"><a href="javascript:void(0);" class="qdAlertClose"></a>
-        <div class="qdAlertTop">
-            <p>客服在线 欢迎咨询</p><em></em>
+    <div class="proDetailFixed">
+        <div class="proDetailFixedCon">
+            <div class="itemName">
+                <a href="#productAttr" title="深圳市碧玺电子设备有限公司">深圳市碧玺电子设备有限公司</a>
+            </div>
+            <div class="proDetailTab">
+                <ul>
+                    <li class="cur"><a href="#productAttr" id="curmsg" style="color:#333;">商品信息</a></li>
+                </ul>
+            </div>
+            <div class="proDetailBtn"><a href="javascript:void(0)">在线询价</a></div>
         </div>
-        <div class="qdAlertBot"><a id="qdConsul" href="javascript:void(0);">立即咨询</a></div>
     </div>
-    <div id="myAjaxResultBox"><iframe name="myAjaxResultFrame" init="false" style="display:none"
-            onload="myAjaxResultFrame_onResult();"></iframe></div> -->
 
     <!-- 公共尾部 start -->
     <div id="footerBox" class="footerBox"></div>
@@ -835,4 +809,5 @@
         })
     </script>
 </body>
+
 </html>

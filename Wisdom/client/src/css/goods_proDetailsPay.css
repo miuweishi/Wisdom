@@ -1545,7 +1545,7 @@ a.orange-btnNew:hover{background:#f1f1f1;color:#333;}
 .proTitCon h1{float:left;}
 .proTitCon a{background:url(https://style.org.hc360.com/images/detail/mysite/siteconfig/new_product/newImg/NewProIco.png) -975px -116px no-repeat;padding-left:29px;float:right;color:#999;font-size:12px;margin:10px 0;}
 .takeSamplesBox{display:none;}
-.proDetailFixed{height:50px;background:#fff;border:1px solid #e5e5e5;border-left:none;border-right:none;position:fixed;top:0;left:0;width:100%;z-index:60000;}
+.proDetailFixed{height:50px;background:#fff;border:1px solid #e5e5e5;border-left:none;border-right:none;position:fixed;top:0px;left:0;width:100%;z-index:60000;}
 .proDetailFixedCon{width:1190px;margin:0 auto;height:50px;}
 .proDetailFixed .itemName{width:238px;border:1px solid #e5e5e5;border-top:none;border-bottom:none;height:50px;float:left;}
 .proDetailFixed .itemName a{display:block;padding-left:42px;background:url(//style.org.hc360.com/images/detail/mysite/siteconfig/new_product/newImg/proDetailIco.png) -265px -317px no-repeat;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;font-size:14px;color:#333;height:50px;line-height:50px;padding-right:20px;}
