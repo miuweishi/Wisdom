@@ -1,16 +1,18 @@
-class Listbox {
-    constructor(arr) {
-        this.arr = arr;
-        this.root = null;
-    }
-    init() {
-        this.renderUI();
-    }
-    renderUI() {
-        this.root = document.createElement("ul");
-        this.root.classList.add("item");
-        let str = this.arr.map((ele, index) => {
-            return `<li data-id=${index+1}>
+$(() => {
+    /*发送请求数据*/
+    $.ajax({
+        type: "get",
+        url: "../../../server/listData03.php",
+        success: function (data) {
+            // console.log(data);
+            let arr = JSON.parse(data);
+            renderUI(arr);
+        }
+    });
+
+    function renderUI(arr) {
+        let str = arr.map((ele, index) => {
+            return `<li data-id=${index+1} >
                 <div class="proImg">
                     <a href="###"  title="${ele.title}">
                         <img src="${ele.url}" class="forbid-title4" alt=""></a>
@@ -34,7 +36,19 @@ class Listbox {
                 </div>
             </li>`
         }).join("");
-        this.root.innerHTML = str;
-        $(".proListLeft").append(this.root);
+        $(".proListLeft .item").html(str);
     }
-}
+
+    /*底部最新咨询的选项卡*/
+    $(".newsTab").click(function () {
+        console.log(this);
+        $(this).addClass("cur").siblings().removeClass("cur");
+        $(".newsList").eq($(this).index()).hide().siblings().show();
+    })
+
+    /*点击每一个商品跳转到详情页，将该商品的id通过url带到详情页*/
+    $(".item").on("click", "li", function () {
+        let id = $(this).data("id")
+        window.open("./goods.html") + id;
+    })
+})

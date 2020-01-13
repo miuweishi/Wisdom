@@ -19,5 +19,27 @@ $(() => {
                 "margin": "0 auto"
             });
         }
-    })
+    });
+
+    /*截取url的参数id，查看数据库渲染数据*/
+    (function (){
+        var str = decodeURI(location.search.slice(1));
+        // console.log(str);
+        $.ajax({
+            type: "get",
+            url: "../../../server/goodsData04.php",
+            data:{id:str},
+            // dataType: "dataType",
+            success: function (response) {
+                console.log(response);
+            }
+        });
+
+        // var html = `<img src="${obj.imgurl}" alt="" />
+        //     <p class="title">${obj.name}</p>`;
+
+        // var box = document.getElementById('box');
+
+        // box.innerHTML = html;//荣耀 肉
+    })()
 })
