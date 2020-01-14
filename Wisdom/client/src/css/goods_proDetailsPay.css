@@ -700,9 +700,7 @@ span.imgRigArrow {
     _display: inline;
 }
 
-#spnFavoProd {
-    /* margin-left:24px;*/
-}
+
 
 .share {
     background: #fff;
@@ -1090,7 +1088,7 @@ a {
     vertical-align: middle;
     text-align: center;
     *display: block;
-    *fon-family: Arial;
+    *font-family: Arial;
 }
 
 .nextPro dl dt,
@@ -1120,7 +1118,7 @@ a {
     overflow: hidden;
     white-space: nowrap;
     word-wrap: normal;
-    fotn-family: "Microsoft YaHei", "SimHei";
+    font-family: "Microsoft YaHei", "SimHei";
 }
 
 .nextProtxt a:hover {
@@ -1133,8 +1131,7 @@ a {
     font-family: "Microsoft YaHei", "SimHei";
     overflow: hidden;
     height: 22px;
-    line-height: ;
-    22px;
+    line-height:22px;
     width: 150px;
 }
 
@@ -1150,8 +1147,6 @@ a {
 .defaut a:hover {
     text-decoration: underline;
 }
-
-.img-scroll-right a {}
 
 .img-scroll-right a {
     display: block;
@@ -3062,7 +3057,6 @@ span.cFax {
     position: absolute;
     top: -1px;
     border-radius: 2px 0 0 2px;
-    /* background: #f8f8f8 url("//style.org.hc360.com/images/detail/mysite/siteconfig/new_product/bg.png") no-repeat; */
     height: 26px;
     line-height: 200px;
     overflow: hidden;
@@ -3072,30 +3066,11 @@ span.cFax {
     border: 1px solid #e5e5e5;
 }
 
-.detail-amount-control .anount-container {
-    float: left;
-    height: 30px;
-    width: 100px;
-    /* overflow:hidden;*/
-}
 
 .detail-amount-control .input {
     width: 74px;
     position: relative;
     margin: 0px 25px;
-}
-
-    {
-    width: 70px;
-    float: left;
-    height: 24px;
-    line-height: 24px;
-    margin: 0px;
-    padding: 2px 2px 0px;
-    color: rgb(102, 102, 102);
-    font-size: 12px;
-    border-width: 0px;
-    visibility: visible;
 }
 
 .adress-wrap {
@@ -3135,7 +3110,7 @@ span.cFax {
 
 .number i {
     font-style: normal;
-    t: 4px;
+    top: 4px;
 }
 
 .see-detail {
@@ -3315,10 +3290,7 @@ a.amount-down {
     background-position: -32px -52px;
 }
 
-a.amount-up {
-    right: 0;
-    background-position: 8px 8px;
-}
+
 
 .item-row-w.price {
     padding-top: 10px
@@ -3731,11 +3703,7 @@ a.amount-up {
     visibility: hidden
 }
 
-.clearfix,
-.proDetailCon,
-.main-detail-info {
-    *+height: 1%;
-}
+
 
 .hotBusi {
     background: #f5f5f5;
@@ -3997,7 +3965,7 @@ span.yPrice {
 
 .guaranteeBox {
     padding: 10px 0;
-    height\:3;
+    /* height:3px; */
     width: 640px;
     height: 30px;
 }
@@ -4027,7 +3995,6 @@ span.yPrice {
     padding-right: 20px;
     padding-top: 1px;
     text-align: center;
-    url(http://style.org.hc360.com/images/detail/mysite/siteconfig/new_product/newImg/NewProIco.png) -982px -152px no-repeat;
     background: url(//style.org.hc360.com/images/detail/mysite/siteconfig/new_product/newImg/NewProIco.png) -906px -700px no-repeat #fff;
     border-bottom: none;
     top: 0;
@@ -4150,14 +4117,7 @@ button.thisShop {
     color: #ee2e2c;
 }
 
-.detail-amount-control .anount-container {
-    float: left;
-    height: 26px;
-    border-color: #e5e5e5 #efefef;
-    border-style: solid;
-    border-width: 1px;
-    /* margin-top:5px;*/
-}
+
 
 .pro-tab-left li.pro-tab-cur a:link,
 .pro-tab-left li.pro-tab-cur a:visited {
@@ -4822,47 +4782,7 @@ em {
     border: none;
 }
 
-.inquiry_form ul li.inquiry_form_con a.amount-up {
-    float: left;
-    width: 24px;
-    height: 26px;
-    text-align: center;
-    font-size: 0;
-    background: url(//style.org.hc360.cn/images/detail/mysite/siteconfig/new_product/xunjia-new/little-m.png) no-repeat 7px 8px;
-    margin: -23px 0 0 164px;
-    display: block;
-    *margin: -20px 0 0 164px;
-    top: 30px !important
-}
 
-.inquiry_form ul li.inquiry_form_con a.amount-down {
-    float: left;
-    width: 24px;
-    height: 26px;
-    text-align: center;
-    margin: -23px 0 0 -192px;
-    _margin-left: -256px;
-    font-size: 0;
-    background: url(//style.org.hc360.cn/images/detail/mysite/siteconfig/new_product/xunjia-new/little-m.png) no-repeat -33px 8px;
-    display: block;
-    _z-index: 1000;
-    *margin: -23px 0 0 -142px;
-    left: 183px !important;
-    top: 30px !important
-}
-
-.inquiry_form ul li.inquiry_form_con a.amount-up:hover {
-    background: url(//style.org.hc360.cn/images/detail/mysite/siteconfig/new_product/xunjia-new/little-m.png) no-repeat 7px -22px;
-}
-
-.inquiry_form ul li.inquiry_form_con a.amount-down:hover {
-    background: url(//style.org.hc360.cn/images/detail/mysite/siteconfig/new_product/xunjia-new/little-m.png) no-repeat -33px -22px;
-}
-
-.inquiry_form ul li.inquiry_form_con a.amount-up:hover,
-.inquiry_form ul li.inquiry_form_con a.amount-down:hover {
-    text-decoration: none
-}
 
 .inquiry_form ul li.inquiry_form_con .inquiry_form_con_tip {
     clear: both;
@@ -4962,7 +4882,7 @@ em {
 /*right-fix-change2016*/
 a {
     outline: none;
-    blr: expression(this.onFocus=this.blur());
+   
 }
 
 * {
@@ -5578,12 +5498,10 @@ a {
     margin: 0 auto;
 }
 
-.zx_pform .suc-btn .s_btn1 {
-    qi
-}
+
 
 .zx_pform .suc-btn .s_btn1 {
-    width: 140px;
+    width:140px;
     height: 38px;
     border: 1px solid #d11120;
     line-height: 40px;
@@ -5826,8 +5744,8 @@ dd.mg-l10 {
 
 .poplayer {
     position: fixed;
-    _position: absolute;
-    _top: expression(documentElement.scrollTop + 400 + "px");
+    /* _position: absolute;
+    _top: expression(documentElement.scrollTop + 400 + "px"); */
     top: 50%;
     left: 50%;
     z-index: 999999;
@@ -5918,9 +5836,9 @@ dd.mg-l10 {
     z-index: 9999;
     width: 90px;
     height: 262px;
-    _position: absolute;
+    /* _position: absolute;
     _bottom: auto;
-    _top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 200)||0)));
+    _top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 200)||0))); */
 }
 
 .wlAdImg a.Link1 {
@@ -7604,9 +7522,6 @@ li.codeCname {
     visibility: hidden
 }
 
-.detailpjBox ul li {
-    *+height: 1%;
-}
 
 .pjImgAlert em.arrow1 {
     border-width: 3px none none none;
@@ -8602,9 +8517,6 @@ a.onMoverMenu {
     visibility: hidden
 }
 
-.clearfix {
-    *+height: 1%;
-}
 
 .BoxContent {
     width: 952px;
@@ -9869,7 +9781,6 @@ a.SYT_ico {
     padding-right: 20px;
     padding-top: 1px;
     text-align: center;
-    url(http://style.org.hc360.com/images/detail/mysite/siteconfig/new_product/newImg/NewProIco.png) -982px -152px no-repeat;
     background: url(//style.org.hc360.com/images/detail/mysite/siteconfig/new_product/newImg/NewProIco.png) -836px -700px no-repeat #fff;
     border-bottom: none;
     top: 0;

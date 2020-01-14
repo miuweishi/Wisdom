@@ -149,7 +149,7 @@
                                 <div class="tab-content-container">
                                     <ul class="nav nav-tabs fn_clear" id="thumblist">
                                         <li class="tab-trigger" style="height: 58px; width: 58px;">
-                                            <a href="javascript:void(0);" class="box-img zoomThumbActive " >
+                                            <a href="javascript:void(0);" class="box-img zoomThumbActive ">
                                                 <img src="../img/smalpic1.jpg" style="height: 58px; width: 58px;">
                                             </a>
                                         </li>
@@ -178,11 +178,6 @@
                                                 <img src="../img/smalpic6.jpg" style="height: 58px; width: 58px;">
                                             </a>
                                         </li>
-                                        <!-- <li class="tab-trigger" style="height: 58px; width: 58px;">
-                                            <a href="javascript:void(0);" class="box-img zoomThumbActive ">
-                                                <img src="../img/smalpic7.jpg" style="height: 58px; width: 58px;">
-                                            </a>
-                                        </li> -->
                                     </ul>
                                 </div>
                                 <ol class="scroll">
@@ -207,6 +202,80 @@
             </div>
             <div class="detail-right-con" style="display:block;">
                 <!-- 具体价格右侧内容 -->
+                <div class=" topPriceBox ">
+                    <span class="topPriceLeft letter2">价格</span>
+                    <a id="freeInquery" href="">免费咨询行业专家</a>
+                </div>
+                <div class="item-row-w">
+                    <span class="item-left-t">供应总量</span>
+                </div>
+                <div class="item-row-w">
+                    <span class="item-left-t">发货期限</span>
+                    卖家承诺24小时发货
+                </div>
+                <div class="item-row-w logistics">
+                    <span class="item-left-t">运费说明</span>
+                    <div class="adress-wrap payf">
+                        --
+                    </div>
+                </div>
+                <div class="cg-info fn_clear" id="dg_div">
+                    <span class="item-left-t cg-info-left">订购信息</span>
+                    <div class="cg-table dg-table">
+                        <table cellspacing="1" cellpadding="1" class="cg-table-con" id="priceList">
+                            <tbody>
+                                <tr id="table1_tr_1">
+                                    <th class="order">起订量 (台)</th>
+                                    <th class="standards">价格</th>
+                                    <th class="PurchaseNum">采购量</th>
+                                </tr>
+                                <tr class="item-cur-tab" id="dj_tr">
+                                    <td class=""> 1 </td>
+                                    <td class="oriPrice"></td>
+                                    <td id="dj_td" rowspan="2">
+                                        <div class="detail-count-control">
+                                            <span class="count-container">
+                                                <input type="text" class="count-input" value="1" /><a href="javascript:void(0)" class="count-up">+</a>
+                                                <a href="javascript:void(0)" class="count-down count-down-limit">-</a>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="item-row-w price">
+                    <span class="item-left-t letter2">总价</span>
+                    <div class="adress-wrap fn_clear">
+                        <div class="price-num">
+                            <em class="rmb">¥</em>
+                            <span id="totalPrice">0.00</span>
+                            <em class="number"> | 共<i id="totalNumber">0</i> 台</em>
+                        </div>
+                        <div class="see-detail">
+                            <span class="cur-span" id="showDetailBtn" style="display: none;">查看清单</span>
+                            <div id="sellDetail">
+                                <div class="close_d"><a>×</a></div>
+                                <div class="span-con">
+                                    <table class="item-span-con-list" cellpadding="1" cellspacing="1" id="detailList">
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-row-w pro-btn-wrap">
+                    <ul class="pro_btn ">
+                        <li><a class="ContactNew" id="checkContactBtn">查看联系方式</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="blue-btnNew setMyCart">加入采购单</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="orange-btnNew orderNow">立即订购</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

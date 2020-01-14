@@ -21,6 +21,7 @@ $(() => {
         }
     });
 
+
     /*截取url的参数id，查看数据库渲染数据*/
     (function () {
         var gid = decodeURI(location.search.slice(1));
@@ -34,91 +35,17 @@ $(() => {
             success: function (data) {
                 let arr = JSON.parse(data);
                 // console.log(arr);
-                let html = arr.map((ele) => {
-                    return `                                             
-                <div class=" topPriceBox ">
-                    <span class="topPriceLeft letter2">价格</span>
-                    <div class="topPriceRig" id="oriPriceTop">
-                        <em>¥</em>${ele.price}
-                    </div>
-                    <a id="freeInquery" href="">免费咨询行业专家</a>
-                </div>
-                <div class="item-row-w">
-                    <span class="item-left-t">供应总量</span>
-                    <span class="supply-numb">${ele.kucun} 台 </span>
-                </div>
-                <div class="item-row-w">
-                    <span class="item-left-t">发货期限</span>
-                    卖家承诺24小时发货
-                </div>
-                <div class="item-row-w logistics">
-                    <span class="item-left-t">运费说明</span>
-                    <div class="adress-wrap payf">
-                        --
-                    </div>
-                </div>
-                <div class="cg-info fn_clear" id="dg_div">
-                    <span class="item-left-t cg-info-left">订购信息</span>
-                    <div class="cg-table dg-table">
-                        <table cellspacing="1" cellpadding="1" class="cg-table-con" id="priceList">
-                            <tbody>
-                                <tr id="table1_tr_1">
-                                    <th class="order">起订量 (台)</th>
-                                    <th class="standards">价格</th>
-                                    <th class="PurchaseNum">采购量</th>
-                                </tr>
-                                <tr class="item-cur-tab" id="dj_tr">
-                                    <td class=""> 1 </td>
-                                    <td class="oriPrice">¥${ele.price}</td>
-                                    <td id="dj_td" rowspan="2">
-                                        <div class="item-control">
-                                            <div class="detail-amount-control detail-amount-con-hover">
-                                                <span class="anount-container"
-                                                    style="width: 74px; position: relative; margin: 0px 25px;"><input type="text" id="buyNumber" class="amount-input" data-amountindex="0" style="width: 70px; float: left; height: 24px; line-height: 24px; margin: 0px; padding: 2px 2px 0px; color: rgb(102, 102, 102); font-size: 12px; border-width: 0px; visibility: visible;">
-                                                    <div style="clear: both;"></div><a href="javascript:void(0)" class="amount-up">+</a><a href="javascript:void(0)"
-                                                        class="amount-down amount-down-limit">-</a>
-                                                </span>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="item-row-w price">
-                    <span class="item-left-t letter2">总价</span>
-                    <div class="adress-wrap fn_clear">
-                        <div class="price-num">
-                            <em class="rmb">¥</em>
-                            <span id="totalPrice">0.00</span>
-                            <em class="number"> | 共<i id="totalNumber">0</i> 台</em>
-                        </div>
-                        <div class="see-detail">
-                            <span class="cur-span" id="showDetailBtn" style="display: none;">查看清单</span>
-                            <div id="sellDetail">
-                                <div class="close_d"><a>×</a></div>
-                                <div class="span-con">
-                                    <table class="item-span-con-list" cellpadding="1" cellspacing="1" id="detailList">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-row-w pro-btn-wrap">
-                    <ul class="pro_btn ">
-                        <li><a class="ContactNew" id="checkContactBtn">查看联系方式</a>
-                        </li>
-                        <li><a href="javascript:void(0)" class="blue-btnNew setMyCart">加入采购单</a>
-                        </li>
-                        <li><a href="javascript:void(0)" class="orange-btnNew orderNow">立即订购</a>
-                        </li>
-                    </ul>
-                </div>
-            `
+                let tpl1 = arr.map((ele) => {
+                    return `<div class="topPriceRig" id="oriPriceTop">
+                    <em>¥</em>${ele.price}
+                </div>`
                 }).join("");
-                $(".detail-right-con").html(html);
+                let tpl2 = arr.map(ele => {
+                    return `<span class="supply-numb">${ele.kucun} 台 </span>`
+                }).join("");
+                $(".topPriceBox").append(tpl1);
+                $(".item-row-w").eq(0).append(tpl2);
+                $(".oriPrice").text($("#oriPriceTop").text());
 
                 /*导航栏的数据渲染*/
                 let html1 = arr.map(ele => `<a href="">${ele.newCname}</a>&gt;
@@ -141,7 +68,7 @@ $(() => {
 
     /*轮播小图的切换*/
     // (function swipe() {
-        
+
     //     /*点击左右按钮切换图片*/
     //     let index = 0;
     //     $("#baseNex").click(function(){
@@ -150,6 +77,33 @@ $(() => {
     //         // index++;
     //         // ul.style.left = -(index) * iw;
     //     })
-        
     // })()
+
+    /*商品数量加减*/
+    $(".count-up").click(function () {
+
+        this.prev().val()
+    })
+
+    $(document).ready(function () {
+        //获得文本框对象
+        var t = $("#text_box");
+        //初始化数量为1,并失效减
+        $('#min').attr('disabled', true);
+        //数量增加操作
+        $("#add").click(function () {
+            // 给获取的val加上绝对值，避免出现负数
+            t.val(Math.abs(parseInt(t.val())) + 1);
+            if (parseInt(t.val()) != 1) {
+                $('#min').attr('disabled', false);
+            };
+        })
+        //数量减少操作
+        $("#min").click(function () {
+            t.val(Math.abs(parseInt(t.val())) - 1);
+            if (parseInt(t.val()) == 1) {
+                $('#min').attr('disabled', true);
+            };
+        })
+    });
 });
