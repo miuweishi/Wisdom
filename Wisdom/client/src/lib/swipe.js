@@ -65,4 +65,3 @@ class Swipe {
       this.picbtns.children[this.index].classList.add("active");
     }
   }
-  /*主页logo的轮播图 end*/

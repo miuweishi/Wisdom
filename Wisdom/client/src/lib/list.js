@@ -49,6 +49,7 @@ $(() => {
     /*点击每一个商品跳转到详情页，将该商品的id通过url带到详情页*/
     $(".item").on("click", "li", function () {
         let id = $(this).data("id")
-        window.open("./goods.html") + id;
+        // console.log(id);
+        window.location.href = "./goods.html?" + id;
     })
 })

@@ -1,4 +1,4 @@
-//轮播图得菜单导航
+//左侧菜单导航数据爬取
 // var ch_data = [];
 // var data = document.getElementsByClassName("subnav-menu")[0];
 // var items = data.getElementsByClassName("item");
@@ -17,9 +17,6 @@
 //   items_datas.suvnav_tit = suvnav_tit.innerHTML;
 //   ch_data.push(items_datas);
 // }
-
-
-
 
 
 
