@@ -311,12 +311,6 @@ body {
     font-weight: normal;
 }
 
-
-
-
-
-
-
 .fLink .fLinkBox {
     padding: 10px 0;
     overflow: hidden;
@@ -771,7 +765,7 @@ body {
 }
 .detail-count-control{
     border: 1px solid #ccc;
-    width:100px;
+    width:120px;
     height: 30px;
     margin-left: 90px;
     position: relative;
@@ -779,9 +773,10 @@ body {
 }
 
 .detail-count-control .count-input{
-    width: 25%;
+    width: 30%;
     height: 100%;
     text-align: center;
+    font-size: 8px;
 }
 .detail-count-control a{
     border: 1px solid #ccc;
@@ -793,6 +788,7 @@ body {
 }
 #buyNumber{
     border: none;
+    
 }
 .detail-count-control .count-down{
     position: absolute;
@@ -804,9 +800,23 @@ body {
 }
 .detail-count-control .count-up{
     position: absolute;
-    left: 70px;
+    left: 90px;
     top:0;
     border-top:none;
     border-bottom:none;
     border-right:none;
+}
+.detail-count-control .count-down-limit{
+    /* background: #ccc; */
+    color:#ccc
+}
+.mask {
+	position: absolute;
+	display: none;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 200px;
+	background: url('../images/mask-bg.png') repeat;
+	cursor: crosshair;
 }

@@ -123,28 +123,23 @@
                 <div class="region-custom region-detail-gallery">
                     <div class="widget-custom offerdetail_ditto_gallery">
                         <div class="mod mod-detail-gallery">
-                            <div class="tab-pane">
-                                <div class="vertical-img" id="bigpic">
-                                    <a href="" class="box-img jqzoom" rel="gal1" id="imgContainer"
-                                        style="outline-style: none; text-decoration: none;">
-                                        <div class="zoomPad" style="margin-left: 0px; margin-top: 0px;"></div>
+                            <div class="tab-pane" >
+                                <div class="vertical-img" id="bigpic" style="box-sizing: border-box;width:380px;height:380px;position: relative;">
+                                    <a href="" style="outline-style: none; text-decoration: none;">
+                                        <!-- 左边的大图 里面的img-->
+                                        <div class="zoomPad" style="position: relative;overflow: hidden;width: 380px;height: 380px;">
+                                            <!-- 遮罩光标 -->
+                                            <div class="mask"></div>
+                                        </div>
                                         <!-- 放大的图片 -->
                                         <div class="zoomWindow"
-                                            style="position: absolute; z-index: 5001; right: inherit; left: 393px; top: -11px; display: none;">
-                                            <div class="zoomWrapper" style="width: 450px;">
-                                                <div class="zoomWrapperTitle"
-                                                    style="width: 100%; position: absolute; display: none;">
-                                                </div>
-                                                <div class="zoomWrapperImage" style="width: 100%; height: 450px;">
-                                                    <img src="//img005.hc360.cn/k2/M02/C0/1D/wKhQxF4PZs6EYHB8AAAAAHjYw5s098.jpg"
-                                                        style="position: absolute; border: 0px; display: block; left: -102.695px; top: -350px;">
-                                                </div>
-                                            </div>
+                                            style="position: absolute; left: 400px; top: 0px; display: none; width: 450px; height: 450px;overflow: hidden; ">
+                                            <img src="" style="width:200%;height:200%;position:absolute;left: 0;top: 0;">
                                         </div>
                                     </a>
                                 </div>
-                                <i title="图片可放大" class="icon-mag" style="display:inline;"></i>
                             </div>
+                            <!-- 切换小图 -->
                             <div class="tab-content tab-content-4 fn_clear" id="dt-tab">
                                 <div class="tab-content-container">
                                     <ul class="nav nav-tabs fn_clear" id="thumblist">
@@ -191,7 +186,7 @@
                     </div>
                 </div>
                 <div class="leftImgBot  clearfix">
-                    <a rel="nofollow" class="pro-fav" id="spnFavoProd" onclick="addFavoritesTo();">收藏商品</a>
+                    <a rel="nofollow" class="pro-fav" id="spnFavoProd">收藏商品</a>
                     <div class="shareBox">
                         <a href="javascript:void(0)" class="shareLink" id="share">分享</a>
                     </div>
@@ -232,11 +227,13 @@
                                 <tr class="item-cur-tab" id="dj_tr">
                                     <td class=""> 1 </td>
                                     <td class="oriPrice"></td>
-                                    <td id="dj_td" rowspan="2">
+                                    <td id="dj_td" rowspan="1">
+                                        <!-- 数量加减操作 -->
                                         <div class="detail-count-control">
                                             <span class="count-container">
-                                                <input type="text" class="count-input" value="1" /><a href="javascript:void(0)" class="count-up">+</a>
-                                                <a href="javascript:void(0)" class="count-down count-down-limit">-</a>
+                                                <input type="text" class="count-input" value="1" />
+                                                <a href="javascript:void(0)" class="count-up">+</a>
+                                                <a href="javascript:void(0)" class="count-down">-</a>
                                             </span>
                                         </div>
                                     </td>

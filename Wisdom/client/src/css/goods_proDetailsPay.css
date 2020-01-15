@@ -589,18 +589,11 @@ span.imgRigArrow {
     z-index: 500;
 }
 
-.mod-detail-gallery {
-    position: relative;
-}
-
-.mod-detail-gallery .content {
-    margin-bottom: 0px;
-}
 
 .mod-detail-gallery .tab-pane {
     height: 380px;
     margin: 0;
-    position: relative;
+    /* position: relative; */
     width: 380px;
 }
 
@@ -608,7 +601,20 @@ span.imgRigArrow {
     background: #fff;
     height: 380px;
     width: 380px;
+    /* position: relative; */
 }
+/*图片遮罩层的样式*/
+.mask {
+    width: 200px;
+    height: 200px;
+    background: orangered;
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
 
 .vertical-img {
     display: table;
@@ -624,10 +630,7 @@ span.imgRigArrow {
     text-align: center;
 }
 
-.mod-detail-gallery .tab-pane .zoom-mask {
-    background: url("//img.china.alibaba.com/cms/upload/detail/2012/bg-mask.png") repeat;
-    position: absolute;
-}
+
 
 .mod-detail-gallery .tab-content {
     padding: 10px 0 12px 0;
