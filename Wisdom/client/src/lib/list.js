@@ -52,4 +52,5 @@ $(() => {
         // console.log(id);
         window.location.href = "./goods.html?" + id;
     })
+
 })

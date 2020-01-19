@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+<script>
+// let hotinf = $(".joinlist").find(".wordlist");
+// let boxs = $(".wordlist").find("ul");
+// let lis = $(".wordlist ul").find("li:not(.til)");
+// let app = $(".wordlist ul li:not(.til)").find("a:not(.atab)");
+// console.log(app);
+
+// let arr = [];
+// boxs.each(function(){
+//     let o = {};
+//     o.title = $(this).find(".til").text();
+//     // o.cons = $(this).find("li:not(.til)").text();
+//     let self = $(this);
+//     lis.each(function(){
+//         o.con_name = self.find("a:first").text();
+//         o.cons = self.find("a:not(:eq(1))").text();
+//         app.each(function(){
+//         })
+//     })
+//     arr.push(o);
+// })
+// // console.log(arr);
+// JSON.stringify(arr);
+
+let floorl = $(".pub-main").find(".pub-main-left");
+// console.log(floorl);
+let l_title = $(".pub-main").find(".pub-title").text();
+// console.log(l_title);
+$(".right-con-warp").find(".f_listpic img");
+let l_img = $(".right-con-warp").find(".f_listpic");
+// let r_con = $(".pub-main-right").find("")
+let arr = [];
+// let self = $(this);
+floorl.each(function(){
+    let o = {};
+    o.l_title = $.trim($(this).find(".pub-title").text());
+    // left.src = $(this).find(".right-con-warp .f_listpic img").attr("src");
+    o.bigsrc = $(this).find(".pub-hot-pro img").attr("src");
+    l_img.each(function(){
+        o.smalsrc = $(this).find(".f_listpic img").attr("src");
+    })
+    // o.r_title = $(this).find(".pub-con-right-t").text();
+    // o.r_title = $(this).find(".pub-con-right-t").text();
+    // r_con = self.find("")
+    arr.push(o);
+})
+console.log(arr);
+
+</script>
+</html>

@@ -1,4 +1,15 @@
-/*主页logo的轮播图 strat*/
+
+/*主页logo的轮播图*/
+$.ajax({
+  type: "get",
+  url: "./server/swipeData01.php",
+  dataType: "json",
+  success: function (data) {
+      // console.log(data);
+      (new Swipe(data)).init();
+  }
+});
+
 class Swipe {
     constructor(data) {
       this.data = data;
@@ -20,7 +31,7 @@ class Swipe {
       this.root = document.createElement("div");
       this.root.classList.add("mad-bx");
       let tpl1 = this.data.map((ele, index) => {
-        return `<a href="###">
+        return `<a href="client/src/html/list.html">
         <img id="picitem0" src="${ele}">
       </a>`
       }).join("");

@@ -763,60 +763,67 @@ body {
     border: 1px solid #efd4b2;
     border-top: none;
 }
-.detail-count-control{
+
+.detail-count-control {
     border: 1px solid #ccc;
-    width:120px;
+    width: 120px;
     height: 30px;
     margin-left: 90px;
     position: relative;
     /* text-align: center; */
 }
 
-.detail-count-control .count-input{
+.detail-count-control .count-input {
     width: 30%;
     height: 100%;
     text-align: center;
     font-size: 8px;
 }
-.detail-count-control a{
+
+.detail-count-control a {
     border: 1px solid #ccc;
-    width:30px;
+    width: 30px;
     line-height: 30px;
     height: 30px;
     font-size: 20px;
-    color:#272727;
+    color: #272727;
 }
-#buyNumber{
+
+#buyNumber {
     border: none;
-    
+
 }
-.detail-count-control .count-down{
+
+.detail-count-control .count-down {
     position: absolute;
     left: 0;
-    top:0;
-    border-left:none;
-    border-top:none;
-    border-bottom:none;
+    top: 0;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
 }
-.detail-count-control .count-up{
+
+.detail-count-control .count-up {
     position: absolute;
     left: 90px;
-    top:0;
-    border-top:none;
-    border-bottom:none;
-    border-right:none;
+    top: 0;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
 }
-.detail-count-control .count-down-limit{
+
+.detail-count-control .count-down-limit {
     /* background: #ccc; */
-    color:#ccc
+    color: #ccc
 }
+
 .mask {
-	position: absolute;
-	display: none;
-	left: 0;
-	top: 0;
-	width: 200px;
-	height: 200px;
-	background: url('../images/mask-bg.png') repeat;
-	cursor: crosshair;
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    background: url('../images/mask-bg.png') repeat;
+    cursor: crosshair;
 }

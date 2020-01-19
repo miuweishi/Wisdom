@@ -537,7 +537,7 @@ font{font-size:12px;color:#fff;}
 
 .tablist ul.tabli li a:hover{text-decoration:none;}
 
-.tablist .tabcont{padding:10px;min-height:35px;height:56px;}
+.tablist .tabcont{height:56px;}
 
 .tablist .linkwrap span{margin:0 5px;}
 

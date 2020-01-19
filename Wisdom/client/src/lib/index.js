@@ -19,64 +19,39 @@
 // }
 
 
-
-  /*登录后将username存入cookie，在主页获取cookie值渲染到顶部的登录名字*/
-  // if(Cookie.getItem("uesename").length != 0){
-  //   $(".userName").text(username + "欢迎来到慧聪！")
-  // }else{
-  //   $(".userName").text("HI，欢迎来到慧聪！")
-  // }
-
-$(()=>{
+$(() => {
   /*轮播图右边的买卖家滑块切换*/
   $(".bull-btn").click(function () {
     $(this).addClass("btn-current").siblings().removeClass("btn-current");
     $(".btll-btn-con").eq($(this).index()).addClass("btll-btn-current").siblings().removeClass("btll-btn-current");
-  })
+  });
+
+  /*点击所有的a标签链接到列表页*/
+  $("a").not(".login").not(".reg").not(".shopCart").attr("href", "client/src/html/list.html");
+
+  /*点击购物车实现跳转*/
+  // $(".shopCart").click(function () {
+  //   // console.log(Cookie.getItem("username"));
+  //   if (Cookie.getItem("username")) {
+  //     window.location.href = "client/src/html/cart.html"
+  //   } else {
+  //     window.location.href = "client/src/html/login.html"
+  //   }
+  // })
+
+  // /*登录后将username存入cookie，在主页获取cookie值渲染到顶部的登录名字*/
+  // let name = Cookie.getItem("username");
+  // // console.log(name);
+  // function updateStatus() {
+  //   if (name) {
+  //     //登陆的 
+  //     $(".userName").html(name + "欢迎来到慧聪");
+  //     $(".login").text("退出");
+  //   } else {
+  //     //登出的
+  //     $(".userName").html("HI, 欢迎来到慧聪")
+  //     $(".login").text("登录")
+  //   }
+  // }
+  // updateStatus();
 })
-
-
-
-
-  /*数据渲染（1F~6F楼层）*/
-  class Floor {
-    constructor(data) {
-      this.data = data;
-      this.root = null;
-    }
-    init() {
-      this.renderUI();
-    }
-    renderUI() {
-      this.root = document.createElement("div")
-      this.root.classList.add("pub-main-left");
-      // let tpl = this.data.
-      let html = this.data.map((ele) =>{
-        return `<div class="left-con-warp">
-                      <h2 class="pub-title">${ele.title}</h2>
-                      <div class="left-con">
-                          <div class="pub-hot-pro">
-                              <img src=${ele.bigpic} alt="">
-                          </div>
-                      </div>
-                  </div>
-                  <div class="right-con-warp">
-                      <div class="pub-main-nav">
-                      <ul>
-                          <li><a href="###">涂料</a></li>
-                          <li><a href="###">塑料</a></li>
-                          <li><a href="###">化工</a></li>
-                      </ul>
-                  </div>
-                  <div class="pub-main-con">
-                          <ul class="f_listpic">
-                              <li>
-                                  <div class="picbox"><a href=""><img alt="润滑脂" src="" /></a> </div>
-                              </li>
-                          </ul>
-                  </div>`
-       }).join("");
-      this.root.innerHTML = html;
-      $(".pub-main").append(this.root);
-    }
-  }

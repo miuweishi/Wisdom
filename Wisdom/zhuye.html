@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./client/src/css/topper.css">
     <link rel="stylesheet" href="./client/src/css/footer.css">
     <script src="./client/src/lib/jquery-3.4.1.js"></script>
+    <script src="client/src/lib/Cookie.js"></script>
     <script src="./client/src/lib/index.js"></script>
     <script src="./client/src/lib/swipe.js"></script>
 </head>
@@ -27,12 +28,51 @@
 <body>
     <div id="Wisdom">
         <!-- topper顶部菜单栏 -->
-        <div class="toolbarBox" id="TopBar"></div>
-        <script>
-            $(() => {
-                $('#TopBar').load('./client/src/html/topper.html');
-            })
-        </script>
+        <div class="toolbarBox" id="TopBar">
+            <div class="toolbarCon">
+                <div class="toolbarLeft">
+                    <div class="login-status" style="display: block;">
+                        <p class="userName">Hi，欢迎来到慧聪</p><a href="client/src/html/login.html" class="login">登录</a>
+                        <div class="topReg"><a href="client/src/html/reg.html" class="reg">免费注册</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbarRig">
+                    <ul>
+                        <li>
+                            <div class="navTitle"><a href="javascript:void(0);">我的慧聪</a></div>
+                            <div class="navCon2019 w225"><em></em>
+                                <dl>
+                                    <dd>
+                                        <h3>我是买家</h3><a href="">进入采购通</a><a href="">已买到的产品</a><a href="">发布采购计划</a><a
+                                            href="">供应商管理</a><a href="">我的留言</a>
+                                    </dd>
+                                    <dd>
+                                        <h3>我是卖家</h3><a href="">进入买卖通</a><a href="">已卖出的产品</a><a href="">批量发布产品</a><a
+                                            href="">管理炫铺</a><a href="">我的留言</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="purchaselist"><a href="###" class="shopCart">采购单<span>0</span></a></div>
+                        </li>
+                        <li>
+                            <div class="navTitle"><a href="">产品服务</a></div>
+                        </li>
+                        <li>
+                            <div class="navTitle"><a href="">客服中心</a></div>
+                        </li>
+                        <li>
+                            <div class="navTitle"><a href="">网站导航</a></div>
+                        </li>
+                        <li>
+                            <div class="navTitle"><a href="javascript:void(0);">掌上慧聪</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!-- head头部内容 -->
         <div class="heads" id="header"></div>
         <script>
@@ -40,7 +80,7 @@
                 $('#header').load('./client/src/html/head.html');
             })
         </script>
-        <!--*********************************导航条****************************-->
+        <!--*********导航条*******************-->
         <div class="navs">
             <div class="subnav">
                 <div class="subnav-left">
@@ -57,7 +97,6 @@
                 </div>
             </div>
         </div>
-        <!--*********************************导航条****************************-->
         <div class="maincont">
             <div class="maincont-one">
                 <div class="maincont-one-left">
@@ -1012,11 +1051,9 @@
                             <p><a href="###">我是采购商，我要申办采购会</a></p>
                         </div>
                         <div class="btll-btn-con">
-                            <div class="btn-wrap"><button class="reg"
-                                    >免费注册</button>
+                            <div class="btn-wrap"><button class="reg">免费注册</button>
                             </div>
-                            <div class="btn-wrap"><button class="buy"
-                                   >发布供应</button>
+                            <div class="btn-wrap"><button class="buy">发布供应</button>
                             </div>
                             <p>今日采购<span>7</span>场采购洽谈会正在征集供应商<span>51900</span>万元采购大单等待竞标。</p>
                             <p><a href="###">我是供应商，我要报名</a></p>
@@ -1047,21 +1084,23 @@
                 </div>
                 <div class="wordlist">
                     <ul>
-                        <li class="til"><a href="https://www.hc360.com/hots/900096273.html">机械</a></li>
-                        <li><strong><a href="https://www.hc360.com/hots/900059290.html">阀门</a></strong><a
-                                href="https://www.hc360.com/hots-mhf/900156441.html">球阀</a><a
-                                href="https://www.hc360.com/hots/900053540.html">蝶阀</a><a
-                                href="https://www.hc360.com/hots/900047778.html">电磁阀</a><a
-                                href="https://www.hc360.com/hots/900053201.html">调节阀</a></li>
-                        <li><strong><a href="https://www.hc360.com/hots/900051201.html">电容器</a></strong><a
-                                href="https://www.hc360.com/hots/900055494.html">独石电容器</a><a
-                                href="https://www.hc360.com/hots/900045995.html">低压电容器</a><a
-                                href="https://www.hc360.com/hots-0uh/902575025.html">云母电容器</a></li>
-                        <li><strong><a href="https://www.hc360.com/hots/900095752.html">机床</a></strong><a
-                                href="https://www.hc360.com/hots-mhf/900176239.html">数控机床</a><a
-                                href="https://www.hc360.com/hots-mhf/900135925.html">木工机床</a><a
-                                href="https://www.hc360.com/hots/900056296.html">锻压机床</a><a
-                                href="https://www.hc360.com/hots/900035995.html">冲压机床</a></li>
+                        <li class="til">
+                            <a href="">机械</a>
+                        </li>
+                        <li>
+                            <strong>
+                                <a href="" class="atab">阀门</a>
+                            </strong>
+                            <a href="">球阀</a><a href="">蝶阀</a><a href="">电磁阀</a><a href="">调节阀</a></li>
+                        <li>
+                            <strong>
+                                <a href="">电容器</a>
+                            </strong>
+                            <a href="">独石电容器</a><a href="">低压电容器</a><a href="">云母电容器</a></li>
+                        <li>
+                            <strong>
+                                <a href="">机床</a></strong>
+                            <a href="">数控机床</a><a href="">木工机床</a><a href="">锻压机床</a><a href="">冲压机床</a></li>
                     </ul>
                     <ul class="bottompd">
                         <li class="til"><a href="https://www.hc360.com/hots/900103269.html">建材、工程建筑</a></li>
@@ -1190,172 +1229,47 @@
             </div>
             <!--================1F机械机电专区==============-->
             <div class="pub-main">
-                <!-- <div class="pub-main-left">
+                <div class="pub-main-left">
                     <div class="left-con-warp">
                         <h2 class="pub-title">1F化工专区</h2>
                         <div class="left-con">
                             <div class="pub-hot-pro">
-                                <img src="//image.hc360.com/b2b/supermarket/images/floorpic01.jpg" alt="">
+                                <img src="" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="right-con-warp">
                         <div class="pub-main-nav">
                             <ul>
-                                <li><a href="https://www.hc360.com/hots-mhf/900195559.html"
-                                        class="pub-main-nav-cur">涂料</a></li>
-                                <li><a href="https://www.hc360.com/hots-mhf/900182905.html">塑料</a></li>
-                                <li><a href="https://www.hc360.com/hots/900091399.html">化工</a></li>
+                                <li><a href="" class="pub-main-nav-cur">涂料</a></li>
+                                <li><a href="">塑料</a></li>
+                                <li><a href="">化工</a></li>
                             </ul>
                         </div>
                         <div class="pub-main-con">
                             <ul class="f_listpic">
                                 <li>
-                                    <div class="picbox"><a href="https://www.hc360.com/hots-mhf/900161973.html"><img
-                                                alt="润滑脂"
-                                                src="//image.hc360.com/b2b/supermarket/images/pub-img01.jpg" /></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="picbox"><a href="https://www.hc360.com/hots/900111083.html"><img
-                                                alt="净味乳胶漆"
-                                                src="//image.hc360.com/b2b/supermarket/images/pub-img02.jpg" /></a>
-                                    </div>
-                                </li>
-                                <li class="last">
-                                    <div class="picbox"><a href="https://www.hc360.com/hots-taj/900235116.html"><img
-                                                alt="华喆真石漆"
-                                                src="//image.hc360.com/b2b/supermarket/images/pub-img03.jpg" /></a>
-                                    </div>
+                                    <div class="picbox"><a href=""><img alt="" src="" /></a></div>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </div> -->
-                <div class="pub-main-right">
-
-                    <h3 class="pub-con-right-t">优质化工供应信息</h3>
-
-                    <ul class="pub-con-right-c">
-
-                        <li>
-
-                            <dl class="pub-list">
-
-                                <dt><a href="http://b2b.hc360.com/supplyself/239760079.html"
-                                        title="瑞斯达涂料助剂RU-7520增稠剂">瑞斯达涂料助剂RU-7520增稠剂</a></dt>
-
-                                <dd class="moy">￥40</dd>
-
-                            </dl>
-
-                        </li>
-
-                        <li>
-
-                            <dl class="pub-list">
-
-                                <dt><a href="http://b2b.hc360.com/supplyself/250531571.html"
-                                        title="真石漆 丽特彩虹天然真石漆，外墙真石漆 另有氟碳漆，乳胶漆">真石漆 丽特彩虹天然真石漆，外墙真石漆 另有氟碳漆，乳胶漆</a></dt>
-
-                                <dd class="moy">￥80</dd>
-
-                            </dl>
-
-                        </li>
-
-                        <li>
-
-                            <dl class="pub-list">
-
-                                <dt><a href="http://b2b.hc360.com/supplyself/223393685.html"
-                                        title="供应PU固化剂740">供应PU固化剂740</a>
-                                </dt>
-
-                                <dd class="moy">￥14</dd>
-
-                            </dl>
-
-                        </li>
-
-                        <li>
-
-                            <dl class="pub-list">
-
-                                <dt><a href="http://b2b.hc360.com/supplyself/397387964.html"
-                                        title="攀枝花钛白粉、添光钛白粉、攀钢钛白粉、涂料专用型钛白粉、油墨专用型钛白粉、塑料专用型钛白粉">攀枝花钛白粉、添光钛白粉、攀钢钛白粉、涂料专用型钛白粉、油墨专用型钛白粉、塑料专用型钛白粉</a>
-                                </dt>
-
-                                <dd class="moy">￥13</dd>
-
-                            </dl>
-
-                        </li>
-
-                        <li>
-
-                            <dl class="pub-list">
-
-                                <dt><a href="http://b2b.hc360.com/supplyself/51940356.html" title="供硅丙乳液">供硅丙乳液</a></dt>
-
-                                <dd class="moy">￥9000</dd>
-
-                            </dl>
-
-                        </li>
-
-                        <li>
-
-                            <dl class="pub-list">
-
-                                <dt><a href="http://b2b.hc360.com/supplyself/246416050.html"
-                                        title="新科技S-910Q消泡剂抑泡久 污水处理 纺织印染">新科技S-910Q消泡剂抑泡久 污水处理 纺织印染</a></dt>
-
-                                <dd class="moy">￥10</dd>
-
-                            </dl>
-
-                        </li>
-
-                        <li>
-
-                            <dl class="pub-list">
-
-                                <dt><a href="http://b2b.hc360.com/supplyself/226712013.html"
-                                        title="供应草酸 硫酸铵 醋酸乙酯 醋酸丁酯 台湾NP-8.6 01">供应草酸 硫酸铵 醋酸乙酯 醋酸丁酯 台湾NP-8.6 01</a></dt>
-
-                                <dd class="moy">电话议价</dd>
-
-                            </dl>
-
-                        </li>
-
-                        <li>
-
-                            <dl class="pub-list last">
-
-                                <dt><a href="http://b2b.hc360.com/supplyself/188987821.html"
-                                        title="氢氧化铝 活性氢氧化铝 质量保障 价格优惠">氢氧化铝
-                                        活性氢氧化铝 质量保障 价格优惠</a></dt>
-
-                                <dd class="moy">￥2800</dd>
-
-                            </dl>
-
-                        </li>
-
-                    </ul>
-
                 </div>
-
+                <div class="pub-main-right">
+                    <h3 class="pub-con-right-t">优质化工供应信息</h3>
+                    <ul class="pub-con-right-c">
+                        <li>
+                            <dl class="pub-list">
+                                <dt><a href="" title="">瑞斯达涂料助剂RU-7520增稠剂</a></dt>
+                                <dd class="moy">￥40</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-
-
-            <!--==================================================1F机械机电专区========================================================-->
-
+            <!--==================================================1F机械机电专区end======================================================-->
+            
             <!--==================================================2F信息产业专区========================================================-->
-
             <div class="pub-main">
 
                 <div class="pub-main-left">
@@ -2055,403 +1969,182 @@
 
                                 <dt><a href="http://b2b.hc360.com/supplyself/391938860.html"
                                         title="供应汇百川HBC-GL金属玻璃平光油墨，低温固化，耐酒精，耐磨">供应汇百川HBC-GL金属玻璃平光油墨，低温固化，耐酒精，耐磨</a></dt>
-
                                 <dd class="moy">￥90</dd>
-
                             </dl>
-
                         </li>
-
                         <li>
-
                             <dl class="pub-list">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/177981034.html"
                                         title="供应图锐TR600-II热敏CTP制版机">供应图锐TR600-II热敏CTP制版机</a></dt>
-
                                 <dd class="moy">￥10</dd>
-
                             </dl>
-
                         </li>
-
                         <li>
-
                             <dl class="pub-list">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/343581508.html"
                                         title="刮墨刀 飞马刮胶 吉美刮胶 优力刮胶 飞马刮刀 丝印胶条 铝柄 回墨刀 网框 刮刀 刀条 刮胶板 太阳能印刷专用刮胶">刮墨刀 飞马刮胶 吉美刮胶
                                         优力刮胶
                                         飞马刮刀 丝印胶条 铝柄 回墨刀 网框 刮刀 刀条 刮胶板 太阳能印刷专用刮胶</a></dt>
-
                                 <dd class="moy">￥60</dd>
-
                             </dl>
-
                         </li>
-
                         <li>
-
                             <dl class="pub-list">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/369294616.html"
                                         title="应广楹GY-LWE高精密拉网机电动拉网机 绷网机">应广楹GY-LWE高精密拉网机电动拉网机 绷网机</a></dt>
-
                                 <dd class="moy">￥100</dd>
-
                             </dl>
-
                         </li>
-
                         <li>
-
                             <dl class="pub-list">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/105055344.html"
                                         title="供应HX-A1手动大幅度烫画机">供应HX-A1手动大幅度烫画机</a></dt>
-
                                 <dd class="moy">￥2000</dd>
-
                             </dl>
-
                         </li>
-
                         <li>
-
                             <dl class="pub-list">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/195207977.html"
                                         title="供应鼎和 DH-218 水墨助剂 水性聚氨酯增稠剂">供应鼎和 DH-218 水墨助剂 水性聚氨酯增稠剂</a></dt>
-
                                 <dd class="moy">￥48</dd>
-
                             </dl>
-
                         </li>
-
                         <li>
-
                             <dl class="pub-list last">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/411582401.html"
                                         title="供应（Strong） STP-I热敏UVCTP印刷版材">供应（Strong） STP-I热敏UVCTP印刷版材</a></dt>
-
                                 <dd class="moy">￥28</dd>
-
                             </dl>
-
                         </li>
-
                     </ul>
-
                 </div>
-
             </div>
+            <!--===========5F服装纺织专区============-->
 
-
-
-            <!--==================================================5F服装纺织专区========================================================-->
-
-            <!--==================================================6F家居用品专区========================================================-->
-
+            <!--=================6F家居用品专区====================-->
             <div class="pub-main">
-
                 <div class="pub-main-left">
-
                     <div class="left-con-warp">
-
                         <h2 class="pub-title">6F净水专区</h2>
-
                         <div class="left-con">
-
                             <div class="pub-hot-pro">
-
                                 <img src="//image.hc360.com/b2b/supermarket/images/floorpic06.jpg" alt="">
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="right-con-warp">
-
                         <div class="pub-main-nav">
-
                             <ul>
-
                                 <li><a href="https://www.hc360.com/hots/900110984.html" class="pub-main-nav-cur">净水器</a>
                                 </li>
-
                                 <li><a href="https://www.hc360.com/hots-pr8/900241479.html">中央软水</a></li>
-
                                 <li><a href="https://www.hc360.com/hots-mhf/900144333.html">配件</a></li>
-
                             </ul>
-
                         </div>
-
                         <div class="pub-main-con">
-
                             <ul class="f_listpic">
-
                                 <li>
-
                                     <div class="picbox"><a href="https://www.hc360.com/hots-pr8/900241480.html"><img
                                                 alt="中央软水机"
                                                 src="//image.hc360.com/b2b/supermarket/images/pub-img16.jpg" /></a>
                                     </div>
-
                                 </li>
-
                                 <li>
-
                                     <div class="picbox"><a href="https://www.hc360.com/hots/900036758.html"><img
                                                 alt="厨房净水器"
                                                 src="//image.hc360.com/b2b/supermarket/images/pub-img17.jpg" /></a>
                                     </div>
-
                                 </li>
-
                                 <li class="last">
-
                                     <div class="picbox"><a href="https://www.hc360.com/hots/900029749.html"><img
                                                 alt="茶吧机"
                                                 src="//image.hc360.com/b2b/supermarket/images/pub-img18.jpg" /></a>
                                     </div>
-
                                 </li>
-
                             </ul>
-
                         </div>
-
                     </div>
-
                 </div>
-
                 <div class="pub-main-right">
-
                     <h3 class="pub-con-right-t">优质印刷供应信息</h3>
-
                     <ul class="pub-con-right-c">
-
                         <li>
-
                             <dl class="pub-list">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/245752675.html"
                                         title="浩泽JZY-A2B3-S1厨上式 商用直饮水机 厨房净水器 净水机 浩泽净水">浩泽JZY-A2B3-S1厨上式 商用直饮水机 厨房净水器 净水机
                                         浩泽净水</a></dt>
 
                                 <dd class="moy">￥4180</dd>
-
                             </dl>
-
                         </li>
-
                         <li>
-
                             <dl class="pub-list">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/156646022.html"
                                         title="金利源JX-07A超滤不锈钢净水器|厨房净水机">金利源JX-07A超滤不锈钢净水器|厨房净水机</a></dt>
-
                                 <dd class="moy">￥6500</dd>
-
                             </dl>
-
                         </li>
-
                         <li>
-
                             <dl class="pub-list">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/368809193.html"
                                         title="晶达牌240壁挂机台式管线机">晶达牌240壁挂机台式管线机</a></dt>
-
                                 <dd class="moy">￥700</dd>
-
                             </dl>
-
                         </li>
-
                         <li>
-
                             <dl class="pub-list">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/248967918.html"
                                         title="碧丽JO-3Q饮水机、直饮机">碧丽JO-3Q饮水机、直饮机</a></dt>
-
                                 <dd class="moy">￥--</dd>
-
                             </dl>
-
                         </li>
-
                         <li>
-
                             <dl class="pub-list">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/245767461.html"
                                         title="浩泽 A1XB2-1浩泽反渗透直饮机立式">浩泽
                                         A1XB2-1浩泽反渗透直饮机立式</a></dt>
-
                                 <dd class="moy">￥3500</dd>
-
                             </dl>
-
                         </li>
-
                         <li>
-
                             <dl class="pub-list">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/241112012.html"
                                         title="善之泉龙头净水器SZQ-LT-A670S善之泉广东水处理设备">善之泉龙头净水器SZQ-LT-A670S善之泉广东水处理设备</a></dt>
 
                                 <dd class="moy">￥1680</dd>
-
                             </dl>
-
                         </li>
-
                         <li>
-
                             <dl class="pub-list">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/248793848.html"
                                         title="瑞和源水龙头净水器厂家家用直饮OEM贴牌代工">瑞和源水龙头净水器厂家家用直饮OEM贴牌代工</a></dt>
-
                                 <dd class="moy">￥42</dd>
-
                             </dl>
-
                         </li>
-
                         <li>
-
                             <dl class="pub-list last">
-
                                 <dt><a href="http://b2b.hc360.com/supplyself/267642082.html"
                                         title="净碧泉深圳龙头净水器 厨房净水 净水器代工 OEM 家用净水器">净碧泉深圳龙头净水器 厨房净水 净水器代工 OEM 家用净水器</a></dt>
-
                                 <dd class="moy">￥69</dd>
-
                             </dl>
-
                         </li>
-
                     </ul>
-
                 </div>
-
             </div>
-
-
-
-            <!--==================================================6F家居用品专区========================================================-->
-
-
-
-            <!--=================================================友情链接区=========================================================-->
-
+            <!--=============6F家居用品专区=====================-->
+            <!--===============友情链==================-->
             <div class="tablist">
-
                 <div class="tabox">
-
-                    <!-- <span><a href="#">更多&gt;&gt;</a></span> -->
-
+                    <span><a href="#">更多&gt;&gt;</a></span>
                     <ul class="tabli">
-
                         <li class="current"><a href="#">友情链接</a></li>
-
-                        <!-- <li><a href="#">快消品微门户</a></li>
-
-					<li><a href="#">工业品微门户</a></li>
-
-					<li><a href="#">精选微门户</a></li>
-
-					<li><a href="#">热门微门户</a></li> -->
-
                     </ul>
-
                 </div>
-
                 <div class="tabcont">
-                    <div class="linkwrap">
-                        <a href="http://www.hc360.com/hots/900036891.html" target="_blank">厨具</a><span>|
-                        </span><a href="http://www.hc360.com/hots/900085663.html" target="_blank">行车记录仪</a><span>|
-                        </span><a href="http://www.hc360.com/hots/900058781.html" target="_blank">发电机</a><span>|
-                        </span><a href="http://www.hc360.com/hots/900055748.html" target="_blank">镀锌板</a><span>|
-                        </span><a href="http://www.hc360.com/hots/900077268.html" target="_blank">工程塑料</a><span>|
-                        </span><a href="http://www.hc360.com/hots/900020326.html" target="_blank">保险杠</a><span>|
-                        </span><a href="http://www.boqii.com/" target="_blank">波奇宠物网</a><span>|
-                        </span><a target="_blank" href="http://www.youbian.com/">邮编生活网</a><span>|
-                        </span><a target="_blank" href="http://www.hbzhan.com">中国环保在线</a><span>|
-                        </span><a target="_blank" href="http://www.9998.tv/">白酒招商</a><span>|
-                        </span><a target="_blank" href="http://qd8.com.cn/">分类信息网</a><span>|
-                        </span><a target="_blank" href="http://info.b2b168.com/">八方供应商机</a><span>|
-                        </span><a target="_blank" href="http://www.dzsc.com/">电子元器件采购网</a><span>|
-                        </span><a target="_blank" href="http://www.chinawj.com.cn">五金商机网</a><span>|
-                        </span><a target="_blank" href="http://b2b.huangye88.com/">中国企业名录</a><span>|
-                        </span><a target="_blank" href="http://www.eastsoo.com/">东方供应商</a><span>|
-                        </span><a target="_blank" href="http://www.17house.com/">家装</a><span>|
-                        </span><a target="_blank" href="http://www.chinapp.com/">中国品牌网</a><span>|
-                        </span><a target="_blank" href="http://product.58che.com/">汽车报价</a><span>|
-                        </span><a target="_blank" href="http://www.skxox.com/">云同盟</a><span>|
-                        </span><a target="_blank" href="http://www.qianlima.com/">千里马招标网</a><span>|
-                        </span><a target="_blank" href="http://www.zjtcn.com/">工程造价</a><span>|
-                        </span><a target="_blank" href="http://beijing.liebiao.com/">北京分类信息</a><span>|</span>
-                        <a target="_blank" href="http://www.ctoy.com.cn/">中外玩具网</a><span>|</span>
-                        <a target="_blank" href="http://www.zgsydw.com/">事业单位招聘网</a><span>|</span>
-                        <a target="_blank" href="http://www.xianjichina.com/">企业服务平台</a><span>|</span>
-                        <a target="_blank" href="http://www.qj.com.cn/">加盟网</a><span>|</span>
-                        <a target="_blank" href="http://www.ailete.com/">乐泰</a><span>|</span>
-                        <a target="_blank" href="http://china.findlaw.cn/shuofa/">法律咨询</a><span>|</span>
-                        <a target="_blank" href="http://www.jihaoba.com/">手机靓号</a><span>|</span>
-                        <a target="_blank" href="http://www.jianzhi8.com/">大学生兼职</a><span>|</span>
-                        <a target="_blank" href="http://www.zbird.com/">钻石小鸟</a><span>|</span>
-                        <a target="_blank" href="http://www.instrument.com.cn/">仪器信息网</a><span>|</span>
-                        <a target="_blank" href="http://www.91jm.com/">加盟连锁网</a><span>|</span>
-                        <a target="_blank" href="http://chengdu.anjuke.com/">成都房产网</a><span>|</span>
-                        <a target="_blank" href="http://www.912688.com/">搜好货网</a><span>|</span>
-                        <a target="_blank" href="http://www.shushi100.com/ask/">舒适100问答</a>
-                    </div>
+                    <img src="client/src/img/footlink.png" alt="">
                 </div>
             </div>
-            <!-- <script>
-        $(function () {
-            $(".tabli li").hover(function () {
-                var index = $(this).index();
-                $(this).addClass("current").siblings().removeClass("current")
-                $(".tabcont").hide();
-                $(".tabcont").eq(index).show();
-            });
-            $(".subnav-menu-list li").hover(function () {
-                $(this).addClass("cur").find("div.nav-list-con").show();
-            }, function () {
-                $(this).removeClass("cur").find("div.nav-list-con").hide();
-            });
-
-            $(".register-btn button").click(function () {
-                $(this).addClass("btn-current").siblings().removeClass("btn-current")
-                var index = $(this).index();
-                $(".btll-btn-con ").hide();
-                $(".btll-btn-con ").eq(index).show()
-            })
-            $(".header_head ul li").hover(function () {
-                $(this).find("ul").show()
-            }, function () {
-                $(this).find("ul").hide()
-            })
-        })
-    </script> -->
-            <!-- <script src="https://style.org.hc360.cn/js/build/source/core/hc.control.js"></script> -->
-
-
         </div>
-
         <!-- 公共尾部 start -->
         <div id="footerBox" class="footerBox"></div>
         <script>
@@ -2462,26 +2155,14 @@
     </div>
 </body>
 <script>
-    
     window.onload = () => {
-        /*主页logo的轮播图*/
-        $.ajax({
-            type: "get",
-            url: "./server/swipeData01.php",
-            dataType: "json",
-            success: function (data) {
-                // console.log(data);
-                (new Swipe(data)).init();
-            }
-        });
-
         /*楼层的图片数据发送请求*/
         $.ajax({
             type: "get",
             url: "./server/floorData02.php",
             success: function (data) {
                 // console.log(data);
-                (new Floor(data)).init();
+                // (new Floor(data)).init();
             }
         });
     }

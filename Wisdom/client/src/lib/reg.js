@@ -89,14 +89,14 @@ $(() => {
 
     //点击按钮注册
     $("#btnNextStep").click(function () {
-         /* 001-检查用户是否输入了正确的信息并且通过验证，如果没有通过那么就返回 */
+        /* 001-检查用户是否输入了正确的信息并且通过验证，如果没有通过那么就返回 */
         $("#userName,#mobile,#password,#repassword,#captcha").trigger("blur");
         if ($(".borRed").length != 0) {
             return;
         }
-        
-         /* 002-检查用户是否勾选了用户协议*/
-        if (!$("#severTerms").is(":checked")){
+
+        /* 002-检查用户是否勾选了用户协议*/
+        if (!$("#severTerms").is(":checked")) {
             alert("请阅读并同意用户协议！");
             return;
         }
@@ -111,13 +111,13 @@ $(() => {
             url: "../../../server/reg.php",
             data: data,
             success: function (response) {
-                 console.log(response);
+                console.log(response);
                 /* 如果注册成功，那么就先提示用户然后再跳转 */
-                if (response.status == "success") {
-                    alert("yes");
+                if (response == "yes") {
+                    alert("恭喜你，注册成功！");
                     window.location.href = "./login.html";
                 } else {
-                    alert("no");
+                    alert("抱歉，该用户名已经被注册，请重新选择一个更优秀的名字！！");
                 }
             }
         });
