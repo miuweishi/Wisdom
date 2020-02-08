@@ -1,61 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-   
+
 </body>
 <script>
-// let hotinf = $(".joinlist").find(".wordlist");
-// let boxs = $(".wordlist").find("ul");
-// let lis = $(".wordlist ul").find("li:not(.til)");
-// let app = $(".wordlist ul li:not(.til)").find("a:not(.atab)");
-// console.log(app);
+    //       var box = document.getElementsByClassName("proListLeft")[0];
+    //      var lis = box.getElementsByTagName("li");
+    //      var data = [];
+    //      for (var i = 0; i < 22; i++) {
+    //          var Img = box.getElementsByClassName("proImg")[0];
 
-// let arr = [];
-// boxs.each(function(){
-//     let o = {};
-//     o.title = $(this).find(".til").text();
-//     // o.cons = $(this).find("li:not(.til)").text();
-//     let self = $(this);
-//     lis.each(function(){
-//         o.con_name = self.find("a:first").text();
-//         o.cons = self.find("a:not(:eq(1))").text();
-//         app.each(function(){
-//         })
-//     })
-//     arr.push(o);
-// })
-// // console.log(arr);
-// JSON.stringify(arr);
+    //          var urls = Img.getElementsByTagName("img")[0];
+    //          // var price = lis[i].getElementsByClassName("seaNewPrice")[0];
+    //          // var decs = lis[i].getElementsByClassName("newName")[0];
+    //          // var shopName = lis[i].getElementsByClassName("newCname")[0];
+    //          // var areaBox = lis[i].getElementsByClassName("areaBox")[0];
+    //          console.log(Img);
+    //          console.log(urls);
+    //  //         console.log(lis);
+    //          var good = {};
+    //          good.url = url.src;
+    //          // good.prices = price.innerText;
+    //          // good.decs = decs.innerHTML;
+    //          // good.shopName = shopName.innerText;
+    //          // good.areaBox = areaBox.innerText;
+    //  //         console.log(good.url);
+    //          
+    //  //         data.push(good);
+    //      }
 
-let floorl = $(".pub-main").find(".pub-main-left");
-// console.log(floorl);
-let l_title = $(".pub-main").find(".pub-title").text();
-// console.log(l_title);
-$(".right-con-warp").find(".f_listpic img");
-let l_img = $(".right-con-warp").find(".f_listpic");
-// let r_con = $(".pub-main-right").find("")
-let arr = [];
-// let self = $(this);
-floorl.each(function(){
-    let o = {};
-    o.l_title = $.trim($(this).find(".pub-title").text());
-    // left.src = $(this).find(".right-con-warp .f_listpic img").attr("src");
-    o.bigsrc = $(this).find(".pub-hot-pro img").attr("src");
-    l_img.each(function(){
-        o.smalsrc = $(this).find(".f_listpic img").attr("src");
+//左侧菜单导航数据爬取
+// var ch_data = [];
+// var data = document.getElementsByClassName("subnav-menu")[0];
+// var items = data.getElementsByClassName("item");
+// for (var i = 0; i < items.length; i++) {
+//   var items_datas = {};
+//   var suvnav_tit = items[i].getElementsByClassName("suvnav-tit")[0];
+//   var tit_infos = items[i].getElementsByTagName("dd");
+//   for (var j = 0; j < tit_infos.length; j++) {
+//     var tit_infos_datas = {};
+//     var info_con = tit_infos[j].getElementsByTagName("a")[0];
+//     var info_line = tit_infos[j].getElementsByTagName("font")[0];
+//     tit_infos_datas.info_con = info_con.innerHTML;
+//     tit_infos_datas.info_line = info_line.innerHTML;
+//     items_datas.tit_infos_datas = tit_infos_datas;
+//   }
+//   items_datas.suvnav_tit = suvnav_tit.innerHTML;
+//   ch_data.push(items_datas);
+// }
+
+
+
+    let hotinf = $(".joinlist").find(".wordlist");
+    let boxs = $(".wordlist").find("ul");
+    let lis = $(".wordlist ul").find("li:not(.til)");
+    let app = $(".wordlist ul li:not(.til)").find("a");
+    // console.log(app);
+
+    let arr = [];
+    boxs.each(function(){
+        let o = {};
+        o.title = $(this).find(".til").text();
+        // o.cons = $(this).find("li:not(.til)").text();
+        let self = $(this);
+        // lis.each(function(){
+            // o.con_name = self.find("a:first").text();
+            // o.cons = self.find("a:not(:eq(1))").text();
+            
+            app.each(function(){
+                // let selfs = $(this);
+                o.inf= $.trim(self.text())
+            })
+        // })
+        arr.push(o);
     })
-    // o.r_title = $(this).find(".pub-con-right-t").text();
-    // o.r_title = $(this).find(".pub-con-right-t").text();
-    // r_con = self.find("")
-    arr.push(o);
-})
-console.log(arr);
+    console.log(arr);
+    // JSON.stringify(arr);
 
+
+    //左边的大样
+    let floorl = $(".pub-main").find(".pub-main-left");
+    let l_title = $(".pub-main").find(".pub-title").text();
+    let r_title = $(".pub-main-right").find("h3").text();
+
+    let arr = [];
+    floorl.each(function () {
+        let o = {};
+        o.l_title = $.trim($(this).find(".pub-title").text());
+        o.bigsrc = $(this).find(".pub-hot-pro img").attr("src");
+        arr.push(o);
+    })
+    // console.log(arr);
+
+    //右边的标题
+    let arr1 = [];
+    let floorr = $(".pub-main").find(".pub-main-right");
+
+    floorr.each(function () {
+        let j = {};
+        j.r_title = $(this).find("h3").text();
+        arr1.push(j);
+    })
+    console.log(arr1);
+
+    //右边的价格
+    let arr2 = [];
+    let uls = $(".pub-main-right").find(".pub-con-right-c");
+    let dls = $(".pub-con-right-c").find(".pub-list");
+    // uls.each(function () {
+        dls.each(function () {
+            let k = {};
+            k.conts = $(this).find("dt").text();
+            k.price = $(this).find("dd").text();
+            arr2.push(k);
+        })
+    // });
+    console.log(arr2);
+        JSON.stringify(arr2)
+
+    //小图的抓取
+    let arr3 = [];
+    let rightcon = $(".right-con-warp").find(".pub-main-con li");
+    rightcon.each(function () {
+        // let self = $(this);
+        let b = {};
+        b.smalsrc = $(this).find("img").attr("src");
+        arr3.push(b);
+    })
+    console.log(arr3);
 </script>
+
 </html>

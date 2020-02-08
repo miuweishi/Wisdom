@@ -12,7 +12,7 @@ $(() => {
 
     function renderUI(arr) {
         let str = arr.map((ele, index) => {
-            return `<li data-id=${index+1} >
+            return `<li data-id=${index+1}>
                 <div class="proImg">
                     <a href="###"  title="${ele.title}">
                         <img src="${ele.url}" class="forbid-title4" alt=""></a>

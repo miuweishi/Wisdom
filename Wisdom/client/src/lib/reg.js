@@ -1,10 +1,5 @@
 $(() => {
 
-    /* 初始默认值 */
-    $("#userName").val("shi");
-    $("#password").val("123a");
-    $("#mobile").val("13711413714");
-
     //用户名验证
     $("#userName").blur(function () {
         let val = $.trim($(this).val());

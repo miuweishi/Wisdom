@@ -21,7 +21,7 @@ $(() => {
         }
     });
 
-/***********************************************************/ 
+    /***********************************************************/
     /*截取url的参数id，查看数据库渲染数据*/
     (function () {
         let gid = decodeURI(location.search.slice(1));
@@ -66,7 +66,7 @@ $(() => {
         });
     })();
 
-/***********************************************************/
+    /***********************************************************/
     /*放大镜效果*/
     //给左边的图片添加鼠标移入事件
     $(".zoomPad").mouseenter(function () {
@@ -122,21 +122,10 @@ $(() => {
         $(".zoomWindow img").css("left", leftImg).css("top", topImg);
     });
 
-/**********************************************************8/
-    /*轮播小图的切换*/
+    /**********************************************************8/
+        /*轮播小图的切换*/
     // (function swipe() {
-    //     /*点击左右按钮切换图片*/
-    //     let index = 0;
-    //     $("#baseNex").click(function(){
-    //         let ul = $(this).parent().siblings().children("ul");
-    //         let iw = ul.children(":first").width();
-    //         // index++;
-    //         // ul.style.left = -(index) * iw;
-    //     })
-    // })()
-
-/************************************************************/
-    /*商品数量加减*/
+    //     /*点击左右按钮切换图 /*商品数量加减*/
     let countbox = $(".count-input"); //单个数量
     // let num = $(".item-left-t").siblings().text(); //总数量
     // let sum = $("#totalPrice").text();
@@ -146,25 +135,43 @@ $(() => {
     // console.log(gprice);
 
     //数量增加
-    $(".count-up").click(function () {
-    })
+    // $(".count-up").click(function () {
+    // })片*/
+    //     let index = 0;
+    //     $("#baseNex").click(function(){
+    //         let ul = $(this).parent().siblings().children("ul");
+    //         let iw = ul.children(":first").width();
+    //         // index++;
+    //         // ul.style.left = -(index) * iw;
+    //     })
+    // })()
+
+    /************************************************************/
+   
 
 
     /*点击加入购物车跳转到购物车页*/
-    $(".setMyCart").click(function () {
-        let gid = decodeURI(location.search.slice(1));
-        // $.ajax({
-        //     type: "post",
-        //     url: "../../../server/insertData05.php",
-        //     data: {
-        //         gid:gid
-        //     },
-        //     success: function (response) {
-
-        //     }
-        // });
-        window.location.href = "./cart.html?gid=" + gid;
+    $(".pro_btn").on("click", ".setMyCart", function () {
+        let username = Cookie.getItem("username");
+        let userID = Cookie.getItem("userID");
+        if (!username || !userID) {
+            window.location.href = "login.html";
+        } else {
+            let gid = decodeURI(location.search.slice(1));
+            $.ajax({
+                type: "get",
+                url: "../../../server/cart.php",
+                data: `type=add&goods_id=${gid}&user_id=${userID}`,
+                dataType: "json",
+                success: function (response) {
+                    /* 加入成功之后：更新购物车数量 */
+                    if (response.status == "success") {
+                        alert("成功加入购物车");
+                        window.location.href = "./cart.html";
+                    }
+                }
+            });
+        }
     })
-
 
 });

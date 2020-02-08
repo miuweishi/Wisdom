@@ -47,6 +47,7 @@ $(() => {
                 if (response.status == "success") {
                     alert("登录成功！");
                     Cookie.setItem('username', username);
+                    Cookie.setItem('userID', response.id);
                     window.location.href = "../../../zhuye.html";
 
                 } else {

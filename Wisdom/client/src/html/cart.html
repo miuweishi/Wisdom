@@ -13,16 +13,19 @@
     <!-- <link rel="stylesheet" href="../css/cart_pur_order.css"> -->
     <link rel="stylesheet" href="../css/cart_public-popup.css">
     <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../lib/Cookie.js"></script>
+    <script src="../lib/cart.js"></script>
 </head>
+
 <body>
-     <!-- topper顶部菜单栏 -->
-     <div class="toolbarBox" id="TopBar"></div>
-     <!-- 公共顶部菜单栏 -->
-     <script>
-         $(() => {
-             $('#TopBar').load('./topper.html');
-         })
-     </script>
+    <!-- topper顶部菜单栏 -->
+    <div class="toolbarBox" id="TopBar"></div>
+    <!-- 公共顶部菜单栏 -->
+    <script>
+        $(() => {
+            $('#TopBar').load('./topper.html');
+        })
+    </script>
     <div class="header-c">
         <div class="p_header fn-clear">
             <h1 class="fl"><a href="http://www.hc360.com" target="_blank" title="慧聪网" class="hc_logo">慧聪网</a></h1>
@@ -39,26 +42,23 @@
                 <!-- <a href="http://detail.b2b.hc360.com/detail/turbine/template/transaction,batch_cart.html" class="fr btn3 switchOrderModel">批量下单</a> -->
             </div>
             <div class="p-form mg-t15">
-                <table>
+                <table class="grade">
                     <tr>
-                        <th class="txt-l" width="10%"><input type="checkbox" class="v-a checkAllProduct"
-                                checked="checked" />&nbsp;全选</th>
+                        <th class="txt-l" width="10%"><input type="checkbox" class="v-a checkAllProduct" />&nbsp;全选</th>
                         <th width="41%">货品</th>
                         <th width="15%">单价（元）</th>
                         <th width="13%">数量</th>
                         <th width="15%">金额（元）</th>
                         <th width="6%"></th>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <td colspan="6" class="pd-l10">
                             <input type="checkbox" class="v-a checkSupplierProduct" checked="checked" />&nbsp;
-                            <a href="http://szbceec.b2b.hc360.com" target="_blank" title="深圳市碧玺电子设备有限公司" class="bold"
-                                onclick="return hcclick('?hcmy_SupplierManagelog=Company3');">
+                            <a href="" target="_blank" title="深圳市碧玺电子设备有限公司" class="bold">
                                 深圳市碧玺电子设备有限公司
                             </a>
                             <span class="hc_ico"></span>
-                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=316175048&site=qq&menu=yes"
-                                onclick="HC.UBA.sendUserlogsElement('UserBehavior_order_qq?detailbcid=408517661&detailuserid=1268954');">
+                            <a target="_blank" href="">
                                 <img border="0"
                                     src="//style.org.hc360.com/images/detail/mysite/siteconfig/qqIco/qqIco2.gif"
                                     alt="点击这里给我发消息" title="点击这里给我发消息" style="padding-bottom:5px;" />
@@ -73,18 +73,12 @@
                                             checked="checked" /></td>
                                     <td width="48%" class="v-a-t">
                                         <ul class="fn-clear">
-                                            <li class="fl pd1"><a href="http://b2b.hc360.com/supplyself/408517661.html"
-                                                    target="_blank"
-                                                    onclick="return hcclick('?hcmy_SupplierManagelog=title4');"><img
-                                                        onclick="return hcclick('?hcmy_SupplierManagelog=title4');"
+                                            <li class="fl pd1"><a href="" target="_blank"><img
                                                         src="//img003.hc360.cn/m3/M05/A9/69/wKhQ51S8Z_iEUTqJAAAAAOpRVww641.jpg..180x180.jpg"
-                                                        onerror="this.src='//style.org.hc360.com/images/my/images/corcenter/mmt4/tran/nop.png';"
                                                         alt="IPC网络摄像机 130万 红外 智能分析" width="80" height="80" /></a></li>
                                             <li class="fl pd2 mg-l10">
                                                 <p class="h-60">
-                                                    <a href="http://b2b.hc360.com/supplyself/408517661.html"
-                                                        target="_blank" title="IPC网络摄像机 130万 红外 智能分析"
-                                                        onclick="return hcclick('?hcmy_SupplierManagelog=title4');">
+                                                    <a href="" target="_blank" title="IPC网络摄像机 130万 红外 智能分析">
                                                         IPC网络摄像机 130万 红外 智能分析
                                                     </a>
                                                 </p>
@@ -114,17 +108,16 @@
                                     </td>
                                     <td width="15%" class="txt-c v-a-t"><b class="red1 totalPrice">240.00</b></td>
                                     <td width="6%" class="v-a-t"><a href="javascript:void(0);"
-                                            class="close removeProduct" bcId="408517661" skuId="16326326">删除</a></td>
+                                            class="close removeProduct">删除</a></td>
                                 </tr>
                             </table>
                         </td>
-                    </tr>
+                    </tr> -->
                     <tr>
                         <td class="bg-f pd-0 bd-n bg-blue" colspan="6">
                             <div class="fn-clear mg-t-1">
                                 <div class="fl mg-l10">
-                                    <input type="checkbox" class="v-a checkAllSupplierProduct"
-                                        checked="checked" />&nbsp;全选
+                                    <input type="checkbox" class="v-a checkAllSupplierProduct"/>&nbsp;全选
                                     <a href="javascript:void(0);" class="hui1 mg-l15 batchRemoveProduct">删除选中的货品</a>
                                 </div>
                                 <div class="fr mg-r20 fn-clear">
