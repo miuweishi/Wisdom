@@ -43,10 +43,13 @@ $(() => {
                 let tpl2 = arr.map(ele => {
                     return `<span class="supply-numb">${ele.kucun} 台 </span>`
                 }).join("");
+                let tpl3 = arr.map(ele => {
+                    return `${(ele.price.slice(0,-2))}`
+                }).join("");
                 $(".topPriceBox").append(tpl1);
                 $(".item-row-w").eq(0).append(tpl2);
                 $(".oriPrice").text($("#oriPriceTop").text());
-
+                $("#totalPrice").text(tpl3)
                 /*导航栏的数据渲染*/
                 let html1 = arr.map(ele => `<a href="">${ele.newCname}</a>&gt;
                 <a href="" class="navTitle">${ele.title}</a>`).join("");
@@ -66,6 +69,17 @@ $(() => {
         });
     })();
 
+    // $(()=>{
+    //     let smlpic = $("#dt-tab .tab-trigger img");
+    //     let midtu = $("#bigpic .zoomPad img");
+    //     $("#dt-tab .tab-trigger img").click(function(){
+    //         console.log(this);
+            
+    //         midtu.attr("src", smlpic.attr("src"));
+    //     })
+    // })
+    
+            
     /***********************************************************/
     /*放大镜效果*/
     //给左边的图片添加鼠标移入事件

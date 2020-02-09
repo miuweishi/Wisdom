@@ -109,7 +109,7 @@ $(() => {
                                     </div>
                                 </div>
                             </td>
-                            <td width="15%" class="txt-c v-a-t"><b class="red1 totalPrice">240.00</b></td>
+                            <td width="15%" class="txt-c v-a-t"><b class="red1 totalPrice">${(ele.price.slice(0,-2))}</b></td>
                             <td width="6%" class="v-a-t"><a href="javascript:void(0);"
                                     class="close removeProduct">删除</a></td>
                         </tr>
@@ -150,6 +150,8 @@ $(() => {
                     /* 重新加载和渲染这部分 */
                     getCartData();
                     getCartGoodsCount();
+                     /* 重新刷新当前页面 */
+                    window.location.reload();
                 }
             }
         });
@@ -203,16 +205,41 @@ $(() => {
         $("#pcountId").text(totalCount);
     }
 
-     /*商品数量加减*/
-     $(".p-form").on("click",".decreaseProduct",function(){
-         let num = $(this).next().prop("value") * 1;
-         if(num == 1){
-            $(this).addClass("allowed");
-            return;
-         }
-        //  updatadata(this,num-1);
-        //  computedTotal();
-     })
+    //  /*商品数量加减*/
+    //  $(".p-form").on("click",".decreaseProduct",function(){
+    //      let num = $(this).next().prop("value") * 1;
+    //      if(num == 1){
+    //         $(this).addClass("allowed");
+    //         return;
+    //      }
+    //      updataData(this,num-1);
+    //      computedTotal();
+    //  })
+    //  $(".p-form").on("click",".increaseProduct",function(){
+    //     let num = $(this).next().prop("value") * 1;
+    //     updataData(this,num+1);
+    //     computedTotal();
+    // })
     
+    // function updataData(ele,count){
+    //     // console.log(ele);
+    //     let goods_id = $(ele).parents(".list_item").data("id");
+    //     // console.log(goods_id);
+        
+    //     $.ajax({
+    //         type: "get",
+    //         url: "../../../server/cart.php",
+    //         data: `type=update&user_id=${userID}&goods_id=${goods_id}&count=${num}`,
+    //         dataType: "json",
+    //         success: function(data) {
+    //             if (data.status == "success") {
+    //                 $(ele).parent().children("input").val(count);
+    //                 $(ele).parent().prev().text(count);
 
+    //                 getCartGoodsCount();
+    //             }
+    //         }
+    //     });
+    // }
+    
 })
