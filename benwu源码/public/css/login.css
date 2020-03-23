@@ -1,0 +1,39 @@
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.el-form {
+  margin: 0.416667rem;
+}
+.el-form .el-button {
+  width: 100%;
+  background-color: #afd3f7;
+  border-color: #afd3f7;
+}
+.footer-word {
+  font-size: 0.314815rem;
+  color: #c3c3c3;
+  text-align: center;
+  margin-bottom: 1.157407rem;
+}
+.footer-word a {
+  margin-left: 0.444444rem;
+  color: #92dff9;
+}
+.agree {
+  color: #b5b5b5;
+  font-size: 0.314815rem;
+}
+.agree a {
+  font-size: 0.259259rem;
+  color: #62c6f7;
+}
+.agree a:hover {
+  text-decoration: none;
+}
+.el-checkbox__inner {
+  border-radius: 50%;
+  margin-right: 0.185185rem;
+}
