@@ -1,0 +1,72 @@
+{
+  "id": "1428622",
+  "name": "京东-移动duan",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "478799",
+      "name": "向右",
+      "font_class": "xiangyou",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "577367",
+      "name": "搜索类目",
+      "font_class": "sousuoleimu",
+      "unicode": "e754",
+      "unicode_decimal": 59220
+    },
+    {
+      "icon_id": "599986",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "688133",
+      "name": "笑脸 满意 服务",
+      "font_class": "xiaolianmanyifuwu",
+      "unicode": "e7a9",
+      "unicode_decimal": 59305
+    },
+    {
+      "icon_id": "705682",
+      "name": "拼图",
+      "font_class": "pintu",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "1638231",
+      "name": "更多",
+      "font_class": "gengduo1",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "5017106",
+      "name": "更多",
+      "font_class": "gengduo3",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "8843664",
+      "name": "向左",
+      "font_class": "xiangzuo1",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "10056268",
+      "name": "钱袋",
+      "font_class": "qiandai",
+      "unicode": "e70f",
+      "unicode_decimal": 59151
+    }
+  ]
+}
