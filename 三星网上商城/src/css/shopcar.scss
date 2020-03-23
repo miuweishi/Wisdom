@@ -1,0 +1,196 @@
+#sanxing {
+    .content {
+
+        h1 {
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        .list-title {
+            position: relative;
+            width: 1220px;
+            height: 50px;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .icon-checked {
+                position: absolute;
+                left: 20px;
+                top: 15px;
+                display: block;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .list-leftimg {
+                p {
+                    margin-left: 60px;
+                    width: 40px;
+                }
+            }
+
+            .list-right {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 110px;
+
+                .shopcart-goods {
+                    width: 25%;
+                }
+
+                .shopcart-unit-price {
+                    width: 15%;
+                }
+
+                .shopcart-qty {
+                    width: 23%;
+                }
+
+                .shopcart-sum {
+                    width: 17%;
+                }
+            }
+        }
+
+        .list-content {
+            .shopcart-list {
+                position: relative;
+                padding: 19px 0 19px 176px;
+                border-bottom: 1px solid #f1f1f1;
+
+                .icon-checked {
+                    position: absolute;
+                    left: 0px;
+                    top: 50%;
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    margin-left: 20px;
+                }
+
+                .shopcart-list-right {
+                    width: 100%;
+                    min-height: 102px;
+                    padding-right: 20px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .shopcart-goods {
+                        width: 25%;
+                        text-align: left;
+
+                        .list-leftimg {
+                            display: block;
+                            width: 100px;
+                            border: 1px solid #e5e5e5;
+                            position: absolute;
+                            left: 59px;
+                            top: 0;
+                            margin-top: 20px;
+                        }
+
+                        a {
+                            color: #333;
+                            font-size: 14px;
+                            line-height: 17px;
+                            word-break: normal;
+                            display: block;
+                        }
+
+                    }
+
+                    .unit-price {
+                        width: 20%;
+                        text-align: center;
+
+                        p {
+                            margin-bottom: 4px;
+                        }
+                    }
+
+                    .qty {
+                        width: 23%;
+                        text-align: center;
+
+                        .calculateNum {
+                            width: 76px;
+                            height: 22px;
+                            margin: 0 auto 8px;
+                            border: 1px solid #e5e5e5;
+
+                            a {
+                                display: block;
+                                float: left;
+                                width: 22px;
+                                height: 22px;
+                                cursor: pointer;
+                            }
+
+                            input {
+                                float: left;
+                                width: 30px;
+                                height: 22px;
+                                line-height: 22px;
+                                text-align: center;
+                                border-left: 1px solid #e5e5e5;
+                                border-right: 1px solid #e5e5e5;
+                                border-radius: 0;
+                            }
+                        }
+                    }
+
+                    .sum {
+                        width: 20%;
+                        text-align: right;
+
+                    }
+                }
+            }
+        }
+
+        .sum-box {
+            padding: 29px 30px;
+            margin-bottom: 50px;
+
+            .shopcost-sum {
+                float: right;
+
+                .sum-title {
+                    margin-right: 30px;
+                    line-height: 24px;
+                    font-size: 16px;
+                }
+
+                .sum-num {
+                    font-size: 22px;
+                    color: #1428a0;
+                    font-weight: bold;
+                    line-height: 24px;
+                    float: right;
+                }
+            }
+
+            label {
+                float: left;
+                font-size: 14px;
+
+                .icon-shopcar {
+                    display: inline-block;
+                    width: 22px;
+                    height: 18px;
+                    margin: 0 11px -2px 3px;
+                }
+            }
+        }
+    }
+}

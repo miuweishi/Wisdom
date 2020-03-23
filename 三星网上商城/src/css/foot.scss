@@ -1,0 +1,112 @@
+#sanxing {
+    width: 100%;
+
+    .content {
+        width: 1220px;
+        margin: 0px 73px;
+    }
+
+    /*尾部*/
+    #footer {
+
+        #f-two {
+            background: #cccccc;
+            height: 285px;
+            position: relative;
+
+            .about {
+                display: flex;
+                justify-content: flex-start;
+                padding-top: 47px;
+                margin-left: 73px;
+
+                dl {
+                    margin-right: 200px;
+                    color: #333333;
+
+                    dt {
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+
+                    dd {
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            .copy {
+                margin-left: 73px;
+                padding-top: 25px;
+                color: #333333;
+            }
+
+            .share {
+                position: absolute;
+                right: 250px;
+                top: 25px;
+
+                p:nth-child(1) {
+                    font-weight: bold;
+                }
+
+                p:nth-child(2) {
+                    margin-top: 22px;
+
+                    span {
+                        font-size: 42px;
+                        margin-right: 14px;
+                    }
+                }
+            }
+        }
+
+        #f-three {
+            height: 142px;
+            background: #666666;
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+
+            .left {
+                margin-left: 73px;
+                height: 142px;
+                width: 550px;
+
+                ul {
+                    height: 12px;
+                    display: flex;
+                    justify-content: flex-start;
+                    margin: 30px 0px;
+
+                    li {
+                        margin-right: 26px;
+                    }
+                }
+            }
+
+            .right {
+                margin-right: 88px;
+                width: 440px;
+
+                p:nth-child(1) {
+                    margin: 30px 0px;
+                    width: 276px;
+                }
+
+                p:nth-child(2) {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .tubiao {
+                        display: block;
+                        width: 17px;
+                        height: 20px;
+                        margin-left: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,189 @@
+#sanxing {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#sanxing .container .section {
+  padding: 25px 30px;
+  margin: 0px 35px;
+}
+
+#sanxing .container .section .list-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#sanxing .container .section .list-top .divider {
+  padding: 5px;
+}
+
+#sanxing .container .list-section {
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#sanxing .container .list-section .nav-left {
+  width: 350px;
+  height: auto;
+  padding: 2px 18px;
+}
+
+#sanxing .container .list-section .nav-left .title {
+  background: #e0e0e0;
+  padding: 15px 0 15px 30px;
+  font-size: 16px;
+}
+
+#sanxing .container .list-section .nav-left .list-ulstyled {
+  border-left: 10px solid #f2f2f2;
+  border-right: 10px solid #f2f2f2;
+  border-bottom: 20px solid #f2f2f2;
+  padding: 2px 18px;
+  font-size: 16px;
+}
+
+#sanxing .container .list-section .nav-left .list-ulstyled li {
+  padding: 5px 10px 15px 10px;
+}
+
+#sanxing .container .list-section .nav-left .nav-second .icon-checked i {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#sanxing .container .list-section .nav-right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#sanxing .container .list-section .nav-right .title-srch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sanxing .container .list-section .nav-right .title-srch strong {
+  width: 128px;
+  height: 48px;
+  font-size: 20px;
+  line-height: 48px;
+}
+
+#sanxing .container .list-section .nav-right .title-srch .sort {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 522px;
+}
+
+#sanxing .container .list-section .nav-right .title-srch .sort .sort-tle {
+  font-size: 16px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+#sanxing .container .list-section .nav-right .title-srch .sort .sort-style {
+  vertical-align: middle;
+  display: inline-block;
+  zoom: 1;
+  font-size: 14px;
+}
+
+#sanxing .container .list-section .nav-right .title-srch .sort .sort-style li {
+  float: left;
+  padding: 10px 18px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+#sanxing .container .list-section .nav-right .title-srch .sort .sort-style li:first-of-type {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: 1px solid #e5e5e5;
+}
+
+#sanxing .container .list-section .nav-right .title-srch .sort .sort-style li:nth-child(2) {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#sanxing .container .list-section .nav-right .title-srch .sort .sort-style li:nth-child(3) {
+  border: 1px solid #e5e5e5;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+  width: 80px;
+}
+
+#sanxing .container .list-section .nav-right .title-srch .sort .sort-style li:nth-child(3) .rank-icon .iconup {
+  border: 5px solid transparent;
+  border-top-color: grey;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
+}
+
+#sanxing .container .list-section .nav-right .title-srch .sort .sort-style li:nth-child(3) .rank-icon .icondown {
+  border: 5px solid transparent;
+  border-bottom-color: grey;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  right: 12px;
+  top: 8px;
+}
+
+#sanxing .container .list-section .nav-right #alllist {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#sanxing .container .list-section .nav-right #alllist .lists {
+  position: relative;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sanxing .container .list-section .nav-right #alllist .lists .list-boxing img {
+  width: 255px;
+  height: 255px;
+}
+
+#sanxing .container .list-section .nav-right #alllist .lists .list-name {
+  text-align: center;
+}
+
+#sanxing .container .list-section .nav-right #alllist .lists .list-name h2 a {
+  line-height: 24px;
+  color: #333333;
+}
+
+#sanxing .container .list-section .nav-right #alllist .lists .list-name .price {
+  color: #e2352f;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+#sanxing .container .list-section .nav-right #alllist .lists .list-name .price del {
+  font-size: 12px;
+  color: #666;
+  margin-left: 5px;
+  display: inline-block;
+}
